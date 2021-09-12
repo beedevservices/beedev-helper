@@ -5,6 +5,7 @@
 @blue: #113469;
 @red: #911a1a;
 @transparent: #e9eee6bd;
+@hr: #FFEDAB;
 .background {
     background-image: radial-gradient(@green04, @green03, @green02, @green01);
     background-repeat: no-repeat;
@@ -232,6 +233,15 @@ body {
         }
         a {
             .a();
+        }
+        hr {
+            background-color: @hr;
+            height: 10px;
+            width: 95%;
+            border-radius: 10%;
+        }
+        .img {
+            max-width: 1000px;
         }
         .main {
             .flexcolumn();

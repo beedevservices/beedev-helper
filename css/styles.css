@@ -340,6 +340,15 @@ body main a {
   text-decoration: none;
   color: black;
 }
+body main hr {
+  background-color: #FFEDAB;
+  height: 10px;
+  width: 95%;
+  border-radius: 10%;
+}
+body main .img {
+  max-width: 1000px;
+}
 body main .main {
   display: flex;
   flex-direction: column;
