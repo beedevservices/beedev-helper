@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../css/styles.css" />
+    <title>CSS Shapes</title>
+</head>
+<body>
+    <header>
+        <h1>BeeDev Services Helper Website</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <span id='showHTML'HTML>HTML</span>
+            <div id='htmlHide'>
+
+            </div>
+            <span id='showCSS'>CSS</span>
+            <div id='cssHide'>
+                <a href="./flexbox.html">Flexbox</a>
+                <a href="./shapes.html">CSS Shapes</a>
+            </div>
+            <span id='showJS'>JS</span>
+            <div id='jsHide'>
+                <a href="../jsPages/loops.html">JS Loops</a>
+                <a href="../jsPages/conditionals.html">JS Conditionals</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Making Shapes with CSS</h2>
+        <a href="https://css-tricks.com/the-shapes-of-css/">Other Shapes</a>
+        <div class='chart'>
+            <div class='shape'>
+                <span class='theShape'>
+                    <p class='triangleDown'>
+                        <span class='text'>Triangle</span>
+                    </p>
+                </span>
+                <pre>
+                    <code>
+                        .shapeContainer {
+                            position: relative;
+                        }
+                        .triangle {
+                            width: 0; 
+                            height: 0; 
+                            border-left: 100px solid transparent;
+                            border-right: 100px solid transparent;
+                            border-top: 100px solid blue;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .text {
+                            position:absolute;
+                            top: 30px;
+                            width: 200px;
+                            left: 0;
+                            text-align: center;
+                            display:block;
+                            color: green;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class='shape'>
+                <span class='theShape'>
+                    <p class='stop'>&nbsp;
+                        <span class='text'>Stop</span>
+                    </p>
+                </span>
+                <pre>
+                    <code>
+                        .shapeContainer {
+                            position: relative;
+                        }
+                        .stop {
+                            width: 170px;
+                            height: 150px;
+                            background: red;
+                            position: relative;
+                        }
+                        .stop:before {
+                            content: "";
+                            width: 100px;
+                            height: 0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            border-bottom: 35px solid red;
+                            border-left: 35px solid #fff;
+                            border-right: 35px solid #fff;
+                        }
+                        .stop:after {
+                            content: "";
+                            width: 100px;
+                            height: 0;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            border-top: 35px solid red;
+                            border-left: 35px solid #fff;
+                            border-right: 35px solid #fff;
+                        }
+                        .text {
+                            position:absolute;
+                            top: 60px;
+                            width: 170px;
+                            left: 0;
+                            text-align: center;
+                            display:block;
+                            color: green;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class='shape'>
+                <span class='theShape'>
+                    <p class='heart'>
+                        <span class='text'>Heart</span>
+                    </p>
+                </span>
+                <pre>
+                    <code>
+                        .shapeContainer {
+                            position: relative;
+                        }
+                        .heart {
+                            position: relative;
+                            width: 200px;
+                            height: 175px;
+                        }
+                        .heart:before,
+                        .heart:after {
+                          position: absolute;
+                          content: "";
+                          left: 100px;
+                          top: 0;
+                          width: 100px;
+                          height: 145px;
+                          background: @red;
+                          border-radius: 50px 50px 0 0;
+                          transform: rotate(-45deg);
+                          transform-origin: 0 100%;
+                        }
+                        .heart:after {
+                          left: 0;
+                          transform: rotate(45deg);
+                          transform-origin: 100% 100%;
+                        }
+                        .text {
+                            position:absolute;
+                            top: 40px;
+                            width: 200px;
+                            left: 0;
+                            text-align: center;
+                            display:block;
+                            color: @green04;
+                            z-index: 2;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class='shape'>
+                <span class='theShape'>
+                    <p class='diamond'>
+                        <span class='text'>Diamond</span>
+                    </p>
+                </span>
+                <pre>
+                    <code>
+                        .shapeContainer {
+                            position: relative;
+                        }
+                        .diamond {
+                            width: 0;
+                            height: 0;
+                            border: 100px solid transparent;
+                            border-bottom-color: blue;
+                            position: relative;
+                            top: -100px;
+                        }
+                        .diamond:after {
+                            content: '';
+                            position: absolute;
+                            left: -100px;
+                            top: 100px;
+                            width: 0;
+                            height: 0;
+                            border: 100px solid transparent;
+                            border-top-color: blue;
+                          }
+                        .text {
+                            position:absolute;
+                            top: 90px;
+                            width: 200px;
+                            left: -100px;
+                            text-align: center;
+                            display:block;
+                            color: green;
+                            z-index: 2;
+                        }
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2021 BeeDev Services</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
