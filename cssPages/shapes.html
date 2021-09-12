@@ -38,8 +38,8 @@
                         <span class='text'>Triangle</span>
                     </p>
                 </span>
-                <pre>
-                    <code>
+                <form class='code'>
+                    <textarea id='triangle' disabled rows="22" cols="79">
                         .shapeContainer {
                             position: relative;
                         }
@@ -61,8 +61,9 @@
                             display:block;
                             color: green;
                         }
-                    </code>
-                </pre>
+                </textarea>
+                    <button onclick='copyTriangle()'>Copy Code</button>
+                </form>
             </div>
             <div class='shape'>
                 <span class='theShape'>
@@ -70,8 +71,8 @@
                         <span class='text'>Stop</span>
                     </p>
                 </span>
-                <pre>
-                    <code>
+                <form class='code'>
+                    <textarea id='stop' disabled cols='79' rows='41'>
                         .shapeContainer {
                             position: relative;
                         }
@@ -112,8 +113,9 @@
                             display:block;
                             color: green;
                         }
-                    </code>
-                </pre>
+                    </textarea>
+                    <button onclick='copyStop()'>Copy Code</button>
+                </form>
             </div>
             <div class='shape'>
                 <span class='theShape'>
@@ -121,8 +123,8 @@
                         <span class='text'>Heart</span>
                     </p>
                 </span>
-                <pre>
-                    <code>
+                <form class='code'>
+                    <textarea id='heart' disabled cols='79' rows='37'>
                         .shapeContainer {
                             position: relative;
                         }
@@ -159,8 +161,9 @@
                             color: @green04;
                             z-index: 2;
                         }
-                    </code>
-                </pre>
+                    </textarea>
+                    <button onclick='copyHeart()'>Copy Code</button>
+                </form>
             </div>
             <div class='shape'>
                 <span class='theShape'>
@@ -168,8 +171,8 @@
                         <span class='text'>Diamond</span>
                     </p>
                 </span>
-                <pre>
-                    <code>
+                <form class='code'>
+                    <textarea id='diamond' disabled cols='79' rows='32'>
                         .shapeContainer {
                             position: relative;
                         }
@@ -201,8 +204,9 @@
                             color: green;
                             z-index: 2;
                         }
-                    </code>
-                </pre>
+                    </textarea>
+                    <button onclick='copyDiamond()'>Copy Code</button>
+                </form>
             </div>
         </div>
     </main>

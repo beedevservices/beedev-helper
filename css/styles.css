@@ -487,7 +487,7 @@ body main .chart .shape .theShape .diamond:after {
   border: 100px solid transparent;
   border-top-color: #113469;
 }
-body main .chart .shape pre {
+body main .chart .shape .code {
   background-color: #e9eee6bd;
   border: 2px double #DBEBD4;
   margin: 1em;

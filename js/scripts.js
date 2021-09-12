@@ -42,3 +42,36 @@ $(document).ready(function(){
         })
     })
 })
+
+function copyTriangle() {
+    var copyText = document.querySelector('#triangle')
+    console.log(copyText)
+    copyText.select()
+    copyText.setSelectionRange(0, 99999)
+    navigator.clipboard.writeText(copyText.value)
+    alert("Copied the text: " + copyText.value)
+  }
+  function copyStop() {
+    var copyText = document.querySelector('#stop')
+    console.log(copyText)
+    copyText.select()
+    copyText.setSelectionRange(0, 99999)
+    navigator.clipboard.writeText(copyText.value)
+    alert("Copied the text: " + copyText.value)
+  }
+  function copyHeart() {
+    var copyText = document.querySelector('#heart')
+    console.log(copyText)
+    copyText.select()
+    copyText.setSelectionRange(0, 99999)
+    navigator.clipboard.writeText(copyText.value)
+    alert("Copied the text: " + copyText.value)
+  }
+  function copyDiamond() {
+    var copyText = document.querySelector('#diamond')
+    console.log(copyText)
+    copyText.select()
+    copyText.setSelectionRange(0, 99999)
+    navigator.clipboard.writeText(copyText.value)
+    alert("Copied the text: " + copyText.value)
+  }
