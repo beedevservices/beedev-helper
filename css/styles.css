@@ -292,6 +292,7 @@ body header {
   justify-content: center;
   align-items: center;
   width: 95%;
+  text-align: center;
 }
 body header nav {
   display: flex;
@@ -510,8 +511,22 @@ body footer {
   width: 95%;
   margin: 1em;
 }
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 1150px) {
   body main .img {
-    width: 800px;
+    max-width: 775px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  body main .img {
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  body header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .img {
+    max-width: 300px;
   }
 }
