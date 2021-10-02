@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    $('#showHTML').click(function() {
-        $('#htmlHide').animate( {
+    $('#showFundamentals').click(function() {
+        $('#hideFundamentals').animate( {
             width: 'toggle'
         })
-        $('#htmlHide').css({
+        $('#hideFundamentals').css({
             'display': 'flex',
             'flex-direction': 'column',
             'justify-content': 'center',
@@ -13,11 +13,11 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
-    $('#showCSS').click(function() {
-        $('#cssHide').animate( {
+    $('#showPython').click(function() {
+        $('#hidePython').animate( {
             width: 'toggle'
         })
-        $('#cssHide').css({
+        $('#hidePython').css({
             'display': 'flex',
             'flex-direction': 'column',
             'justify-content': 'center',
@@ -27,11 +27,11 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
-    $('#showJS').click(function() {
-        $('#jsHide').animate( {
+    $('#showReact').click(function() {
+        $('#hideReact').animate( {
             width: 'toggle'
         })
-        $('#jsHide').css({
+        $('#hideReact').css({
             'display': 'flex',
             'flex-direction': 'column',
             'justify-content': 'center',

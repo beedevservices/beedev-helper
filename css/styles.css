@@ -314,14 +314,14 @@ body header nav span {
   justify-content: center;
   align-items: center;
 }
-body header nav #htmlHide,
-body header nav #cssHide,
-body header nav #jsHide {
+body header nav #hideFundamentals,
+body header nav #hidePython,
+body header nav #hideReact {
   display: none;
 }
-body header nav #htmlHide a,
-body header nav #cssHide a,
-body header nav #jsHide a {
+body header nav #hideFundamentals a,
+body header nav #hidePython a,
+body header nav #hideReact a {
   margin: 0.5em;
 }
 body main {
