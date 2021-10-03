@@ -279,6 +279,7 @@
   border-top-color: #113469;
 }
 body {
+  font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -331,6 +332,7 @@ body main {
   align-items: center;
   width: 95%;
   margin: 1em;
+  text-align: center;
 }
 body main p {
   width: 50%;
@@ -357,10 +359,7 @@ body main .main {
   align-items: center;
 }
 body main .main img {
-  margin: 1em;
-}
-body main .main .img {
-  max-width: 900px;
+  margin: 1em 0;
 }
 body main .chart {
   display: flex;
@@ -514,6 +513,9 @@ body footer {
 @media only screen and (max-width: 1150px) {
   body main .img {
     max-width: 775px;
+  }
+  body main p {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 850px) {
