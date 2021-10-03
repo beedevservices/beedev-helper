@@ -11,6 +11,9 @@ In order to get started, first you will need to clone this repo to your local ma
 
 ## Community
 
+## Some important information:
+This repo uses less to style the pages.  If you install the easy less extention to vs code you can then make all css changes directly to the .less file and it will auto update  the .css.  If you make changes to the .css please make sure to note this in your pr so that the changes can then be translated over to the .less and not get lost
+
 Me, myself and I! Welcome all who want to share in open source and contribute to improving this app.
 
 ## Issues
