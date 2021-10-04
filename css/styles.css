@@ -317,12 +317,14 @@ body header nav span {
 }
 body header nav #hideFundamentals,
 body header nav #hidePython,
-body header nav #hideReact {
+body header nav #hideReact,
+body header nav #hideCommands {
   display: none;
 }
 body header nav #hideFundamentals a,
 body header nav #hidePython a,
-body header nav #hideReact a {
+body header nav #hideReact a,
+body header nav #hideCommands a {
   margin: 0.5em;
 }
 body main {
