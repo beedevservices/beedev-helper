@@ -524,6 +524,7 @@ body main .resourceContainer .resources .section {
 body main .resourceContainer .resources .section .topic {
   padding: 1em;
   border: 3px groove black;
+  background-color: #DBEBD4;
 }
 body main .resourceContainer .resources .section #hideBasic,
 body main .resourceContainer .resources .section #hideHtmlCss,
