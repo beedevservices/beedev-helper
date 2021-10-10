@@ -80,6 +80,22 @@ body {
                 }
             }
         }
+        .resourceContainer {
+            .flexcolumn();
+
+            .resources {
+                .flexrow();
+                flex-wrap: wrap;
+
+                .topic {
+                    padding: 1em;
+                    border: 3px groove black;
+                }
+                #hideBasic, #hideHtmlCss, #hideJs, #hideFullStack {
+                    display: none;
+                }
+            }
+        }
     }
     footer {
         .flexrow();
