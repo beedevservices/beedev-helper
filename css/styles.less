@@ -24,7 +24,7 @@ body {
             span {
                 .flexcolumn();
             }
-            #hideFundamentals, #hidePython, #hideReact {
+            #hideFundamentals, #hidePython, #hideReact, #hideCommands {
                 display: none;
 
                 a {
@@ -77,6 +77,28 @@ body {
                 }
                 .code {
                     .codeBlock();
+                }
+            }
+        }
+        .resourceContainer {
+            .flexcolumn();
+
+            .resources {
+                .flexrow();
+                flex-wrap: wrap;
+
+                .section {
+                    padding: .5em;
+                    margin: .5em;
+
+                    .topic {
+                        padding: 1em;
+                        border: 3px groove black;
+                        background-color: #DBEBD4;
+                    }
+                    #hideBasic, #hideHtmlCss, #hideJs, #hideFullStack, #hideIde, #hidePlaygrounds, #hideResources, #hideChallenges, #hideHackathons, #hideBlogRss {
+                        display: none;
+                    }
                 }
             }
         }
