@@ -335,6 +335,8 @@ body main {
   width: 95%;
   margin: 1em;
   text-align: center;
+  min-height: 725px;
+  justify-content: flex-start;
 }
 body main p {
   width: 50%;
@@ -516,6 +518,7 @@ body main .resourceContainer .resources {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 body main .resourceContainer .resources .section {
   padding: 0.5em;
@@ -537,6 +540,33 @@ body main .resourceContainer .resources .section #hideChallenges,
 body main .resourceContainer .resources .section #hideHackathons,
 body main .resourceContainer .resources .section #hideBlogRss {
   display: none;
+  padding: 1em;
+  margin: 0.5em;
+}
+body main .resourceContainer .resources .section #hideBasic a,
+body main .resourceContainer .resources .section #hideHtmlCss a,
+body main .resourceContainer .resources .section #hideJs a,
+body main .resourceContainer .resources .section #hideFullStack a,
+body main .resourceContainer .resources .section #hideIde a,
+body main .resourceContainer .resources .section #hidePlaygrounds a,
+body main .resourceContainer .resources .section #hideResources a,
+body main .resourceContainer .resources .section #hideChallenges a,
+body main .resourceContainer .resources .section #hideHackathons a,
+body main .resourceContainer .resources .section #hideBlogRss a,
+body main .resourceContainer .resources .section #hideBasic span,
+body main .resourceContainer .resources .section #hideHtmlCss span,
+body main .resourceContainer .resources .section #hideJs span,
+body main .resourceContainer .resources .section #hideFullStack span,
+body main .resourceContainer .resources .section #hideIde span,
+body main .resourceContainer .resources .section #hidePlaygrounds span,
+body main .resourceContainer .resources .section #hideResources span,
+body main .resourceContainer .resources .section #hideChallenges span,
+body main .resourceContainer .resources .section #hideHackathons span,
+body main .resourceContainer .resources .section #hideBlogRss span {
+  border: 2px solid #2d4323;
+  background-color: #FFEDAB;
+  padding: 0.5em;
+  margin: 0.5em;
 }
 body main .nav {
   display: flex;

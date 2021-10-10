@@ -38,6 +38,8 @@ body {
         width: 95%;
         margin: 1em;
         text-align: center;
+        min-height: 725px;
+        justify-content: flex-start;
 
         p {
             width: 50%;
@@ -86,6 +88,7 @@ body {
             .resources {
                 .flexrow();
                 flex-wrap: wrap;
+                align-items: flex-start;
 
                 .section {
                     padding: .5em;
@@ -98,6 +101,15 @@ body {
                     }
                     #hideBasic, #hideHtmlCss, #hideJs, #hideFullStack, #hideIde, #hidePlaygrounds, #hideResources, #hideChallenges, #hideHackathons, #hideBlogRss {
                         display: none;
+                        padding: 1em;
+                        margin: .5em;
+
+                        a, span {
+                            border: 2px solid @green05;
+                            background-color: @hr;
+                            padding: .5em;
+                            margin: .5em;
+                        }
                     }
                 }
             }
