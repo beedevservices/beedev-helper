@@ -538,6 +538,14 @@ body main .resourceContainer .resources .section #hideHackathons,
 body main .resourceContainer .resources .section #hideBlogRss {
   display: none;
 }
+body main .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
 body footer {
   display: flex;
   flex-direction: row;
