@@ -13,7 +13,7 @@ body {
         nav {
             .flexrow();
             align-items: flex-start;
-            width: 50%;
+            width: 95%;
             justify-content: space-evenly;
             font-size: 18px;
 
@@ -103,8 +103,39 @@ body {
             }
         }
         .nav {
-            .flexcolumn();
+            .flexrow();
             .a();
+
+            a {
+                margin: 1em;
+                padding: .5em;
+                border: 3px groove black;
+                background-color: #DBEBD4;
+            }
+        }
+        .contribs {
+            .flexrow();
+            flex-wrap: wrap;
+
+            .contrib {
+                margin: 1em;
+                padding: .5em;
+                border: 3px groove #FFEDAB;
+                background-color: #DBEBD4;
+                .flexcolumn();
+
+                a {
+                    color: black;
+                    text-decoration: underline;
+                    margin: 1em;
+                    padding: .5em;
+                    background-color: #DBEBD4;
+                }
+                .contribImg {
+                    max-width: 100px;
+                    margin: .3em;
+                }
+            }
         }
     }
     footer {
