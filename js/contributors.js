@@ -15,8 +15,3 @@ $(document).ready(function() {
         $(".contribs").html(html_str);
     }, "json");
 })
-
-
-// avatar_url: "https://avatars.githubusercontent.com/u/59035920?v=4"
-// html_url: "https://github.com/melissa-24"
-// login: "melissa-24"
