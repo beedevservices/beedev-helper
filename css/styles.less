@@ -24,7 +24,7 @@ body {
             span {
                 .flexcolumn();
             }
-            #hideFundamentals, #hidePython, #hideReact {
+            #hideFundamentals, #hidePython, #hideReact, #hideCommands {
                 display: none;
 
                 a {
@@ -87,12 +87,17 @@ body {
                 .flexrow();
                 flex-wrap: wrap;
 
-                .topic {
-                    padding: 1em;
-                    border: 3px groove black;
-                }
-                #hideBasic, #hideHtmlCss, #hideJs, #hideFullStack {
-                    display: none;
+                .section {
+                    padding: .5em;
+                    margin: .5em;
+
+                    .topic {
+                        padding: 1em;
+                        border: 3px groove black;
+                    }
+                    #hideBasic, #hideHtmlCss, #hideJs, #hideFullStack, #hideIde, #hidePlaygrounds, #hideResources, #hideChallenges, #hideHackathons, #hideBlogRss {
+                        display: none;
+                    }
                 }
             }
         }

@@ -318,7 +318,7 @@ body header nav span {
 body header nav #hideFundamentals,
 body header nav #hidePython,
 body header nav #hideReact,
-body header nav #hideCommands{
+body header nav #hideCommands {
   display: none;
 }
 body header nav #hideFundamentals a,
@@ -517,14 +517,24 @@ body main .resourceContainer .resources {
   align-items: center;
   flex-wrap: wrap;
 }
-body main .resourceContainer .resources .topic {
+body main .resourceContainer .resources .section {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+body main .resourceContainer .resources .section .topic {
   padding: 1em;
   border: 3px groove black;
 }
-body main .resourceContainer .resources #hideBasic,
-body main .resourceContainer .resources #hideHtmlCss,
-body main .resourceContainer .resources #hideJs,
-body main .resourceContainer .resources #hideFullStack {
+body main .resourceContainer .resources .section #hideBasic,
+body main .resourceContainer .resources .section #hideHtmlCss,
+body main .resourceContainer .resources .section #hideJs,
+body main .resourceContainer .resources .section #hideFullStack,
+body main .resourceContainer .resources .section #hideIde,
+body main .resourceContainer .resources .section #hidePlaygrounds,
+body main .resourceContainer .resources .section #hideResources,
+body main .resourceContainer .resources .section #hideChallenges,
+body main .resourceContainer .resources .section #hideHackathons,
+body main .resourceContainer .resources .section #hideBlogRss {
   display: none;
 }
 body footer {
