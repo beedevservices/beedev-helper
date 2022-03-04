@@ -310,6 +310,7 @@ body header nav a {
   color: black;
 }
 body header nav span {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
