@@ -1,6 +1,7 @@
 @import './base.less';
 
 body {
+    font-family: 'Lato', sans-serif;
     .flexcolumn();
     .background();
 
@@ -12,7 +13,7 @@ body {
         nav {
             .flexrow();
             align-items: flex-start;
-            width: 50%;
+            width: 95%;
             justify-content: space-evenly;
             font-size: 18px;
 
@@ -21,9 +22,10 @@ body {
             }
 
             span {
+                cursor: pointer;
                 .flexcolumn();
             }
-            #htmlHide, #cssHide, #jsHide {
+            #hideFundamentals, #hidePython, #hideReact, #hideCommands {
                 display: none;
 
                 a {
@@ -36,6 +38,9 @@ body {
         .flexcolumn();
         width: 95%;
         margin: 1em;
+        text-align: center;
+        min-height: 725px;
+        justify-content: flex-start;
 
         p {
             width: 50%;
@@ -58,10 +63,7 @@ body {
             .flexcolumn();
 
             img {
-                margin: 1em;
-            }
-            .img {
-                max-width: 900px;
+                margin: 1em 0;
             }
         }
         .chart {
@@ -78,6 +80,73 @@ body {
                 }
                 .code {
                     .codeBlock();
+                }
+            }
+        }
+        .resourceContainer {
+            .flexcolumn();
+
+            .resources {
+                .flexrow();
+                flex-wrap: wrap;
+                align-items: flex-start;
+
+                .section {
+                    padding: .5em;
+                    margin: .5em;
+
+                    .topic {
+                        padding: 1em;
+                        border: 3px groove black;
+                        background-color: #DBEBD4;
+                    }
+                    #hideBasic, #hideHtmlCss, #hideJs, #hideFullStack, #hideIde, #hidePlaygrounds, #hideResources, #hideChallenges, #hideHackathons, #hideBlogRss {
+                        display: none;
+                        padding: 1em;
+                        margin: .5em;
+
+                        a, span {
+                            border: 2px solid @green05;
+                            background-color: @hr;
+                            padding: .5em;
+                            margin: .5em;
+                        }
+                    }
+                }
+            }
+        }
+        .nav {
+            .flexrow();
+            .a();
+
+            a {
+                margin: 1em;
+                padding: .5em;
+                border: 3px groove black;
+                background-color: #DBEBD4;
+            }
+        }
+        .contribs {
+            .flexrow();
+            flex-wrap: wrap;
+
+            .contrib {
+                margin: 1em;
+                padding: .5em;
+                border: 3px groove #FFEDAB;
+                background-color: #DBEBD4;
+                .flexcolumn();
+
+                a {
+                    color: black;
+                    text-decoration: underline;
+                    margin: 1em;
+                    padding: .5em;
+                    background-color: #DBEBD4;
+                }
+                .contribImg {
+                    max-width: 100px;
+                    margin: .3em;
                 }
             }
         }

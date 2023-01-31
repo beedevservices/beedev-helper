@@ -279,6 +279,7 @@
   border-top-color: #113469;
 }
 body {
+  font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -300,7 +301,7 @@ body header nav {
   justify-content: center;
   align-items: center;
   align-items: flex-start;
-  width: 50%;
+  width: 95%;
   justify-content: space-evenly;
   font-size: 18px;
 }
@@ -309,19 +310,22 @@ body header nav a {
   color: black;
 }
 body header nav span {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body header nav #htmlHide,
-body header nav #cssHide,
-body header nav #jsHide {
+body header nav #hideFundamentals,
+body header nav #hidePython,
+body header nav #hideReact,
+body header nav #hideCommands {
   display: none;
 }
-body header nav #htmlHide a,
-body header nav #cssHide a,
-body header nav #jsHide a {
+body header nav #hideFundamentals a,
+body header nav #hidePython a,
+body header nav #hideReact a,
+body header nav #hideCommands a {
   margin: 0.5em;
 }
 body main {
@@ -331,6 +335,9 @@ body main {
   align-items: center;
   width: 95%;
   margin: 1em;
+  text-align: center;
+  min-height: 725px;
+  justify-content: flex-start;
 }
 body main p {
   width: 50%;
@@ -357,10 +364,7 @@ body main .main {
   align-items: center;
 }
 body main .main img {
-  margin: 1em;
-}
-body main .main .img {
-  max-width: 900px;
+  margin: 1em 0;
 }
 body main .chart {
   display: flex;
@@ -503,6 +507,110 @@ body main .chart .shape .code {
   margin: 1em;
   width: 575px;
 }
+body main .resourceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .resourceContainer .resources {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+body main .resourceContainer .resources .section {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+body main .resourceContainer .resources .section .topic {
+  padding: 1em;
+  border: 3px groove black;
+  background-color: #DBEBD4;
+}
+body main .resourceContainer .resources .section #hideBasic,
+body main .resourceContainer .resources .section #hideHtmlCss,
+body main .resourceContainer .resources .section #hideJs,
+body main .resourceContainer .resources .section #hideFullStack,
+body main .resourceContainer .resources .section #hideIde,
+body main .resourceContainer .resources .section #hidePlaygrounds,
+body main .resourceContainer .resources .section #hideResources,
+body main .resourceContainer .resources .section #hideChallenges,
+body main .resourceContainer .resources .section #hideHackathons,
+body main .resourceContainer .resources .section #hideBlogRss {
+  display: none;
+  padding: 1em;
+  margin: 0.5em;
+}
+body main .resourceContainer .resources .section #hideBasic a,
+body main .resourceContainer .resources .section #hideHtmlCss a,
+body main .resourceContainer .resources .section #hideJs a,
+body main .resourceContainer .resources .section #hideFullStack a,
+body main .resourceContainer .resources .section #hideIde a,
+body main .resourceContainer .resources .section #hidePlaygrounds a,
+body main .resourceContainer .resources .section #hideResources a,
+body main .resourceContainer .resources .section #hideChallenges a,
+body main .resourceContainer .resources .section #hideHackathons a,
+body main .resourceContainer .resources .section #hideBlogRss a,
+body main .resourceContainer .resources .section #hideBasic span,
+body main .resourceContainer .resources .section #hideHtmlCss span,
+body main .resourceContainer .resources .section #hideJs span,
+body main .resourceContainer .resources .section #hideFullStack span,
+body main .resourceContainer .resources .section #hideIde span,
+body main .resourceContainer .resources .section #hidePlaygrounds span,
+body main .resourceContainer .resources .section #hideResources span,
+body main .resourceContainer .resources .section #hideChallenges span,
+body main .resourceContainer .resources .section #hideHackathons span,
+body main .resourceContainer .resources .section #hideBlogRss span {
+  border: 2px solid #2d4323;
+  background-color: #FFEDAB;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+body main .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+body main .nav a {
+  margin: 1em;
+  padding: 0.5em;
+  border: 3px groove black;
+  background-color: #DBEBD4;
+}
+body main .contribs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body main .contribs .contrib {
+  margin: 1em;
+  padding: 0.5em;
+  border: 3px groove #FFEDAB;
+  background-color: #DBEBD4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .contribs .contrib a {
+  color: black;
+  text-decoration: underline;
+  margin: 1em;
+  padding: 0.5em;
+  background-color: #DBEBD4;
+}
+body main .contribs .contrib .contribImg {
+  max-width: 100px;
+  margin: 0.3em;
+}
 body footer {
   display: flex;
   flex-direction: row;
@@ -514,6 +622,9 @@ body footer {
 @media only screen and (max-width: 1150px) {
   body main .img {
     max-width: 775px;
+  }
+  body main p {
+    width: 80%;
   }
 }
 @media only screen and (max-width: 850px) {

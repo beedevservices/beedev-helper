@@ -1,0 +1,8 @@
+Please add any ideas you have for images or pages below.
+Please use the following format:
+
+1. Page Idea / Image Idea - The name or concept
+2. Image provided y / n - Upload the image if yes to this same folder
+3. Any supporting documents or example images? - If you have an example of an image that describes your idea (but isn't yours) please provide the link to the image, and if you feel it is needed please also provide any supporting information.
+4. Your email or some way to reach out so that if there are questions we can get it right.
+5. Would you like to be listed as contributor? - by creating a pull request you git will automatically be added as a contributor on that page however it can be removed if you would rather
