@@ -59,7 +59,7 @@ const mutuallyExclusiveButtonsOfMany = (group, attribute, increase=true) => {
     group.forEach(e=>adjustAttributeValue(e, attribute, increase))
 }
 
-const incrementouCnt = button => {
+const incrementCount = button => {
     button.parentElement.firstElementChild.firstElementChild.innerText++
 }
 
