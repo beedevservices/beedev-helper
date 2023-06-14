@@ -6,48 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="../css/styles.css" />
+    <script src="../js/components/nav.js"></script>
+    <script src="../js/components/footer.js"></script>
     <title>Python Basics</title>
 </head>
 
 <body>
     <header>
         <h1>BeeDev Services Helper Website</h1>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../resources.html">Resources Wiki</a>
-            <a href="../about.html">About</a>
-            <span>
-                <span id='showFundamentals'>HTML / CSS / JS</span>
-                <div id='hideFundamentals'>
-                    <a href="../fundamentals/house.html">Building your Page</a>
-                    <a href="../fundamentals/flexbox.html">Flexbox</a>
-                    <a href="../fundamentals/shapes.html">CSS Shapes</a>
-                    <a href="../fundamentals/loops.html">JS Loops</a>
-                    <a href="../fundamentals/conditionals.html">JS Conditionals</a>
-                </div>
-            </span>
-            <span>
-                <span id='showPython'>Python / Flask / Django</span>
-                <div id='hidePython'>
-                    <a href="basics.html">Python Basics</a>
-                    <a href="loops.html">Python Loops</a>
-                    <a href="iteratingData.html">IteratingData</a>
-                    <a href="classes.html">Classes</a>
-                </div>
-            </span>
-            <span>
-                <span id='showReact'>React / Express / Node</span>
-                <div id='hideReact'>
-
-                </div>
-            </span>
-            <span>
-                <span id="showCommands">Git / Terminal</span>
-                <div id="hideCommands">
-                    <a href="../git/basics.html">Git Basics</a>
-                </div>
-            </span>
-        </nav>
+        <nav-component></nav-component>
     </header>
     <main>
         <h1>Python Basics</h1>
@@ -66,9 +33,7 @@
         <a href='../images/python/valid_and_invalid_variables.png' download><button>Download Image</button></a>
         <hr>
     </main>
-    <footer>
-        <p>&copy; 2021 BeeDev Services</p>
-    </footer>
+    <footer-component></footer-component>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/scripts.js"></script>
 </body>

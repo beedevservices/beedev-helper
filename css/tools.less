@@ -1,0 +1,68 @@
+@import './base.less';
+
+body {
+    font-family: 'Lato', sans-serif;
+    // .flexcolumn();
+    .background();
+    min-height: 1200px;
+
+    header {
+        .flexcolumn();
+        width: 95%;
+        text-align: center;
+
+        .toolsNav {
+            .flexrow();
+            align-items: flex-start;
+            width: 95%;
+            justify-content: space-evenly;
+            font-size: 18px;
+            margin-top: 1em;
+    
+                a {
+                    .a();
+                }
+        }
+
+        tool-component {
+            .flexrow();
+            align-items: flex-start;
+            width: 95%;
+            justify-content: space-evenly;
+            font-size: 18px;
+
+            nav {
+                .flexrow();
+                align-items: flex-start;
+                width: 95%;
+                justify-content: space-evenly;
+                font-size: 18px;
+    
+                a {
+                    .a();
+                }
+    
+                span {
+                    cursor: pointer;
+                    .flexcolumn();
+                }
+                #hideFundamentals, #hidePython, #hideReact, #hideJava, #hideCSharp, #hideCommands {
+                    display: none;
+    
+                    a {
+                        margin: .5em;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        display: block;
+
+        .displayDiv {
+            border: 2px solid @hr;
+
+            p { border: 1px solid red }
+        }
+    }
+}

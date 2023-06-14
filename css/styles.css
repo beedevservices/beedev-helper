@@ -295,7 +295,7 @@ body header {
   width: 95%;
   text-align: center;
 }
-body header nav {
+body header nav-component {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -305,27 +305,41 @@ body header nav {
   justify-content: space-evenly;
   font-size: 18px;
 }
-body header nav a {
+body header nav-component nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 95%;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+body header nav-component nav a {
   text-decoration: none;
   color: black;
 }
-body header nav span {
+body header nav-component nav span {
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body header nav #hideFundamentals,
-body header nav #hidePython,
-body header nav #hideReact,
-body header nav #hideCommands {
+body header nav-component nav #hideFundamentals,
+body header nav-component nav #hidePython,
+body header nav-component nav #hideReact,
+body header nav-component nav #hideJava,
+body header nav-component nav #hideCSharp,
+body header nav-component nav #hideCommands {
   display: none;
 }
-body header nav #hideFundamentals a,
-body header nav #hidePython a,
-body header nav #hideReact a,
-body header nav #hideCommands a {
+body header nav-component nav #hideFundamentals a,
+body header nav-component nav #hidePython a,
+body header nav-component nav #hideReact a,
+body header nav-component nav #hideJava a,
+body header nav-component nav #hideCSharp a,
+body header nav-component nav #hideCommands a {
   margin: 0.5em;
 }
 body main {
@@ -336,7 +350,7 @@ body main {
   width: 95%;
   margin: 1em;
   text-align: center;
-  min-height: 725px;
+  min-height: 825px;
   justify-content: flex-start;
 }
 body main p {
@@ -506,6 +520,14 @@ body main .chart .shape .code {
   border: 2px double #DBEBD4;
   margin: 1em;
   width: 575px;
+}
+body main #hideInlineBlock,
+body main #hideDisplayFlex,
+body main #hideFlexWrap,
+body main #hideBoxModel {
+  display: none;
+  padding: 1em;
+  margin: 0.5em;
 }
 body main .resourceContainer {
   display: flex;

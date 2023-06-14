@@ -5,47 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="../css/styles.css" />
+    <script src="../js/components/nav.js"></script>
+    <script src="../js/components/footer.js"></script>
     <title>CSS Flexbox</title>
 </head>
 <body>
     <header>
         <h1>BeeDev Services Helper Website</h1>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../resources.html">Resources Wiki</a>
-            <a href="../about.html">About</a>
-            <span>
-                <span id='showFundamentals'>HTML / CSS / JS</span>
-                <div id='hideFundamentals'>
-                    <a href="house.html">Building your Page</a>
-                    <a href="flexbox.html">Flexbox</a>
-                    <a href="shapes.html">CSS Shapes</a>
-                    <a href="loops.html">JS Loops</a>
-                    <a href="conditionals.html">JS Conditionals</a>
-                </div>
-            </span>
-            <span>
-                <span id='showPython'>Python / Flask / Django</span>
-                <div id='hidePython'>
-                    <a href="../python/basics.html">Python Basics</a>
-                    <a href="../python/loops.html">Python Loops</a>
-                    <a href="../python/iteratingData.html">IteratingData</a>
-                    <a href="../python/classes.html">Classes</a>
-                </div>
-            </span>
-            <span>
-                <span id='showReact'>React / Express / Node</span>
-                <div id='hideReact'>
-
-                </div>
-            </span>
-            <span>
-                <span id="showCommands">Git / Terminal</span>
-                <div id="hideCommands">
-                    <a href="../git/basics.html">Git Basics</a>
-                </div>
-            </span>
-        </nav>
+        <nav-component></nav-component>
     </header>
     <main>
         <h1>CSS Flexbox</h1>
@@ -65,9 +32,7 @@
         <img src="../images/css/flex05.PNG" alt="align items" class='img'>
         <a href="../images/css/flex05.PNG" download><button>Download Image</button></a>
     </main>
-    <footer>
-        <p>&copy; 2021 BeeDev Services</p>
-    </footer>
+    <footer-component></footer-component>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/scripts.js"></script>
 </body>

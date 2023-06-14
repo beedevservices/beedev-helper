@@ -41,6 +41,34 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+    $('#showJava').click(function() {
+        $('#hideJava').animate( {
+            width: 'toggle'
+        })
+        $('#hideJava').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
+    $('#showCSharp').click(function() {
+        $('#hideCSharp').animate( {
+            width: 'toggle'
+        })
+        $('#hideCSharp').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
     $('#showCommands').click(function() {
         $('#hideCommands').animate( {
             width: 'toggle'
@@ -186,6 +214,62 @@ $(document).ready(function(){
             width: 'toggle'
         })
         $('#hideBlogRss').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
+    $('#showInlineBlock').click(function() {
+        $('#hideInlineBlock').animate( {
+            width: 'toggle'
+        })
+        $('#hideInlineBlock').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
+    $('#showFlexWrap').click(function() {
+        $('#hideFlexWrap').animate( {
+            width: 'toggle'
+        })
+        $('#hideFlexWrap').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
+    $('#showDisplayFlex').click(function() {
+        $('#hideDisplayFlex').animate( {
+            width: 'toggle'
+        })
+        $('#hideDisplayFlex').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
+    $('#showBoxModel').click(function() {
+        $('#hideBoxModel').animate( {
+            width: 'toggle'
+        })
+        $('#hideBoxModel').css({
             'display': 'flex',
             'flex-direction': 'column',
             'justify-content': 'center',

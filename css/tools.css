@@ -1,0 +1,365 @@
+.background {
+  background-image: radial-gradient(#DBEBD4, #C5DDBB, #ADCD9F, #95BD83);
+  background-repeat: no-repeat;
+}
+.a {
+  text-decoration: none;
+  color: black;
+}
+.codeBlock {
+  background-color: #e9eee6bd;
+  border: 2px double #DBEBD4;
+  margin: 1em;
+  width: 575px;
+}
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.altrow {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.altcolumn {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.triangleD .triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #113469;
+  margin: 0;
+  padding: 0;
+}
+.triangleD .triangleDown .text {
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+}
+.anyArrow {
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+  color: #113469;
+}
+.theStop .stop {
+  width: 170px;
+  height: 150px;
+  background: #911a1a;
+  position: relative;
+}
+.theStop .stop .text {
+  position: absolute;
+  top: 60px;
+  width: 170px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+}
+.theStop .stop:before {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
+}
+.theStop .stop:after {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
+}
+.heart .heart {
+  position: relative;
+  width: 200px;
+  height: 175px;
+}
+.heart .heart .text {
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
+}
+.heart .heart:before,
+.heart .heart:after {
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 0;
+  width: 100px;
+  height: 145px;
+  background: #911a1a;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart .heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.diamond .diamond {
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-bottom-color: #113469;
+  position: relative;
+  top: -100px;
+}
+.diamond .diamond .text {
+  position: absolute;
+  top: 90px;
+  width: 200px;
+  left: -100px;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
+}
+.diamond .diamond:after {
+  content: '';
+  position: absolute;
+  left: -100px;
+  top: 100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-top-color: #113469;
+}
+.shapeContainer {
+  position: relative;
+  width: 200px;
+}
+.shapeContainer .triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #113469;
+  margin: 0;
+  padding: 0;
+}
+.shapeContainer .triangleDown .text {
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+}
+.shapeContainer .stop {
+  width: 170px;
+  height: 150px;
+  background: #911a1a;
+  position: relative;
+}
+.shapeContainer .stop .text {
+  position: absolute;
+  top: 60px;
+  width: 170px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+}
+.shapeContainer .stop:before {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
+}
+.shapeContainer .stop:after {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
+}
+.shapeContainer .heart {
+  position: relative;
+  width: 200px;
+  height: 175px;
+}
+.shapeContainer .heart .text {
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
+}
+.shapeContainer .heart:before,
+.shapeContainer .heart:after {
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 0;
+  width: 100px;
+  height: 145px;
+  background: #911a1a;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.shapeContainer .heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.shapeContainer .diamond {
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-bottom-color: #113469;
+  position: relative;
+  top: -100px;
+}
+.shapeContainer .diamond .text {
+  position: absolute;
+  top: 90px;
+  width: 200px;
+  left: -100px;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
+}
+.shapeContainer .diamond:after {
+  content: '';
+  position: absolute;
+  left: -100px;
+  top: 100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-top-color: #113469;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: radial-gradient(#DBEBD4, #C5DDBB, #ADCD9F, #95BD83);
+  background-repeat: no-repeat;
+  min-height: 1200px;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  text-align: center;
+}
+body header .toolsNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 95%;
+  justify-content: space-evenly;
+  font-size: 18px;
+  margin-top: 1em;
+}
+body header .toolsNav a {
+  text-decoration: none;
+  color: black;
+}
+body header tool-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 95%;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+body header tool-component nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 95%;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+body header tool-component nav a {
+  text-decoration: none;
+  color: black;
+}
+body header tool-component nav span {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header tool-component nav #hideFundamentals,
+body header tool-component nav #hidePython,
+body header tool-component nav #hideReact,
+body header tool-component nav #hideJava,
+body header tool-component nav #hideCSharp,
+body header tool-component nav #hideCommands {
+  display: none;
+}
+body header tool-component nav #hideFundamentals a,
+body header tool-component nav #hidePython a,
+body header tool-component nav #hideReact a,
+body header tool-component nav #hideJava a,
+body header tool-component nav #hideCSharp a,
+body header tool-component nav #hideCommands a {
+  margin: 0.5em;
+}
+body main {
+  display: block;
+}
+body main .displayDiv {
+  border: 2px solid #FFEDAB;
+}
+body main .displayDiv p {
+  border: 1px solid red;
+}

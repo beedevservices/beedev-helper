@@ -10,26 +10,34 @@ body {
         width: 95%;
         text-align: center;
 
-        nav {
+        nav-component {
             .flexrow();
             align-items: flex-start;
             width: 95%;
             justify-content: space-evenly;
             font-size: 18px;
 
-            a {
-                .a();
-            }
-
-            span {
-                cursor: pointer;
-                .flexcolumn();
-            }
-            #hideFundamentals, #hidePython, #hideReact, #hideCommands {
-                display: none;
-
+            nav {
+                .flexrow();
+                align-items: flex-start;
+                width: 95%;
+                justify-content: space-evenly;
+                font-size: 18px;
+    
                 a {
-                    margin: .5em;
+                    .a();
+                }
+    
+                span {
+                    cursor: pointer;
+                    .flexcolumn();
+                }
+                #hideFundamentals, #hidePython, #hideReact, #hideJava, #hideCSharp, #hideCommands {
+                    display: none;
+    
+                    a {
+                        margin: .5em;
+                    }
                 }
             }
         }
@@ -39,7 +47,7 @@ body {
         width: 95%;
         margin: 1em;
         text-align: center;
-        min-height: 725px;
+        min-height: 825px;
         justify-content: flex-start;
 
         p {
@@ -82,6 +90,11 @@ body {
                     .codeBlock();
                 }
             }
+        }
+        #hideInlineBlock, #hideDisplayFlex, #hideFlexWrap, #hideBoxModel {
+            display: none;
+            padding: 1em;
+            margin: .5em;
         }
         .resourceContainer {
             .flexcolumn();
