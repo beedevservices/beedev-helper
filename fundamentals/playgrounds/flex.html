@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../../css/tools.css" />
+    <script src="../../js/components/toolNav.js"></script>
+    <script src="../../js/components/footer.js"></script>
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <h1>BeeDev Services Helper Website</h1>
+        <tool-component></tool-component>
+        <nav class="toolsNav">
+            <a href="../tools.html">Back to Tools Page</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="centerText">Display Flex</h1>
+        <div id="blockDiv2" class="displayDiv">
+            <p>I am p one</p>
+            <p>I am p two</p>
+            <p>I am p three</p>
+            <a href="#">I am a link</a>
+            <p>I am p four</p>
+            <button>Click Me</button>
+            <button>No Me</button>
+            <p>I am p five</p>
+        </div>
+        <h3 class="centerText">Any buttons below that are green are active. Buttons with a pink shadow are the default setting</h3>
+        <div class="fixBottom">
+            <div class="left">
+                <div class="flexStartGap5">
+                    <p>Border:</p>
+                    <button onclick="changeBorderProperty(this, blockDiv2)">
+                    p { border: 1px solid red }
+                    </button>
+                </div>
+                <div class="flexStartGap5">
+                    <p>Display:</p>
+                    <div class="mutuallyExclusiveButtons">
+                        <button class="defaultProperty showFlexControls" onclick="changePropertyOfOne(blockDiv2, 'display', 'block')">
+                            div { display: block; }
+                        </button>
+                        <button class="showFlexControls" onclick="changePropertyOfOne(blockDiv2, 'display', 'flex')">
+                            div { display: flex; }
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right" id="hideFlexControls">
+                <h3>Options once Flex is activated</h3>
+                <div class="flexStartGap5">
+                    <p>Flex Direction</p>
+                    <div class="mutuallyExclusiveButtons">
+                        <button class="defaultProperty" onclick="changePropertyOfOne(blockDiv2, 'flex-direction', 'row')">
+                            row
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'flex-direction', 'row-reverse')">
+                            row-reverse
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'flex-direction', 'column')">
+                            column
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'flex-direction', 'column-reverse')">
+                            column-reverse
+                        </button>
+                    </div>
+                </div>
+                <div class="flexStartGap5">
+                    <p>Justify Content:</p>
+                    <div class="mutuallyExclusiveButtons">
+                        <button class="defaultProperty" onclick="changePropertyOfOne(blockDiv2, 'justify-content', 'flex-start')">
+                            flex-start
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'justify-content', 'flex-end')">
+                            flex-end
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'justify-content', 'center')">
+                            center
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'justify-content', 'space-around')">
+                            space-around
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'justify-content', 'space-between')">
+                            space-between
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'justify-content', 'space-evenly')">
+                            space-evenly
+                        </button>
+                    </div>
+                </div>
+                <div class="flexStartGap5">
+                    <p>Align Items</p>
+                    <div class="mutuallyExclusiveButtons">
+                        <button class="defaultProperty" onclick="changePropertyOfOne(blockDiv2, 'align-items', 'stretch')">
+                            stretch
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'align-items', 'flex-start')">
+                            flex-start
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'align-items', 'flex-end')">
+                            flex-end
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'align-items', 'baseline')">
+                            baseline
+                        </button>
+                        <button onclick="changePropertyOfOne(blockDiv2, 'align-items', 'center')">
+                            center
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/tools.js"></script>
+</body>
+</html>

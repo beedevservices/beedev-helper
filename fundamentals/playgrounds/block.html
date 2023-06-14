@@ -19,17 +19,47 @@
         </nav>
     </header>
     <main>
-        <h1>Block & Inline-Block</h1>
-        <div id="block_inline_div_1" class="displayDiv">
+        <h1 class="centerText">Block & Inline-Block</h1>
+        <div id="blockDiv1" class="displayDiv">
             <p>I am block one</p>
             <p>I am block two</p>
             <p>I am block three</p>
             <p>I am block four</p>
             <p>We are block level elements</p>
         </div>
+        <div class="fixBottom">
+            <h3>Any buttons below that are green are active. Buttons with a pink shadow are the default setting</h3>
+            <p>Adding a border to the elements can help to understand the changes that are taking place and how much space they actually take up.</p>
+            <p>Lets activate the border before we change anything to see how it is in it's default state</p>
+            <button class="startBorder" onclick="changeBorderProperty(this, blockDiv1)">
+                p { border: 1px solid red }
+            </button>
+            <p>Use the buttons below to change the display properties of the P tags in the above div.</p>
+            <div class="mutuallyExclusiveButtons">
+                <button class="defaultProperty" onclick="changePropertyOfMany(blockDiv1, 'display', 'block')">
+                    p { display: 'block'; }
+                </button>
+                <button onclick="changePropertyOfMany(blockDiv1, 'display', 'inline-block')">
+                    p { display: 'inline-block'; }
+                </button>
+                <button onclick="changePropertyOfMany(blockDiv1, 'display', 'none')">
+                    p { display: 'none'; }
+                </button>
+            </div>
+            <p>Changing the parent's display property can completely negate all of this since a flexed div controls its children completely.</p>
+            <div class="mutuallyExclusiveButtons">
+                <button class="defaultProperty" onclick="blockDiv1.style.display = 'block'">
+                    div { display: block; }
+                </button>
+                <button onclick="blockDiv1.style.display = 'flex'">
+                    div { display: flex; }
+                </button>
+            </div>
+        </div>
     </main>
     <footer-component></footer-component>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../../js/scripts.js"></script>
+    <script src="../../js/tools.js"></script>
 </body>
 </html>

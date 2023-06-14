@@ -279,6 +279,14 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+    $('.showFlexControls').click(function() {
+        $('#hideFlexControls').animate( {
+            width: 'toggle'
+        })
+        $('#hideFlexControls').css({
+            'display': 'flex'
+        })
+    })
 })
 
 function copyTriangle() {

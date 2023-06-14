@@ -1,0 +1,88 @@
+@import './base.less';
+
+body {
+    main {
+        .principal{
+            width: calc(50% - 40px);
+            min-width: 525px;
+            margin: 0 20px 20px 20px;
+            float: left;
+
+            .control {
+                h4 {
+                    a {
+                        font-variant: small-caps; 
+                        font-size: 120%; 
+                        color: #000; 
+                        text-decoration: none;
+                    }
+                    small {
+                        font-variant: normal; 
+                        font-size: 80%; 
+                        font-weight: normal; 
+                        color: @blue;
+                    }
+                }
+                .radio{
+                    margin-bottom: 20px;
+
+                    .defaultProperty {
+                        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+                    }
+                    label{
+                        line-height: 200%;
+                    }
+                    input[type=radio] {
+                        color :white;
+                    }
+                    input[type=radio]:checked + label {
+                        color: @red;
+                        border: 1px dotted @red;
+                    }
+                    input[type=number] {
+                        width: 40px;
+                        margin-right: .5em;
+                    }
+                }
+            }
+            #direction {
+                .item {
+                    flex-wrap: wrap;
+                }
+            }
+            .flex-container {
+                border: 1px solid #555;
+                display : flex;
+                padding:20px;
+                width:100%; 
+
+                .item{
+                    margin:0; 
+                    display : inherit;
+                    padding:10px; 
+                    width:100px; 
+                    height:100px;
+                    align-items: center;
+                    
+                    p {
+                        width: 100%;
+                        text-align: center;
+                        color: #fff;
+                    }
+                }
+            }
+            .row {
+                flex-direction: row;
+            }
+            .row-reverse {
+                flex-direction: row-reverse;
+            }
+            .column {
+                flex-direction: column;
+            }
+            .column-reverse {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}

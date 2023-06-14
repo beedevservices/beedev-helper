@@ -1,8 +1,18 @@
 @import './base.less';
 
+button {
+    padding: 1em;
+    margin: .5em;
+}
+.centerText {
+    text-align: center;
+}
+p {
+    font-size: 1.2em;
+}
+
 body {
     font-family: 'Lato', sans-serif;
-    // .flexcolumn();
     .background();
     min-height: 1200px;
 
@@ -60,9 +70,43 @@ body {
         display: block;
 
         .displayDiv {
-            border: 2px solid @hr;
+            border: 4px solid @hr;
 
-            p { border: 1px solid red }
+            button {
+                padding: 1px 6px;
+                margin: 0;
+            }
         }
+        .fixBottom {
+            display: flex;
+            justify-content: space-between;
+
+
+            .defaultProperty {
+                box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+            }
+            .mutuallyExclusiveButtons button:first-child {
+                background-color: lightgreen;/* signifies that this button represents a property in use */
+            }
+            .flexStartGap5 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: baseline;
+                gap: 5px;
+            }
+            #hideFlexControls {
+                display: none;
+            }
+            .right {
+                display: flex;
+                flex-direction: column;
+                // max-width: 500px;
+            }
+        }
+    }
+    footer {
+        .flexrow();
+        width: 95%;
+        margin: 1em;
     }
 }
