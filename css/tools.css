@@ -405,6 +405,33 @@ body main .fixBottom .right {
   display: flex;
   flex-direction: column;
 }
+body main .flexCenterCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main .flexCenterCol div .flexStartGap5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 5px;
+}
+body main .flexCenterCol .flexCenterRow {
+  display: flex;
+}
+body main .flexCenterCol .flexCenterRow .flexCenterCol .flexStartGap5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 5px;
+}
+body main .flexCenterCol .flexCenter .flexStartGap5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 5px;
+}
 body footer {
   display: flex;
   flex-direction: row;

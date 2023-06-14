@@ -111,6 +111,40 @@ body {
                 // max-width: 500px;
             }
         }
+        .flexCenterCol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            div {
+                .flexStartGap5 {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: baseline;
+                    gap: 5px;
+                }
+            }
+            .flexCenterRow {
+                display: flex;
+                .flexCenterCol {
+                    .flexStartGap5 {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: baseline;
+                        gap: 5px;
+                    }
+                }
+            }
+            .flexCenter {
+                .flexStartGap5 {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: baseline;
+                    gap: 5px;
+                }
+            }
+        }
     }
     footer {
         .flexrow();

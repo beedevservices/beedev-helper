@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../../css/tools.css" />
+    <script src="../../js/components/toolNav.js"></script>
+    <script src="../../js/components/footer.js"></script>
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <h1>BeeDev Services Helper Website</h1>
+        <tool-component></tool-component>
+        <nav class="toolsNav">
+            <a href="../tools.html">Back to Tools Page</a>
+        </nav>
+    </header>
+    <main>
+        <div class="flexCenterCol">
+            <div>
+                <div class="flexStartGap5">
+                    <p>Margin: <span>0</span></p>
+                    <button onclick="adjustAttributeValue(photo, 'margin-top', false); decrementCountBelowZero(this)">-</button>
+                    <button onclick="adjustAttributeValue(photo, 'margin-top', false); incrementCount(this)">+</button>
+                </div>
+                <div class="flexStartGap5">
+                    <p>Border: <span>0</span></p>
+                    <button onclick="adjustAttributeValue(photo, 'border-top-width'); decrementCountBelowZero(this)">-</button>
+                    <button onclick="adjustAttributeValue(photo, 'border-top-width'); incrementCount(this)">+</button>
+                </div>
+                <div class="flexStartGap5">
+                    <p>Padding: <span>0</span></p>
+                    <button onclick="adjustAttributeValue(photo, 'padding-top', false); decrementCountBelowZero(this)">-</button>
+                    <button onclick="adjustAttributeValue(photo, 'padding-top', false); incrementCount(this)">+</button>
+                </div>
+            </div>
+            <div class="flexCenterRow">
+                <div class="flexCenterCol">
+                    <div class="flexStartGap5">
+                        <p>Margin: <span>0</span></p>
+                        <button onclick="adjustAttributeValue(photo, 'margin-left', false); decrementCountBelowZero(this)">-</button>
+                        <button onclick="adjustAttributeValue(photo, 'margin-left', false); incrementCount(this)">+</button>
+                    </div>
+                    <div class="flexStartGap5">
+                        <p>Border: <span>0</span></p>
+                        <button onclick="adjustAttributeValue(photo, 'border-left-width'); decrementCountBelowZero(this)">-</button>
+                        <button onclick="adjustAttributeValue(photo, 'border-left-width'); incrementCount(this)">+</button>
+                    </div>
+                    <div class="flexStartGap5">
+                        <p>Padding: <span>0</span></p>
+                        <button onclick="adjustAttributeValue(photo, 'padding-left', false); decrementCountBelowZero(this)">-</button>
+                        <button onclick="adjustAttributeValue(photo, 'padding-left', false); incrementCount(this)">+</button>
+                    </div>
+                </div>
+                <div class="minimalDisplayDiv">
+                    <img src="../../images/tools/css.JPG" alt="CSS" class="photo" id="photo">
+                </div>
+                <div class="flexCenterCol">
+                    <div class="flexStartGap5">
+                        <p>Margin: <span>0</span></p>
+                        <button onclick="adjustAttributeValue(photo, 'margin-right', false); decrementCountBelowZero(this)">-</button>
+                        <button onclick="adjustAttributeValue(photo, 'margin-right', false); incrementCount(this)">+</button>
+                    </div>
+                    <div class="flexStartGap5">
+                        <p>Border: <span>0</span></p>
+                        <button onclick="adjustAttributeValue(photo, 'border-right-width'); decrementCountBelowZero(this)">-</button>
+                        <button onclick="adjustAttributeValue(photo, 'border-right-width'); incrementCount(this)">+</button>
+                    </div>
+                    <div class="flexStartGap5">
+                        <p>Padding: <span>0</span></p>
+                        <button onclick="adjustAttributeValue(photo, 'padding-right', false); decrementCountBelowZero(this)">-</button>
+                        <button onclick="adjustAttributeValue(photo, 'padding-right', false); incrementCount(this)">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flexCenter">
+                <div class="flexStartGap5">
+                    <p>Margin: <span>0</span></p>
+                    <button onclick="adjustAttributeValue(photo, 'margin-bottom', false); decrementCountBelowZero(this)">-</button>
+                    <button onclick="adjustAttributeValue(photo, 'margin-bottom', false); incrementCount(this)">+</button>
+                </div>
+                <div class="flexStartGap5">
+                    <p>Border: <span>0</span></p>
+                    <button onclick="adjustAttributeValue(photo, 'border-bottom-width'); decrementCountBelowZero(this)">-</button>
+                    <button onclick="adjustAttributeValue(photo, 'border-bottom-width'); incrementCount(this)">+</button>
+                </div>
+                <div class="flexStartGap5">
+                    <p>Padding: <span>0</span></p>
+                    <button onclick="adjustAttributeValue(photo, 'padding-bottom', false); decrementCountBelowZero(this)">-</button>
+                    <button onclick="adjustAttributeValue(photo, 'padding-bottom', false); incrementCount(this)">+</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/tools.js"></script>
+</body>
+</html>
