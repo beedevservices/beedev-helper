@@ -529,6 +529,32 @@ body main #hideBoxModel {
   padding: 1em;
   margin: 0.5em;
 }
+body main #hideInlineBlock .sideBySide,
+body main #hideDisplayFlex .sideBySide,
+body main #hideFlexWrap .sideBySide,
+body main #hideBoxModel .sideBySide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+body main #hideInlineBlock .sideBySide .column,
+body main #hideDisplayFlex .sideBySide .column,
+body main #hideFlexWrap .sideBySide .column,
+body main #hideBoxModel .sideBySide .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+body main #hideInlineBlock .sideBySide .column button,
+body main #hideDisplayFlex .sideBySide .column button,
+body main #hideFlexWrap .sideBySide .column button,
+body main #hideBoxModel .sideBySide .column button {
+  margin: 1em;
+}
 body main .resourceContainer {
   display: flex;
   flex-direction: column;

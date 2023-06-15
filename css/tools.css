@@ -288,6 +288,9 @@ button {
 p {
   font-size: 1.2em;
 }
+.photo {
+  max-width: 215px;
+}
 body {
   font-family: 'Lato', sans-serif;
   background-image: radial-gradient(#DBEBD4, #C5DDBB, #ADCD9F, #95BD83);
@@ -374,6 +377,14 @@ body main .displayDiv button {
   padding: 1px 6px;
   margin: 0;
 }
+body main .displayDiv .photo {
+  padding: 0px;
+  margin: 0px;
+  background-color: green;
+  /* required for functionality, needs a color */
+  border: 0px solid black;
+  /* required for functionality, px need to remain zero */
+}
 body main .altBottom .defaultProperty {
   box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
@@ -420,11 +431,30 @@ body main .flexCenterCol div .flexStartGap5 {
 body main .flexCenterCol .flexCenterRow {
   display: flex;
 }
+body main .flexCenterCol .flexCenterRow .flexCenterCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 body main .flexCenterCol .flexCenterRow .flexCenterCol .flexStartGap5 {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
   gap: 5px;
+}
+body main .flexCenterCol .flexCenterRow .minimalDisplayDiv {
+  width: fit-content;
+  margin: 25px;
+  border: 20px solid yellow;
+}
+body main .flexCenterCol .flexCenterRow .minimalDisplayDiv .photo {
+  padding: 0px;
+  margin: 0px;
+  background-color: green;
+  /* required for functionality, needs a color */
+  border: 0px solid black;
+  /* required for functionality, px need to remain zero */
 }
 body main .flexCenterCol .flexCenter .flexStartGap5 {
   display: flex;

@@ -95,6 +95,20 @@ body {
             display: none;
             padding: 1em;
             margin: .5em;
+
+            .sideBySide {
+                .flexrow();
+                margin: 1em;
+
+                .column {
+                    .flexcolumn();
+                    margin: 1em;
+
+                    button {
+                        margin: 1em;
+                    }
+                }
+            }
         }
         .resourceContainer {
             .flexcolumn();

@@ -54,7 +54,7 @@ const adjustAttributeValue = (element, attribute, increase=true) => {
     }
 }
 
-const mutuallyExclusiveButtonsOfMany = (group, attribute, increase=true) => {
+const adjustAttributeValueOfMany = (group, attribute, increase=true) => {
     if(group.tagName == 'DIV'){ group = getAllChildElements(group) }
     group.forEach(e=>adjustAttributeValue(e, attribute, increase))
 }

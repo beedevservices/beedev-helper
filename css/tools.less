@@ -10,6 +10,9 @@ button {
 p {
     font-size: 1.2em;
 }
+.photo {
+    max-width: 215px;
+}
 
 body {
     font-family: 'Lato', sans-serif;
@@ -76,6 +79,12 @@ body {
                 padding: 1px 6px;
                 margin: 0;
             }
+            .photo {
+                padding: 0px;
+                margin: 0px;
+                background-color: green;/* required for functionality, needs a color */
+                border: 0px solid black;/* required for functionality, px need to remain zero */
+            }
         }
         .altBottom {
             .defaultProperty {
@@ -127,12 +136,30 @@ body {
             }
             .flexCenterRow {
                 display: flex;
+
                 .flexCenterCol {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
                     .flexStartGap5 {
                         display: flex;
                         justify-content: flex-start;
                         align-items: baseline;
                         gap: 5px;
+                    }
+                }
+                .minimalDisplayDiv {
+                    width: fit-content;
+                    margin: 25px;
+                    border: 20px solid yellow;
+
+                    .photo {
+                        padding: 0px;
+                        margin: 0px;
+                        background-color: green;/* required for functionality, needs a color */
+                        border: 0px solid black;/* required for functionality, px need to remain zero */
                     }
                 }
             }

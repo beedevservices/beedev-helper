@@ -18,7 +18,58 @@
         </nav>
     </header>
     <main>
-        
+        <div class="displayDiv" id="blockDiv4">
+            <img src="../../images/tools/ninja.png" alt="ninja" class="photo">
+            <img src="../../images/tools/css.png" alt="css" class="photo">
+            <img src="../../images/tools/emoji.jpg" alt="emoji" class="photo">
+            <img src="../../images/tools/ninja.png" alt="ninja" class="photo">
+            <img src="../../images/tools/css.png" alt="css" class="photo">
+            <img src="../../images/tools/emoji.jpg" alt="emoji" class="photo">
+        </div>
+        <div class="fixBottom">
+            <div class="flexStartGap5">
+                <p>Margin: <span>0</span></p>
+                <button onclick="
+                adjustAttributeValueOfMany(blockDiv4, 'margin', false);
+                decrementCountBelowZero(this)
+                ">
+                    -
+                </button>
+                <button onclick="adjustAttributeValueOfMany(blockDiv4, 'margin');
+                incrementCount(this)
+                ">
+                    +
+                </button>
+            </div>
+            <div class="flexStartGap5">
+                <p>Border: <span>0</span></p>
+                <button onclick="
+                adjustAttributeValueOfMany(blockDiv4, 'border-width', false);
+                decrementCountToZero(this)
+                ">
+                    -
+                </button>
+                <button onclick="adjustAttributeValueOfMany(blockDiv4, 'border-width');
+                incrementCount(this)
+                ">
+                    +
+                </button>
+            </div>
+            <div class="flexStartGap5">
+                <p>Padding: <span>0</span></p>
+                <button onclick="
+                adjustAttributeValueOfMany(blockDiv4, 'padding', false);
+                decrementCountToZero(this)
+                ">
+                    -
+                </button>
+                <button onclick="adjustAttributeValueOfMany(blockDiv4, 'padding');
+                incrementCount(this)
+                ">
+                    +
+                </button>
+            </div>
+        </div>
     </main>
     <footer-component></footer-component>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
