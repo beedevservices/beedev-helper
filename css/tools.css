@@ -409,9 +409,6 @@ body main .fixBottom .flexStartGap5 {
   align-items: baseline;
   gap: 5px;
 }
-body main .fixBottom #hideFlexControls {
-  display: none;
-}
 body main .fixBottom .right {
   display: flex;
   flex-direction: column;
