@@ -75,6 +75,9 @@ body {
         .lineHeight {
             line-height: 0;
         }
+        #blockInlineDiv3 {
+            width: 1800px;
+        }
 
         .displayDiv {
             border: 4px solid @hr;
@@ -90,6 +93,9 @@ body {
                 border: 0px solid black;/* required for functionality, px need to remain zero */
             }
         }
+        .wrapPad {
+            padding: 1em;
+        }
         .altBottom {
             .defaultProperty {
                 box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
@@ -101,6 +107,8 @@ body {
         .fixBottom {
             display: flex;
             justify-content: space-between;
+
+
 
 
             .defaultProperty {
@@ -120,6 +128,10 @@ body {
                 flex-direction: column;
                 // max-width: 500px;
             }
+        }
+        .small {
+            flex-wrap: wrap;
+            width: 1000px;
         }
         .flexCenterCol {
             display: flex;

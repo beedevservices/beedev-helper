@@ -19,6 +19,59 @@
     </header>
     <main>
         <h1 class="centerText">Flex Wrap</h1>
+        <div class="displayDiv wrapPad" id="blockInlineDiv3">
+            <!-- <img src="../../images/tools/ninja.png" alt="ninja" class="photo"> -->
+            <img src="../../images/tools/css.png" alt="css" class="photo">
+            <img src="../../images/tools/emoji.jpg" alt="emoji" class="photo">
+            <!-- <img src="../../images/tools/ninja.png" alt="ninja" class="photo"> -->
+            <img src="../../images/tools/css.png" alt="css" class="photo">
+            <img src="../../images/tools/emoji.jpg" alt="emoji" class="photo">
+            <img src="../../images/tools/css.png" alt="css" class="photo">
+            <img src="../../images/tools/emoji.jpg" alt="emoji" class="photo">
+            <img src="../../images/tools/css.png" alt="css" class="photo">
+            <img src="../../images/tools/emoji.jpg" alt="emoji" class="photo">
+        </div>
+        <div class="fixBottom small">
+            <div class="flexStartGap5">
+                <p>Border:</p>
+                <button onclick="changeBorderProperty(this, blockInlineDiv3)"> img {border: 1px solid red}</button>
+            </div>
+            <div class="flexStartGap5">
+                <p>Display:</p>
+                <div class="mutuallyExclusiveButtons">
+                    <button onclick="changePropertyOfOne(blockInlineDiv3, 'display', 'block')">
+                        div { display: block; }
+                    </button>
+                    <button onclick="changePropertyOfOne(blockInlineDiv3, 'display', 'flex')">
+                        div { display: flex; }
+                    </button>
+                </div>
+            </div>
+            <div class="flexStartGap5">
+                <p>Wrap:</p>
+                <div class="mutuallyExclusiveButtons">
+                    <button onclick="changePropertyOfOne(blockInlineDiv3, 'flex-wrap', 'nowrap')">
+                        div { flex-wrap: nowrap; }
+                    </button>
+                    <button onclick="changePropertyOfOne(blockInlineDiv3, 'flex-wrap', 'wrap')">
+                        div { flex-wrap: wrap; }
+                    </button>
+                </div>
+            </div>
+            <div class="flexStartGap5">
+                <p>Gap: <span>0</span></p>
+                <button onclick="adjustAttributeValue(blockInlineDiv3, 'gap', false);
+                    decrementCountToZero(this)
+                    ">
+                        -
+                    </button>
+                    <button onclick="adjustAttributeValue(blockInlineDiv3, 'gap');
+                    incrementCount(this)
+                    ">
+                        +
+                </button>
+            </div>
+        </div>
         
     </main>
     <footer-component></footer-component>
