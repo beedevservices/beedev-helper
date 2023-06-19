@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/craftsnh/public_html/helper-site
+    - /bin/cp index.html $DEPLOYPATH
