@@ -1,0 +1,50 @@
+@import './base.less';
+@import './tools.less';
+
+body {
+    main {
+        .area {
+            .flexrow();
+            border: 4px solid @hr;
+            justify-content: space-evenly;
+
+            .buttons {
+                .flexcolumn();
+
+
+                .function {
+                    border: 3px solid black;
+                    margin: .5em;
+                }
+            }
+
+            #console {
+                background-color: black;
+                color: magenta;
+                width: 300px;
+                height: 300px;
+                padding: 10px;
+                font-size: 1.2em;
+                margin: 1em;
+
+                @keyframes cursor-blink {
+                    0% {
+                        opacity: 0;
+                    }
+                }
+                p::after {
+                    content: "";
+                    width: 5px;
+                    height: 20px;
+                    background: @green01;
+                    display: inline-block;
+                    animation: cursor-blink 1.5s steps(2) infinite;
+                }
+
+                #update {
+                    color: @green01;
+                }
+            }
+        }
+    }
+}

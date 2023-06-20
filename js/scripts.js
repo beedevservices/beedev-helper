@@ -293,6 +293,20 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+    $('#showJsEvents').click(function() {
+        $('#hideJsEvents').animate( {
+            width: 'toggle'
+        })
+        $('#hideJsEvents').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
 })
 
 function copyTriangle() {

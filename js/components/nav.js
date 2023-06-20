@@ -16,6 +16,7 @@ class Nav extends HTMLElement {
                         <a href="https://helper.beedev-services.com/fundamentals/tools.html">CSS - Playgrounds</a>
                         <a href="https://helper.beedev-services.com/fundamentals/flexbox.html">CSS - Flexbox</a>
                         <a href="https://helper.beedev-services.com/fundamentals/shapes.html">CSS - Shapes</a>
+                        <a href="https://helper.beedev-services.com/fundamentals/jsTools.html">JS - Playground</a>
                         <a href="https://helper.beedev-services.com/fundamentals/loops.html">JS - Loops</a>
                         <a href="https://helper.beedev-services.com/fundamentals/conditionals.html">JS - Conditionals</a>
                     </div>

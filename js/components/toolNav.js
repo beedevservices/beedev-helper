@@ -16,8 +16,10 @@ class ToolNav extends HTMLElement {
                         <a href="../tools.html">CSS - Playgrounds</a>
                         <a href="../flexbox.html">CSS - Flexbox</a>
                         <a href="../shapes.html">CSS - Shapes</a>
+                        <a href="../jsTools.html">JS - Playgrounds</a>
                         <a href="../loops.html">JS - Loops</a>
                         <a href="../conditionals.html">JS - Conditionals</a>
+                        
                     </div>
                 </span>
                 <!-- Start of Python pages -->
