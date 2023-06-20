@@ -554,11 +554,52 @@ body main .area .buttons {
   flex-wrap: wrap;
   align-items: flex-start;
 }
+body main .area .buttons .loopCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 body main .area .buttons .oneButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+body main .area .buttons .oneButton #sTwo,
+body main .area .buttons .oneButton #sThree,
+body main .area .buttons .oneButton #finalStep {
+  display: none;
+}
+body main .area .buttons .oneButton form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+body main .area .buttons .oneButton form p {
+  margin: 1em;
+}
+body main .area .buttons .oneButton form .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .area .buttons .oneButton form .column .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+}
+body main .area .buttons .oneButton form .column .row .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
 }
 body main .area .buttons .oneButton .function {
   display: flex;
@@ -626,4 +667,26 @@ body main .fixBottom .codes .theCode #hideAlert pre code,
 body main .fixBottom .codes .theCode #hideAdding pre code,
 body main .fixBottom .codes .theCode #hideGrow pre code {
   max-width: 300px;
+}
+@media only screen and (max-width: 1150px) {
+  body main .img {
+    max-width: 775px;
+  }
+  body main p {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  body main .img {
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  body header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .img {
+    max-width: 300px;
+  }
 }

@@ -13,7 +13,7 @@ class ToolNav extends HTMLElement {
                     <span id='showFundamentals'>HTML / CSS / JS</span>
                     <div id='hideFundamentals'>
                         <a href="../house.html">HTML - Building your Page</a>
-                        <a href="../tools.html">CSS - Playgrounds</a>
+                        <a href="../cssTools.html">CSS - Playgrounds</a>
                         <a href="../flexbox.html">CSS - Flexbox</a>
                         <a href="../shapes.html">CSS - Shapes</a>
                         <a href="../jsTools.html">JS - Playgrounds</a>

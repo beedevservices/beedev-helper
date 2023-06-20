@@ -1,4 +1,4 @@
-@import './base.less';
+@import '../less/base.less';
 @import './tools.less';
 
 body {
@@ -15,8 +15,39 @@ body {
                 flex-wrap: wrap;
                 align-items: flex-start;
 
+                .loopCode {
+                    .flexcolumn();
+
+                }
+
                 .oneButton {
                     .flexcolumn();
+
+                    #sTwo, #sThree, #finalStep {
+                        display: none;
+                    }
+                    form {
+                        .flexrow();
+                        margin: 1em;
+
+                        p {
+                            margin: 1em;
+                        }
+
+                        .column {
+                            .flexcolumn();
+
+                            .row {
+                                .flexrow();
+                                margin: .5em;
+
+                                .column {
+                                    .flexcolumn();
+                                    margin: .5em;
+                                }
+                            }
+                        }
+                    }
 
                     .function {
                         .flexcolumn();

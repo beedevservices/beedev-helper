@@ -1,0 +1,670 @@
+.background {
+  background-image: radial-gradient(#DBEBD4, #C5DDBB, #ADCD9F, #95BD83);
+  background-repeat: no-repeat;
+}
+.a {
+  text-decoration: none;
+  color: black;
+}
+.codeBlock {
+  background-color: #e9eee6bd;
+  border: 2px double #DBEBD4;
+  margin: 1em;
+  width: 575px;
+}
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.altrow {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.altcolumn {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.triangleD .triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #113469;
+  margin: 0;
+  padding: 0;
+}
+.triangleD .triangleDown .text {
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+}
+.anyArrow {
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+  color: #113469;
+}
+.theStop .stop {
+  width: 170px;
+  height: 150px;
+  background: #911a1a;
+  position: relative;
+}
+.theStop .stop .text {
+  position: absolute;
+  top: 60px;
+  width: 170px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+}
+.theStop .stop:before {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
+}
+.theStop .stop:after {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
+}
+.heart .heart {
+  position: relative;
+  width: 200px;
+  height: 175px;
+}
+.heart .heart .text {
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
+}
+.heart .heart:before,
+.heart .heart:after {
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 0;
+  width: 100px;
+  height: 145px;
+  background: #911a1a;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart .heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.diamond .diamond {
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-bottom-color: #113469;
+  position: relative;
+  top: -100px;
+}
+.diamond .diamond .text {
+  position: absolute;
+  top: 90px;
+  width: 200px;
+  left: -100px;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
+}
+.diamond .diamond:after {
+  content: '';
+  position: absolute;
+  left: -100px;
+  top: 100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-top-color: #113469;
+}
+.shapeContainer {
+  position: relative;
+  width: 200px;
+}
+.shapeContainer .triangleDown {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #113469;
+  margin: 0;
+  padding: 0;
+}
+.shapeContainer .triangleDown .text {
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+}
+.shapeContainer .stop {
+  width: 170px;
+  height: 150px;
+  background: #911a1a;
+  position: relative;
+}
+.shapeContainer .stop .text {
+  position: absolute;
+  top: 60px;
+  width: 170px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+}
+.shapeContainer .stop:before {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
+}
+.shapeContainer .stop:after {
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
+}
+.shapeContainer .heart {
+  position: relative;
+  width: 200px;
+  height: 175px;
+}
+.shapeContainer .heart .text {
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
+}
+.shapeContainer .heart:before,
+.shapeContainer .heart:after {
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 0;
+  width: 100px;
+  height: 145px;
+  background: #911a1a;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.shapeContainer .heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.shapeContainer .diamond {
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-bottom-color: #113469;
+  position: relative;
+  top: -100px;
+}
+.shapeContainer .diamond .text {
+  position: absolute;
+  top: 90px;
+  width: 200px;
+  left: -100px;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
+}
+.shapeContainer .diamond:after {
+  content: '';
+  position: absolute;
+  left: -100px;
+  top: 100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-top-color: #113469;
+}
+button {
+  padding: 1em;
+  margin: 0.5em;
+}
+.centerText {
+  text-align: center;
+}
+p {
+  font-size: 1.2em;
+}
+.photo {
+  max-width: 215px;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: radial-gradient(#DBEBD4, #C5DDBB, #ADCD9F, #95BD83);
+  background-repeat: no-repeat;
+  min-height: 1200px;
+}
+body header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  text-align: center;
+}
+body header .toolsNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 95%;
+  justify-content: space-evenly;
+  font-size: 18px;
+  margin-top: 1em;
+}
+body header .toolsNav a {
+  text-decoration: none;
+  color: black;
+}
+body header tool-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 95%;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+body header tool-component nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 95%;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+body header tool-component nav a {
+  text-decoration: none;
+  color: black;
+}
+body header tool-component nav span {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header tool-component nav #hideFundamentals,
+body header tool-component nav #hidePython,
+body header tool-component nav #hideReact,
+body header tool-component nav #hideJava,
+body header tool-component nav #hideCSharp,
+body header tool-component nav #hideCommands {
+  display: none;
+}
+body header tool-component nav #hideFundamentals a,
+body header tool-component nav #hidePython a,
+body header tool-component nav #hideReact a,
+body header tool-component nav #hideJava a,
+body header tool-component nav #hideCSharp a,
+body header tool-component nav #hideCommands a {
+  margin: 0.5em;
+}
+body main {
+  display: block;
+}
+body main .lineHeight {
+  line-height: 0;
+}
+body main #blockInlineDiv3 {
+  width: 1800px;
+}
+body main .displayDiv {
+  border: 4px solid #FFEDAB;
+}
+body main .displayDiv button {
+  padding: 1px 6px;
+  margin: 0;
+}
+body main .displayDiv .photo {
+  padding: 0px;
+  margin: 0px;
+  background-color: green;
+  /* required for functionality, needs a color */
+  border: 0px solid black;
+  /* required for functionality, px need to remain zero */
+}
+body main #blockDiv {
+  position: static;
+  height: 200px;
+}
+body main #blockDiv .first {
+  background-color: cyan;
+  margin: 6px;
+  padding: 6px;
+  position: relative;
+}
+body main #blockDiv .second {
+  background-color: orange;
+  position: static;
+  margin: 6px;
+  padding: 6px;
+}
+body main #blockDiv .third {
+  background-color: blue;
+  position: absolute;
+  margin: 6px;
+  padding: 6px;
+}
+body main #blockDiv .fourth {
+  background-color: purple;
+  position: sticky;
+  margin: 6px;
+  padding: 6px;
+}
+body main #blockDiv .fifth {
+  background-color: magenta;
+  margin: 6px;
+  padding: 6px;
+  position: fixed;
+  left: 100px;
+}
+body main .wrapPad {
+  padding: 1em;
+}
+body main .altBottom .defaultProperty {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+body main .altBottom .mutuallyExclusiveButtons button:first-child {
+  background-color: lightgreen;
+  /* signifies that this button represents a property in use */
+}
+body main .fixBottom {
+  display: flex;
+  justify-content: space-between;
+}
+body main .fixBottom .defaultProperty {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+body main .fixBottom .mutuallyExclusiveButtons button:first-child {
+  background-color: lightgreen;
+  /* signifies that this button represents a property in use */
+}
+body main .fixBottom .flexStartGap5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 5px;
+}
+body main .fixBottom .right {
+  display: flex;
+  flex-direction: column;
+}
+body main .altFixBottom {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+body main .altFixBottom .defaultProperty {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+body main .altFixBottom .mutuallyExclusiveButtons button:first-child {
+  background-color: lightgreen;
+  /* signifies that this button represents a property in use */
+}
+body main .altFixBottom .flexStartGap5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 5px;
+}
+body main .small {
+  flex-wrap: wrap;
+  width: 1000px;
+}
+body main .flexCenterCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main .flexCenterCol div .flexStartGap5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 5px;
+}
+body main .flexCenterCol .flexCenterRow {
+  display: flex;
+}
+body main .flexCenterCol .flexCenterRow .flexCenterCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main .flexCenterCol .flexCenterRow .flexCenterCol .flexStartGap5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 5px;
+}
+body main .flexCenterCol .flexCenterRow .minimalDisplayDiv {
+  width: fit-content;
+  margin: 25px;
+  background-color: orange;
+  border: 20px solid yellow;
+  line-height: 0;
+}
+body main .flexCenterCol .flexCenterRow .minimalDisplayDiv .photo {
+  padding: 0px;
+  margin: 0px;
+  background-color: green;
+  /* required for functionality, needs a color */
+  border: 0px solid black;
+  /* required for functionality, px need to remain zero */
+}
+body main .flexCenterCol .flexCenter .flexStartGap5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 5px;
+}
+body footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 1em;
+}
+body main .area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #FFEDAB;
+  justify-content: space-evenly;
+  max-height: 600px;
+}
+body main .area .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+body main .area .buttons .loopCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .area .buttons .oneButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .area .buttons .oneButton #sTwo,
+body main .area .buttons .oneButton #sThree,
+body main .area .buttons .oneButton #finalStep {
+  display: none;
+}
+body main .area .buttons .oneButton form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+body main .area .buttons .oneButton form p {
+  margin: 1em;
+}
+body main .area .buttons .oneButton form .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .area .buttons .oneButton form .column .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+}
+body main .area .buttons .oneButton form .column .row .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+}
+body main .area .buttons .oneButton .function {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  margin: 0.5em;
+}
+body main .area .buttons .oneButton .function #hoverMe {
+  height: 50px;
+  width: 300px;
+}
+body main .area #console {
+  background-color: black;
+  color: magenta;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  font-size: 1.2em;
+  margin: 1em;
+}
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+body main .area #console p::after {
+  content: "";
+  width: 5px;
+  height: 20px;
+  background: #95BD83;
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(2) infinite;
+}
+body main .area #console #update {
+  color: #95BD83;
+}
+body main .fixBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .fixBottom .codes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main .fixBottom .codes .theCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .fixBottom .codes .theCode #hideConsole,
+body main .fixBottom .codes .theCode #hideAlert,
+body main .fixBottom .codes .theCode #hideAdding,
+body main .fixBottom .codes .theCode #hideGrow {
+  display: none;
+}
+body main .fixBottom .codes .theCode #hideConsole pre code,
+body main .fixBottom .codes .theCode #hideAlert pre code,
+body main .fixBottom .codes .theCode #hideAdding pre code,
+body main .fixBottom .codes .theCode #hideGrow pre code {
+  max-width: 300px;
+}

@@ -13,7 +13,7 @@ class Nav extends HTMLElement {
                     <span id='showFundamentals'>HTML / CSS / JS</span>
                     <div id='hideFundamentals'>
                         <a href="https://helper.beedev-services.com/fundamentals/house.html">HTML - Building your Page</a>
-                        <a href="https://helper.beedev-services.com/fundamentals/tools.html">CSS - Playgrounds</a>
+                        <a href="https://helper.beedev-services.com/fundamentals/cssTools.html">CSS - Playgrounds</a>
                         <a href="https://helper.beedev-services.com/fundamentals/flexbox.html">CSS - Flexbox</a>
                         <a href="https://helper.beedev-services.com/fundamentals/shapes.html">CSS - Shapes</a>
                         <a href="https://helper.beedev-services.com/fundamentals/jsTools.html">JS - Playground</a>

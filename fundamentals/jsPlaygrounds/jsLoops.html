@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../../css/playground.css" />
+    <link rel="stylesheet" href="../../css/prism.css">
+    <script src="../../js/components/toolNav.js"></script>
+    <script src="../../js/components/footer.js"></script>
+    <title>JS - Loops</title>
+</head>
+<body>
+    <header>
+        <h1>BeeDev Services Helper Website</h1>
+        <tool-component></tool-component>
+        <nav class="toolsNav">
+            <a href="../jsTools.html">Back to JS Tools Page</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="centerText">JS Loops</h1>
+        <div class="area">
+            <div class="buttons">
+                <div class="loopCode">
+                    <pre>
+                        The Code
+                        <code class="language-html">
+                            for(let i = 0; i < 2; i++) {
+                                console.log('the value of i is:', i)
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="oneButton">
+                    <form name="loopStart" id="loopStart">
+                        <p>At start of loop i is 0. <br> Is i less than 2?</p>
+                        <div class="column">
+                            <div class="row">
+                                <div class="column">
+                                    <label for="lessThan">Yes</label>
+                                    <input type="radio" name="lessThan" value="Yes">
+                                </div>
+                                <div class="column">
+                                    <label for="lessThan">No</label>
+                                    <input type="radio" name="lessThan" value="No">
+                                </div>
+                            </div>
+                            <input type="button" value="Submit Choice" onclick="stepOne()">
+                        </div>
+                    </form>
+                    <form name="sTwo" id="sTwo">
+                        <p>Instruction followed <br>i increased by 1 (i++) <br> i is 1. <br>Is i less than 2?</p>
+                        <div class="column">
+                            <div class="row">
+                                <div class="column">
+                                    <label for="lessThan">Yes</label>
+                                    <input type="radio" name="lessThan" value="Yes">
+                                </div>
+                                <div class="column">
+                                    <label for="lessThan">No</label>
+                                    <input type="radio" name="lessThan" value="No">
+                                </div>
+                            </div>
+                            <input type="button" value="Submit Choice" onclick="stepTwo()">
+                        </div>
+                    </form>
+                    <form name="sThree" id="sThree">
+                        <p>Instruction followed <br>i increased by 1 (i++) <br> i is 2. <br>Is i less than 2?</p>
+                        <div class="column">
+                            <div class="row">
+                                <div class="column">
+                                    <label for="lessThan">Yes</label>
+                                    <input type="radio" name="lessThan" value="Yes">
+                                </div>
+                                <div class="column">
+                                    <label for="lessThan">No</label>
+                                    <input type="radio" name="lessThan" value="No">
+                                </div>
+                            </div>
+                            <input type="button" value="Submit Choice" onclick="stepThree()">
+                        </div>
+                    </form>
+                    <form name="startOver" id="finalStep">
+                        <p>Would you like to play again?</p>
+                        <div class="column">
+                            <div class="row">
+                                <div class="column">
+                                    <label for="choice">Yes</label>
+                                    <input type="radio" name="choice" value="Yes">
+                                </div>
+                                <div class="column">
+                                    <label for="choice">No</label>
+                                    <input type="radio" name="choice" value="No">
+                                </div>
+                            </div>
+                            <input type="button" value="Submit Choice" onclick="final()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="console"><p>BeeDevHelper $~/ <span id="update"></span></p></div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/playgrounds/jsTools.js"></script>
+    <script src="../../js/prism.js"></script>
+</body>
+</html>
