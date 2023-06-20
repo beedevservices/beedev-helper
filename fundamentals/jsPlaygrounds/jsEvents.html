@@ -60,9 +60,11 @@
                             The HTML
                             <code class="language-html">
                                 &lt;button onclick="aPrint()"&gt;console.log('Hello World')&lt;/button&gt;
+                                &lt;div id="console"&gt;&lt;p&gt;BeeDevHelper $~/ &lt;span id="update"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
                             </code>
                             The JS
                             <code class="language-js">
+                                let result = document.getElementById('update')
                                 function aPrint() {
                                     result.innerText = 'Hello World'
                                 }
@@ -72,15 +74,69 @@
                 </div>
                 <div class="theCode">
                     <button id="showAlert">Alert Code</button>
-                    <div id="hideAlert"></div>
+                    <div id="hideAlert">
+                        <pre>
+                            The HTML
+                            <code class="language-html">
+                                &lt;button onclick="theAlert()"&gt;alert("Hello World")&lt;/button&gt;
+                                &lt;div id="console"&gt;&lt;p&gt;BeeDevHelper $~/ &lt;span id="update"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+                            </code>
+                            The JS
+                            <code class="language-js">
+                                let result = document.getElementById('update')
+                                function theAlert() {
+                                    alert("Hello World")
+                                    result.innerText = "An alert said Hello World"
+                                }
+                            </code>
+                        </pre>
+                    </div>
                 </div>
                 <div class="theCode">
                     <button id="showAdding">Adding Code</button>
-                    <div id="hideAdding"></div>
+                    <div id="hideAdding">
+                        <pre>
+                            The HTML
+                            <code class="language-html">
+
+                                &lt;p&gt;var a = 2 &lt;br&gt;var b = 3 &lt;br&gt;var c = a + b&lt;/p&gt;
+                                &lt;button onclick="valueC()"&gt;console.log('the value of c is:', c)&lt;/button&gt;
+                                &lt;div id="console"&gt;&lt;p&gt;BeeDevHelper $~/ &lt;span id="update"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+                            </code>
+                            The JS
+                            <code class="language-js">
+                                let result = document.getElementById('update')
+                                function valueC() {
+                                    var a = 2
+                                    var b = 3
+                                    var c = a + b
+                                    result.innerText = "the value of c is: 5"
+                                }
+                            </code>
+                        </pre>
+                    </div>
                 </div>
                 <div class="theCode">
                     <button id="showGrow">Hover Code</button>
-                    <div id="hideGrow"></div>
+                    <div id="hideGrow">
+                        <pre>
+                            The HTML
+                            <code class="language-html">
+                                &lt;button onmouseover="growMe(this)" onmouseout="returnMe(this)" id="hoverMe"&gt;Watch me Grow and Shrink on hover&lt;/button&gt;
+                            </code>
+                            The JS
+                            <code class="language-js">
+                                function growMe(element) {
+                                    element.style.height = "200px"
+                                    element.style.width = "500px"
+                                }
+                                function returnMe(element) {
+                                    element.style.height = "50px"
+                                    element.style.width = "300px"
+                                }
+                            </code>
+                        </pre>
+                    </div>
                 </div>
             </div>
         </div>

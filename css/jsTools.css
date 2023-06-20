@@ -621,3 +621,9 @@ body main .fixBottom .codes .theCode #hideAdding,
 body main .fixBottom .codes .theCode #hideGrow {
   display: none;
 }
+body main .fixBottom .codes .theCode #hideConsole pre code,
+body main .fixBottom .codes .theCode #hideAlert pre code,
+body main .fixBottom .codes .theCode #hideAdding pre code,
+body main .fixBottom .codes .theCode #hideGrow pre code {
+  max-width: 300px;
+}
