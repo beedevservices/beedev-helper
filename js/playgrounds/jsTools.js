@@ -21,8 +21,12 @@ function returnMe(element) {
     element.style.height = "50px"
     element.style.width = "300px"
 }
-
+function nextStep() {
+    result.style.color = 'white'
+    result.innerText = 'PROCEED TO NEXT QUESTION ON THE LEFT'
+}
 function great() {
+    result.style.color = '#95BD83'
     result.innerText = 'Great Job'
 }
 function tryAgain() {
@@ -32,9 +36,11 @@ function clearTerm() {
     result.innerHTML = ''
 }
 function jobDone() {
+    result.style.color = 'white'
     result.innerText = 'the loop is now finished nothing to print'
 }
 function printValue(a) {
+    result.style.color = 'yellow'
     result.innerText = `the value of i is: ${a}`
 }
 function followInstructions() {
@@ -54,7 +60,10 @@ function stepOne() {
                 setTimeout(function() {
                     clearTerm()
                     stepOne.style.display = 'none'
-                    sTwo.style.display = 'flex'
+                    setTimeout(function() {
+                        nextStep()
+                        sTwo.style.display = 'flex'
+                    }, 2000)
                 }, 2000)
             }, 2000)
         }, 2000)
@@ -80,7 +89,10 @@ function stepTwo() {
                     clearTerm()
                     stepOne.style.display = 'none'
                     sTwo.style.display = 'none'
-                    sThree.style.display = 'flex'
+                    setTimeout(function() {
+                        nextStep()
+                        sThree.style.display = 'flex'
+                    }, 2000)
                 }, 2000)
             }, 2000)
         }, 2000)
@@ -108,7 +120,10 @@ function stepThree() {
                     stepOne.style.display = 'none'
                     sTwo.style.display = 'none'
                     sThree.style.display = 'none'
-                    sFour.style.display = 'flex'
+                    setTimeout(function() {
+                        result.innerText = 'Another round?'
+                        sFour.style.display = 'flex'
+                    }, 2000)
                 }, 2000)
             }, 2000)
         }, 2000)
