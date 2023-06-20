@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="../../css/jsTools.css" />
+    <link rel="stylesheet" href="../../css/prism.css">
     <script src="../../js/components/toolNav.js"></script>
     <script src="../../js/components/footer.js"></script>
     <title>CSS</title>
@@ -21,19 +22,73 @@
         <h1 class="centerText">JS Events</h1>
         <div class="area">
             <div class="buttons">
-                <div class="function">
-                    <button onclick="aPrint()">console.log('Hello World')</button>
+                <div class="oneButton">
+                    <h3>Console Log:</h3>
+                    <div class="function">
+                        <button onclick="aPrint()">console.log('Hello World')</button>
+                    </div>
                 </div>
-                <div class="function">
-                    <button onclick="theAlert()">alert("Hello World"}</button>
+                <div class="oneButton">
+                    <h3>Alert:</h3>
+                    <div class="function">
+                        <button onclick="theAlert()">alert("Hello World")</button>
+                    </div>
+                </div>
+                <div class="oneButton">
+                    <h3>Adding Variables:</h3>
+                    <div class="function">
+                        <p>var a = 2 <br>var b = 3 <br>var c = a + b</p>
+                        <button onclick="valueC()">console.log('the value of c is:', c)</button>
+                    </div>
+                </div>
+                <div class="oneButton">
+                    <h3>Hover Event:</h3>
+                    <div class="function">
+                        <button onmouseover="growMe(this)" onmouseout="returnMe(this)" id="hoverMe">Watch me Grow and Shrink on hover</button>
+                    </div>
                 </div>
             </div>
             <div id="console"><p>BeeDevHelper $~/ <span id="update"></span></p></div>
+        </div>
+        <div class="fixBottom">
+            <h2>Code Reveal</h2>
+            <div class="codes">
+                <div class="theCode">
+                    <button id="showConsole">Console Log Code</button>
+                    <div id="hideConsole">
+                        <pre>
+                            The HTML
+                            <code class="language-html">
+                                &lt;button onclick="aPrint()"&gt;console.log('Hello World')&lt;/button&gt;
+                            </code>
+                            The JS
+                            <code class="language-js">
+                                function aPrint() {
+                                    result.innerText = 'Hello World'
+                                }
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="theCode">
+                    <button id="showAlert">Alert Code</button>
+                    <div id="hideAlert"></div>
+                </div>
+                <div class="theCode">
+                    <button id="showAdding">Adding Code</button>
+                    <div id="hideAdding"></div>
+                </div>
+                <div class="theCode">
+                    <button id="showGrow">Hover Code</button>
+                    <div id="hideGrow"></div>
+                </div>
+            </div>
         </div>
     </main>
     <footer-component></footer-component>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../../js/scripts.js"></script>
     <script src="../../js/jsTools.js"></script>
+    <script src="../../js/prism.js"></script>
 </body>
 </html>

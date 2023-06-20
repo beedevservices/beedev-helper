@@ -543,16 +543,34 @@ body main .area {
   align-items: center;
   border: 4px solid #FFEDAB;
   justify-content: space-evenly;
+  max-height: 600px;
 }
 body main .area .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+body main .area .buttons .oneButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body main .area .buttons .function {
+body main .area .buttons .oneButton .function {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 3px solid black;
   margin: 0.5em;
+}
+body main .area .buttons .oneButton .function #hoverMe {
+  height: 50px;
+  width: 300px;
 }
 body main .area #console {
   background-color: black;
@@ -578,4 +596,28 @@ body main .area #console p::after {
 }
 body main .area #console #update {
   color: #95BD83;
+}
+body main .fixBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .fixBottom .codes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main .fixBottom .codes .theCode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .fixBottom .codes .theCode #hideConsole,
+body main .fixBottom .codes .theCode #hideAlert,
+body main .fixBottom .codes .theCode #hideAdding,
+body main .fixBottom .codes .theCode #hideGrow {
+  display: none;
 }
