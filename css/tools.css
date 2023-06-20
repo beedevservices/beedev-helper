@@ -391,6 +391,40 @@ body main .displayDiv .photo {
   border: 0px solid black;
   /* required for functionality, px need to remain zero */
 }
+body main #blockDiv {
+  position: static;
+  height: 200px;
+}
+body main #blockDiv .first {
+  background-color: cyan;
+  margin: 6px;
+  padding: 6px;
+  position: relative;
+}
+body main #blockDiv .second {
+  background-color: orange;
+  position: static;
+  margin: 6px;
+  padding: 6px;
+}
+body main #blockDiv .third {
+  background-color: blue;
+  position: absolute;
+  margin: 6px;
+  padding: 6px;
+}
+body main #blockDiv .fourth {
+  background-color: purple;
+  position: sticky;
+  margin: 6px;
+  padding: 6px;
+}
+body main #blockDiv .fifth {
+  background-color: magenta;
+  margin: 6px;
+  padding: 6px;
+  position: fixed;
+}
 body main .wrapPad {
   padding: 1em;
 }
@@ -421,6 +455,25 @@ body main .fixBottom .flexStartGap5 {
 body main .fixBottom .right {
   display: flex;
   flex-direction: column;
+}
+body main .altFixBottom {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 3em;
+}
+body main .altFixBottom .defaultProperty {
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+body main .altFixBottom .mutuallyExclusiveButtons button:first-child {
+  background-color: lightgreen;
+  /* signifies that this button represents a property in use */
+}
+body main .altFixBottom .flexStartGap5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 5px;
 }
 body main .small {
   flex-wrap: wrap;

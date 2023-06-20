@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../../css/tools.css" />
+    <script src="../../js/components/toolNav.js"></script>
+    <script src="../../js/components/footer.js"></script>
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <h1>BeeDev Services Helper Website</h1>
+        <tool-component></tool-component>
+        <nav class="toolsNav">
+            <a href="../tools.html">Back to Tools Page</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="centerText">Position Example</h1>
+        <div class="displayDiv" id="blockDiv">
+            <div class="first" id="first">Cyan Box 1</div>
+            <div class="second" id="second">Orange Box 2</div>
+            <div class="third" id="third">Blue Box 3</div>
+            <div class="fourth" id="fourth">Purple Box 4</div>
+            <div class="fifth" id="fifth">Magenta Box 5</div>
+        </div>
+        <div class="fixBottom">
+            <div class="flexStartGap5">
+                <p>Border:</p>
+                <button onclick="changeBorderProperty(this, blockDiv)">
+                p { border: 1px solid red }
+                </button>
+            </div>
+            <div class="flexStartGap5">
+                <p>Display:</p>
+                <div class="mutuallyExclusiveButtons">
+                    <button class="defaultProperty" onclick="changePropertyOfOne(blockDiv, 'display', 'block')">
+                        div { display: block; }
+                    </button>
+                    <button onclick="changePropertyOfOne(blockDiv, 'display', 'flex')">
+                        div { display: flex; }
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="altFixBottom">
+            <div class="flexStartGap5">
+                <p>
+                    Position: Cyan Box 1: <br>
+                    div {
+                        position: relative;
+                        margin: 6px;
+                        padding: 6px;
+                    }
+                </p>
+                <div class="mutuallyExclusiveButtons">
+                    <button onclick="changePropertyOfOne(first, 'position', 'relative')">div { position: relative; }</button>
+                    <button onclick="changePropertyOfOne(first, 'position', 'absolute')">div { position: absolute; }</button>
+                    <button class="defaultProperty" onclick="changePropertyOfOne(first, 'position', 'static')">div {position: static;}</button>
+                    <button onclick="changePropertyOfOne(first, 'position', 'fixed')">div {position: fixed;}</button>
+                    <button onclick="changePropertyOfOne(first, 'position', 'sticky')">div {position: sticky;}</button>
+                </div>
+            </div>
+            <div class="flexStartGap5">
+                <p>
+                    Position: Orange Box 2: <br>
+                    div {
+                        position: static;
+                        margin: 6px;
+                        padding: 6px;
+                    }
+                </p>
+                <div class="mutuallyExclusiveButtons">
+                    <button class="defaultProperty" onclick="changePropertyOfOne(second, 'position', 'static')">div { position: static; }</button>
+                    <button onclick="changePropertyOfOne(second, 'position', 'relative')">div { position: relative; }</button>
+                    <button onclick="changePropertyOfOne(second, 'position', 'absolute')">div { position: absolute; }</button>
+                    <button onclick="changePropertyOfOne(second, 'position', 'fixed')">div {position: fixed;}</button>
+                    <button onclick="changePropertyOfOne(second, 'position', 'sticky')">div {position: sticky;}</button>
+                </div>
+            </div>
+            <div class="flexStartGap5">
+                <p>
+                    Position: Blue Box 3: <br>
+                    div {
+                        position: absolute;
+                        margin: 6px;
+                        padding: 6px;
+                    }
+                </p>
+                <div class="mutuallyExclusiveButtons">
+                    <button onclick="changePropertyOfOne(third, 'position', 'absolute')">div { position: absolute; }</button>
+                    <button onclick="changePropertyOfOne(third, 'position', 'relative')">div { position: relative; }</button>
+                    <button class="defaultProperty" onclick="changePropertyOfOne(third, 'position', 'static')">div {position: static;}</button>
+                    <button onclick="changePropertyOfOne(third, 'position', 'fixed')">div {position: fixed;}</button>
+                    <button onclick="changePropertyOfOne(third, 'position', 'sticky')">div {position: sticky;}</button>
+                </div>
+            </div>
+            <div class="flexStartGap5">
+                <p>
+                    Position: Purple Box 4: <br>
+                    div {
+                        position: sticky;
+                        margin: 6px;
+                        padding: 6px;
+                    }
+                </p>
+                <div class="mutuallyExclusiveButtons">
+                    <button onclick="changePropertyOfOne(fourth, 'position', 'sticky')">div {position: sticky;}</button>
+                    <button onclick="changePropertyOfOne(fourth, 'position', 'relative')">div { position: relative; }</button>
+                    <button onclick="changePropertyOfOne(fourth, 'position', 'absolute')">div { position: absolute; }</button>
+                    <button class="defaultProperty" onclick="changePropertyOfOne(fourth, 'position', 'static')">div {position: static;}</button>
+                    <button onclick="changePropertyOfOne(fourth, 'position', 'fixed')">div {position: fixed;}</button>
+                </div>
+            </div>
+            <div class="flexStartGap5">
+                <p>
+                    Position: Magenta Box 5:<br>
+                    div {
+                        margin: 6px;
+                        padding: 6px;
+                        position: fixed;
+                    }
+                </p>
+                <div class="mutuallyExclusiveButtons">
+                    <button onclick="changePropertyOfOne(fifth, 'position','fixed')">div { position: fixed; }</button>
+                    <button onclick="changePropertyOfOne(fifth, 'position', 'relative')">div { position: relative; }</button>
+                    <button onclick="changePropertyOfOne(fifth, 'position', 'absolute')">div { position: absolute; }</button>
+                    <button class="defaultProperty" onclick="changePropertyOfOne(fifth, 'position', 'static')">div {position: static;}</button>
+                    <button onclick="changePropertyOfOne(fifth, 'position', 'sticky')">div {position: sticky;}</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/tools.js"></script>
+</body>
+</html>

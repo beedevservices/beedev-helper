@@ -93,6 +93,42 @@ body {
                 border: 0px solid black;/* required for functionality, px need to remain zero */
             }
         }
+        #blockDiv {
+            position: static;
+            height: 200px;
+
+            .first {
+                background-color: cyan;
+                margin: 6px;
+                padding: 6px;
+                position: relative;
+            }
+            .second {
+                background-color: orange;
+                position: static;
+                margin: 6px;
+                padding: 6px;
+            }
+            .third {
+                background-color: blue;
+                position: absolute;
+                margin: 6px;
+                padding: 6px;
+            }
+            .fourth {
+                background-color: purple;
+                position: sticky;
+                margin: 6px;
+                padding: 6px;
+            }
+            .fifth {
+                background-color: magenta;
+                margin: 6px;
+                padding: 6px;
+                position: fixed;
+            }
+
+        }
         .wrapPad {
             padding: 1em;
         }
@@ -107,9 +143,6 @@ body {
         .fixBottom {
             display: flex;
             justify-content: space-between;
-
-
-
 
             .defaultProperty {
                 box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
@@ -127,6 +160,25 @@ body {
                 display: flex;
                 flex-direction: column;
                 // max-width: 500px;
+            }
+        }
+        .altFixBottom {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-top: 3em;
+
+            .defaultProperty {
+                box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+            }
+            .mutuallyExclusiveButtons button:first-child {
+                background-color: lightgreen;/* signifies that this button represents a property in use */
+            }
+            .flexStartGap5 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: baseline;
+                gap: 5px;
             }
         }
         .small {
