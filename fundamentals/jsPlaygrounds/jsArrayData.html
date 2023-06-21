@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../../css/playground.css" />
+    <script src="../../js/components/toolNav.js"></script>
+    <script src="../../js/components/footer.js"></script>
+    <title>JS - Adding/Removing from Arrays</title>
+</head>
+<body>
+    <header>
+        <h1>BeeDev Services Helper Website</h1>
+        <tool-component></tool-component>
+        <nav class="toolsNav">
+            <a href="../jsTools.html">Back to JS Tools Page</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="centerText">Adding/Removing from Arrays</h1>
+        <div class="area">
+            <div class="buttons">
+                <div class="oneButton">
+                    <h3>Print the Array</h3>
+                    <div class="function">
+                        <button onclick="arrPrint()">console.log(arr01)</button>
+                    </div>
+                </div>
+                <div class="oneButton">
+                    <h3>push()</h3>
+                    <div class="function">
+                        <button onclick="arrPush()">console.log(arr01)</button>
+                    </div>
+                </div>
+                <div class="oneButton">
+                    <h3>pop()</h3>
+                    <div class="function">
+                        <button onclick="arrPop()">console.log(arr01)</button>
+                    </div>
+                </div>
+                <div class="oneButton">
+                    <h3>shift()</h3>
+                    <div class="function">
+                        <button onclick="arrShift()">console.log(arr01)</button>
+                    </div>
+                </div>
+                <div class="oneButton">
+                    <h3>unshift()</h3>
+                    <div class="function">
+                        <button onclick="arrUnshift()">console.log(arr01)</button>
+                    </div>
+                </div>
+                <div class="oneButton">
+                    <h3>splice(2,1)</h3>
+                    <div class="function">
+                        <button onclick="arrSplice21()">console.log(arr01)</button>
+                    </div>
+                </div>
+                <div class="oneButton">
+                    <h3>splice(1,0, 'Hello')</h3>
+                    <div class="function">
+                        <button onclick="arrSplice10Hello()">console.log(arr01)</button>
+                    </div>
+                </div>
+            </div>
+            <div id="console"><p id="term">BeeDevHelper $~/ <p id="update"></p></p></div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/playgrounds/jsTools.js"></script>
+    <script src="../../js/prism.js"></script>
+</body>
+</html>

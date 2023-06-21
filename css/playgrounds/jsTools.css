@@ -627,7 +627,7 @@ body main .area #console {
     opacity: 0;
   }
 }
-body main .area #console p::after {
+body main .area #console #term::after {
   content: "";
   width: 5px;
   height: 20px;
@@ -637,6 +637,8 @@ body main .area #console p::after {
 }
 body main .area #console #update {
   color: #95BD83;
+  max-width: 300px;
+  word-wrap: break-word;
 }
 body main .fixBottom {
   display: flex;

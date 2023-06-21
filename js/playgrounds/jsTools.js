@@ -166,8 +166,36 @@ function final() {
     }
 }
 
+// Manipulating Arrays Code
+let arr01 = ['Bob', 'Jane', 'Mary', 'John']
 
-
+function arrPrint() {
+    result.innerText = `${arr01}`
+}
+function arrPush() {
+    arr01.push('Billy')
+    result.innerText = `${arr01}`
+}
+function arrPop() {
+    arr01.pop()
+    result.innerText = `${arr01}`
+}
+function arrShift() {
+    arr01.shift()
+    result.innerText = `${arr01}`
+}
+function arrUnshift() {
+    arr01.unshift('Micky Mouse')
+    result.innerText = `${arr01}`
+}
+function arrSplice21() {
+    arr01.splice(2,1)
+    result.innerText = `${arr01}`
+}
+function arrSplice10Hello() {
+    arr01.splice(1,0 ,'Hello')
+    result.innerText = `${arr01}`
+}
 
 
 

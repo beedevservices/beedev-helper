@@ -527,7 +527,8 @@ body main #hideFlexWrap,
 body main #hideBoxModel,
 body main #hidePosition,
 body main #hideJsEvents,
-body main #hideJsLoops {
+body main #hideJsLoops,
+body main #hideJsArrayData {
   display: none;
   padding: 1em;
   margin: 0.5em;
@@ -538,7 +539,8 @@ body main #hideFlexWrap .sideBySide,
 body main #hideBoxModel .sideBySide,
 body main #hidePosition .sideBySide,
 body main #hideJsEvents .sideBySide,
-body main #hideJsLoops .sideBySide {
+body main #hideJsLoops .sideBySide,
+body main #hideJsArrayData .sideBySide {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -551,7 +553,8 @@ body main #hideFlexWrap .sideBySide .column,
 body main #hideBoxModel .sideBySide .column,
 body main #hidePosition .sideBySide .column,
 body main #hideJsEvents .sideBySide .column,
-body main #hideJsLoops .sideBySide .column {
+body main #hideJsLoops .sideBySide .column,
+body main #hideJsArrayData .sideBySide .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -564,7 +567,8 @@ body main #hideFlexWrap .sideBySide .column button,
 body main #hideBoxModel .sideBySide .column button,
 body main #hidePosition .sideBySide .column button,
 body main #hideJsEvents .sideBySide .column button,
-body main #hideJsLoops .sideBySide .column button {
+body main #hideJsLoops .sideBySide .column button,
+body main #hideJsArrayData .sideBySide .column button {
   margin: 1em;
 }
 body main .resourceContainer {
