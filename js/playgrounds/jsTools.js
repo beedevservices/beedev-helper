@@ -185,7 +185,7 @@ function arrShift() {
     result.innerText = `${arr01}`
 }
 function arrUnshift() {
-    arr01.unshift('Micky Mouse')
+    arr01.unshift('Ninja')
     result.innerText = `${arr01}`
 }
 function arrSplice21() {
@@ -206,6 +206,15 @@ $(document).ready(function() {
         $('#hideConsole').animate( {
             width: 'toggle'
         })
+        $('#hideAlert').css({
+            'display': 'none',
+        })
+        $('#hideAdding').css({
+            'display': 'none',
+        })
+        $('#hideGrow').css({
+            'display': 'none',
+        })
         $('#hideConsole').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -219,6 +228,15 @@ $(document).ready(function() {
     $('#showAlert').click(function() {
         $('#hideAlert').animate( {
             width: 'toggle'
+        })
+        $('#hideConsole').css({
+            'display': 'none',
+        })
+        $('#hideAdding').css({
+            'display': 'none',
+        })
+        $('#hideGrow').css({
+            'display': 'none',
         })
         $('#hideAlert').css({
             'display': 'flex',
@@ -234,6 +252,15 @@ $(document).ready(function() {
         $('#hideAdding').animate( {
             width: 'toggle'
         })
+        $('#hideAlert').css({
+            'display': 'none',
+        })
+        $('#hideConsole').css({
+            'display': 'none,'
+        })
+        $('#hideGrow').css({
+            'display': 'none',
+        })
         $('#hideAdding').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -247,6 +274,15 @@ $(document).ready(function() {
     $('#showGrow').click(function() {
         $('#hideGrow').animate( {
             width: 'toggle'
+        })
+        $('#hideAlert').css({
+            'display': 'none',
+        })
+        $('#hideAdding').css({
+            'display': 'none',
+        })
+        $('#hideConsole').css({
+            'display': 'none',
         })
         $('#hideGrow').css({
             'display': 'flex',

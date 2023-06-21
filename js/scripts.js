@@ -1,7 +1,23 @@
 $(document).ready(function(){
+    // Menu Items
     $('#showFundamentals').click(function() {
         $('#hideFundamentals').animate( {
             width: 'toggle'
+        })
+        $('#hidePython').css({
+            'display': 'none',
+        })
+        $('#hideReact').css({
+            'display': 'none',
+        })
+        $('#hideJava').css({
+            'display': 'none',
+        })
+        $('#hideCSharp').css({
+            'display': 'none',
+        })
+        $('#hideCommands').css({
+            'display': 'none',
         })
         $('#hideFundamentals').css({
             'display': 'flex',
@@ -17,6 +33,21 @@ $(document).ready(function(){
         $('#hidePython').animate( {
             width: 'toggle'
         })
+        $('#hideFundamentals').css({
+            'display': 'none',
+        })
+        $('#hideReact').css({
+            'display': 'none',
+        })
+        $('#hideJava').css({
+            'display': 'none',
+        })
+        $('#hideCSharp').css({
+            'display': 'none',
+        })
+        $('#hideCommands').css({
+            'display': 'none',
+        })
         $('#hidePython').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -30,6 +61,21 @@ $(document).ready(function(){
     $('#showReact').click(function() {
         $('#hideReact').animate( {
             width: 'toggle'
+        })
+        $('#hideFundamentals').css({
+            'display': 'none',
+        })
+        $('#hidePython').css({
+            'display': 'none',
+        })
+        $('#hideJava').css({
+            'display': 'none',
+        })
+        $('#hideCSharp').css({
+            'display': 'none',
+        })
+        $('#hideCommands').css({
+            'display': 'none',
         })
         $('#hideReact').css({
             'display': 'flex',
@@ -45,6 +91,21 @@ $(document).ready(function(){
         $('#hideJava').animate( {
             width: 'toggle'
         })
+        $('#hideFundamentals').css({
+            'display': 'none',
+        })
+        $('#hideReact').css({
+            'display': 'none',
+        })
+        $('#hidePython').css({
+            'display': 'none',
+        })
+        $('#hideCSharp').css({
+            'display': 'none',
+        })
+        $('#hideCommands').css({
+            'display': 'none',
+        })
         $('#hideJava').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -58,6 +119,21 @@ $(document).ready(function(){
     $('#showCSharp').click(function() {
         $('#hideCSharp').animate( {
             width: 'toggle'
+        })
+        $('#hideFundamentals').css({
+            'display': 'none',
+        })
+        $('#hideReact').css({
+            'display': 'none',
+        })
+        $('#hideJava').css({
+            'display': 'none',
+        })
+        $('#hidePython').css({
+            'display': 'none',
+        })
+        $('#hideCommands').css({
+            'display': 'none',
         })
         $('#hideCSharp').css({
             'display': 'flex',
@@ -73,6 +149,21 @@ $(document).ready(function(){
         $('#hideCommands').animate( {
             width: 'toggle'
         })
+        $('#hideFundamentals').css({
+            'display': 'none',
+        })
+        $('#hideReact').css({
+            'display': 'none',
+        })
+        $('#hideJava').css({
+            'display': 'none',
+        })
+        $('#hideCSharp').css({
+            'display': 'none',
+        })
+        $('#hidePython').css({
+            'display': 'none',
+        })
         $('#hideCommands').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -83,9 +174,37 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+    // Starts Resources
     $('#showBasic').click(function() {
         $('#hideBasic').animate( {
             width: 'toggle'
+        })
+        $('#hideHtmlCss').css({
+            'display': 'none'
+        })
+        $('#hideHackathons').css({
+            'display': 'none'
+        })
+        $('#hideJs').css({
+            'display': 'none'
+        })
+        $('#hideFullStack').css({
+            'display': 'none'
+        })
+        $('#hideIde').css({
+            'display': 'none'
+        })
+        $('#hidePlaygrounds').css({
+            'display': 'none'
+        })
+        $('#hideResources').css({
+            'display': 'none'
+        })
+        $('#hideChallenges').css({
+            'display': 'none'
+        })
+        $('#hideBlogRss').css({
+            'display': 'none'
         })
         $('#hideBasic').css({
             'display': 'flex',
@@ -101,6 +220,33 @@ $(document).ready(function(){
         $('#hideHtmlCss').animate( {
             width: 'toggle'
         })
+        $('#hideBasic').css({
+            'display': 'none'
+        })
+        $('#hideHackathons').css({
+            'display': 'none'
+        })
+        $('#hideJs').css({
+            'display': 'none'
+        })
+        $('#hideFullStack').css({
+            'display': 'none'
+        })
+        $('#hideIde').css({
+            'display': 'none'
+        })
+        $('#hidePlaygrounds').css({
+            'display': 'none'
+        })
+        $('#hideResources').css({
+            'display': 'none'
+        })
+        $('#hideChallenges').css({
+            'display': 'none'
+        })
+        $('#hideBlogRss').css({
+            'display': 'none'
+        })
         $('#hideHtmlCss').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -114,6 +260,30 @@ $(document).ready(function(){
     $('#showJs').click(function() {
         $('#hideJs').animate( {
             width: 'toggle'
+        })
+        $('#hideHtmlCss').css({
+            'display': 'none'
+        })
+        $('#hideBasic').css({
+            'display': 'none'
+        })
+        $('#hideFullStack').css({
+            'display': 'none'
+        })
+        $('#hideIde').css({
+            'display': 'none'
+        })
+        $('#hidePlaygrounds').css({
+            'display': 'none'
+        })
+        $('#hideResources').css({
+            'display': 'none'
+        })
+        $('#hideChallenges').css({
+            'display': 'none'
+        })
+        $('#hideBlogRss').css({
+            'display': 'none'
         })
         $('#hideJs').css({
             'display': 'flex',
@@ -129,6 +299,33 @@ $(document).ready(function(){
         $('#hideFullStack').animate( {
             width: 'toggle'
         })
+        $('#hideHtmlCss').css({
+            'display': 'none'
+        })
+        $('#hideHackathons').css({
+            'display': 'none'
+        })
+        $('#hideJs').css({
+            'display': 'none'
+        })
+        $('#hideBasic').css({
+            'display': 'none'
+        })
+        $('#hideIde').css({
+            'display': 'none'
+        })
+        $('#hidePlaygrounds').css({
+            'display': 'none'
+        })
+        $('#hideResources').css({
+            'display': 'none'
+        })
+        $('#hideChallenges').css({
+            'display': 'none'
+        })
+        $('#hideBlogRss').css({
+            'display': 'none'
+        })
         $('#hideFullStack').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -142,6 +339,33 @@ $(document).ready(function(){
     $('#showIde').click(function() {
         $('#hideIde').animate( {
             width: 'toggle'
+        })
+        $('#hideHtmlCss').css({
+            'display': 'none'
+        })
+        $('#hideJs').css({
+            'display': 'none'
+        })
+        $('#hideFullStack').css({
+            'display': 'none'
+        })
+        $('#hideBasic').css({
+            'display': 'none'
+        })
+        $('#hideHackathons').css({
+            'display': 'none'
+        })
+        $('#hidePlaygrounds').css({
+            'display': 'none'
+        })
+        $('#hideResources').css({
+            'display': 'none'
+        })
+        $('#hideChallenges').css({
+            'display': 'none'
+        })
+        $('#hideBlogRss').css({
+            'display': 'none'
         })
         $('#hideIde').css({
             'display': 'flex',
@@ -157,6 +381,33 @@ $(document).ready(function(){
         $('#hidePlaygrounds').animate( {
             width: 'toggle'
         })
+        $('#hideHtmlCss').css({
+            'display': 'none'
+        })
+        $('#hideJs').css({
+            'display': 'none'
+        })
+        $('#hideFullStack').css({
+            'display': 'none'
+        })
+        $('#hideIde').css({
+            'display': 'none'
+        })
+        $('#hideBasic').css({
+            'display': 'none'
+        })
+        $('#hideHackathons').css({
+            'display': 'none'
+        })
+        $('#hideResources').css({
+            'display': 'none'
+        })
+        $('#hideChallenges').css({
+            'display': 'none'
+        })
+        $('#hideBlogRss').css({
+            'display': 'none'
+        })
         $('#hidePlaygrounds').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -170,6 +421,33 @@ $(document).ready(function(){
     $('#showResources').click(function() {
         $('#hideResources').animate( {
             width: 'toggle'
+        })
+        $('#hideHtmlCss').css({
+            'display': 'none'
+        })
+        $('#hideJs').css({
+            'display': 'none'
+        })
+        $('#hideFullStack').css({
+            'display': 'none'
+        })
+        $('#hideIde').css({
+            'display': 'none'
+        })
+        $('#hidePlaygrounds').css({
+            'display': 'none'
+        })
+        $('#hideBasic').css({
+            'display': 'none'
+        })
+        $('#hideHackathons').css({
+            'display': 'none'
+        })
+        $('#hideChallenges').css({
+            'display': 'none'
+        })
+        $('#hideBlogRss').css({
+            'display': 'none'
         })
         $('#hideResources').css({
             'display': 'flex',
@@ -185,6 +463,33 @@ $(document).ready(function(){
         $('#hideChallenges').animate( {
             width: 'toggle'
         })
+        $('#hideHtmlCss').css({
+            'display': 'none'
+        })
+        $('#hideJs').css({
+            'display': 'none'
+        })
+        $('#hideFullStack').css({
+            'display': 'none'
+        })
+        $('#hideIde').css({
+            'display': 'none'
+        })
+        $('#hidePlaygrounds').css({
+            'display': 'none'
+        })
+        $('#hideResources').css({
+            'display': 'none'
+        })
+        $('#hideBasic').css({
+            'display': 'none'
+        })
+        $('#hideHackathons').css({
+            'display': 'none'
+        })
+        $('#hideBlogRss').css({
+            'display': 'none'
+        })
         $('#hideChallenges').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -198,6 +503,33 @@ $(document).ready(function(){
     $('#showHackathons').click(function() {
         $('#hideHackathons').animate( {
             width: 'toggle'
+        })
+        $('#hideHtmlCss').css({
+            'display': 'none'
+        })
+        $('#hideJs').css({
+            'display': 'none'
+        })
+        $('#hideFullStack').css({
+            'display': 'none'
+        })
+        $('#hideIde').css({
+            'display': 'none'
+        })
+        $('#hidePlaygrounds').css({
+            'display': 'none'
+        })
+        $('#hideResources').css({
+            'display': 'none'
+        })
+        $('#hideChallenges').css({
+            'display': 'none'
+        })
+        $('#hideBasic').css({
+            'display': 'none'
+        })
+        $('#hideBlogRss').css({
+            'display': 'none'
         })
         $('#hideHackathons').css({
             'display': 'flex',
@@ -213,6 +545,33 @@ $(document).ready(function(){
         $('#hideBlogRss').animate( {
             width: 'toggle'
         })
+        $('#hideHtmlCss').css({
+            'display': 'none'
+        })
+        $('#hideJs').css({
+            'display': 'none'
+        })
+        $('#hideFullStack').css({
+            'display': 'none'
+        })
+        $('#hideIde').css({
+            'display': 'none'
+        })
+        $('#hidePlaygrounds').css({
+            'display': 'none'
+        })
+        $('#hideResources').css({
+            'display': 'none'
+        })
+        $('#hideChallenges').css({
+            'display': 'none'
+        })
+        $('#hideBasic').css({
+            'display': 'none'
+        })
+        $('#hideHackathons').css({
+            'display': 'none'
+        })
         $('#hideBlogRss').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -223,9 +582,22 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+    // CSS Playgrounds
     $('#showInlineBlock').click(function() {
         $('#hideInlineBlock').animate( {
             width: 'toggle'
+        })
+        $('#hideFlexWrap').css({
+            'display': 'none'
+        })
+        $('#hideDisplayFlex').css({
+            'display': 'none'
+        })
+        $('#hideBoxModel').css({
+            'display': 'none'
+        })
+        $('#hidePosition').css({
+            'display': 'none'
         })
         $('#hideInlineBlock').css({
             'display': 'flex',
@@ -241,6 +613,18 @@ $(document).ready(function(){
         $('#hideFlexWrap').animate( {
             width: 'toggle'
         })
+        $('#hideInlineBlock').css({
+            'display': 'none'
+        })
+        $('#hideDisplayFlex').css({
+            'display': 'none'
+        })
+        $('#hideBoxModel').css({
+            'display': 'none'
+        })
+        $('#hidePosition').css({
+            'display': 'none'
+        })
         $('#hideFlexWrap').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -254,6 +638,18 @@ $(document).ready(function(){
     $('#showDisplayFlex').click(function() {
         $('#hideDisplayFlex').animate( {
             width: 'toggle'
+        })
+        $('#hideFlexWrap').css({
+            'display': 'none'
+        })
+        $('#hideInlineBlock').css({
+            'display': 'none'
+        })
+        $('#hideBoxModel').css({
+            'display': 'none'
+        })
+        $('#hidePosition').css({
+            'display': 'none'
         })
         $('#hideDisplayFlex').css({
             'display': 'flex',
@@ -269,6 +665,18 @@ $(document).ready(function(){
         $('#hideBoxModel').animate( {
             width: 'toggle'
         })
+        $('#hideFlexWrap').css({
+            'display': 'none'
+        })
+        $('#hideDisplayFlex').css({
+            'display': 'none'
+        })
+        $('#hideInlineBlock').css({
+            'display': 'none'
+        })
+        $('#hidePosition').css({
+            'display': 'none'
+        })
         $('#hideBoxModel').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -283,6 +691,18 @@ $(document).ready(function(){
         $('#hidePosition').animate( {
             width: 'toggle'
         })
+        $('#hideFlexWrap').css({
+            'display': 'none'
+        })
+        $('#hideDisplayFlex').css({
+            'display': 'none'
+        })
+        $('#hideBoxModel').css({
+            'display': 'none'
+        })
+        $('#hideInlineBlock').css({
+            'display': 'none'
+        })
         $('#hidePosition').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -293,6 +713,7 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+    // Starts JS Playgrounds
     $('#showJsEvents').click(function() {
         $('#hideJsEvents').animate( {
             width: 'toggle'

@@ -640,6 +640,18 @@ body main .area #console #update {
   max-width: 300px;
   word-wrap: break-word;
 }
+body main .altBottomArea {
+  border-bottom: 4px dotted #FFEDAB;
+}
+body main .altArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid #FFEDAB;
+  border-left: 4px solid #FFEDAB;
+  border-right: 4px solid #FFEDAB;
+}
 body main .fixBottom {
   display: flex;
   flex-direction: column;
