@@ -1,5 +1,7 @@
+// The console element
 let result = document.getElementById('update')
 
+// Code for Events page
 function aPrint() {
     result.innerText = 'Hello World'
 }
@@ -21,6 +23,8 @@ function returnMe(element) {
     element.style.height = "50px"
     element.style.width = "300px"
 }
+
+// Reusable Code for Loop Page
 function nextStep() {
     result.style.color = 'white'
     result.innerText = 'PROCEED TO NEXT QUESTION ON THE LEFT'
@@ -47,20 +51,32 @@ function followInstructions() {
     result.innerText = 'I will now follow my instructions'
 }
 
+// Actual loop code
 function stepOne() {
     var selection = document.loopStart.lessThan.value
     var stepOne = document.getElementById('loopStart')
     var sTwo = document.getElementById('sTwo')
+    // Correct choice
     if(selection == 'Yes') {
+        // Run this
         great()
+        // Then wait 2 seconds
         setTimeout(function() {
+            // And run this
             followInstructions()
+
+            // Wait 2 seconds
             setTimeout(function() {
+                // Run this
                 printValue(0)
+                // Wait 2 seconds
                 setTimeout(function() {
+                    // Run this
                     clearTerm()
                     stepOne.style.display = 'none'
+                    // Wait 2 seconds
                     setTimeout(function() {
+                        // Run this
                         nextStep()
                         sTwo.style.display = 'flex'
                     }, 2000)
