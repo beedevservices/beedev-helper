@@ -554,7 +554,7 @@ body main .area .buttons {
   flex-wrap: wrap;
   align-items: flex-start;
 }
-body main .area .buttons .loopCode {
+body main .area .buttons .startCode {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -639,6 +639,9 @@ body main .area #console #update {
   color: #95BD83;
   max-width: 300px;
   word-wrap: break-word;
+}
+body main .newArea {
+  max-height: 800px;
 }
 body main .altBottomArea {
   border-bottom: 4px dotted #FFEDAB;

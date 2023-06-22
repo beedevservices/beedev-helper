@@ -718,6 +718,12 @@ $(document).ready(function(){
         $('#hideJsEvents').animate( {
             width: 'toggle'
         })
+        $('#hideJsLoops').css({
+            'display': 'none'
+        })
+        $('#hideJsArrayData').css({
+            'display': 'none'
+        })
         $('#hideJsEvents').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -732,6 +738,12 @@ $(document).ready(function(){
         $('#hideJsLoops').animate( {
             width: 'toggle'
         })
+        $('#hideJsEvents').css({
+            'display': 'none'
+        })
+        $('#hideJsArrayData').css({
+            'display': 'none'
+        })
         $('#hideJsLoops').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -745,6 +757,12 @@ $(document).ready(function(){
     $('#showJsArrayData').click(function() {
         $('#hideJsArrayData').animate( {
             width: 'toggle'
+        })
+        $('#hideJsLoops').css({
+            'display': 'none'
+        })
+        $('#hideJsEvents').css({
+            'display': 'none'
         })
         $('#hideJsArrayData').css({
             'display': 'flex',

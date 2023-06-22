@@ -196,7 +196,25 @@ function arrSplice10Hello() {
     arr01.splice(1,0 ,'Hello')
     result.innerText = `${arr01}`
 }
+// Conditional Code
 
+function v01(x) {
+    if(x < 10) {
+        result.innerText = `${x} is less than 10`
+    } else {
+        result.innerText = `${x} is bigger than 10`
+    }
+}
+function v02(x) {
+    if(x < 5) {
+        result.innerText = `${x} is less than 5`
+    }
+    if(x <=5) {
+        result.innerText = `${x} is less than or equal to 5`
+    } else {
+        result.innerText = `${x} is bigger than 5`
+    }
+}
 
 
 
