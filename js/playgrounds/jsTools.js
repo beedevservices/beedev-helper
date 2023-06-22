@@ -6,6 +6,10 @@ function clearTerm() {
 function tryAgain() {
     result.innerText = 'Please try again'
 }
+function great() {
+    result.style.color = '#95BD83'
+    result.innerText = 'Great Job'
+}
 
 // ***** Code for Events page ***** //
 function aPrint() {
@@ -35,12 +39,6 @@ function nextStep() {
     result.style.color = 'white'
     result.innerText = 'PROCEED TO NEXT QUESTION ON THE LEFT'
 }
-function great() {
-    result.style.color = '#95BD83'
-    result.innerText = 'Great Job'
-}
-
-
 function jobDone() {
     result.style.color = 'white'
     result.innerText = 'the loop is now finished nothing to print'
