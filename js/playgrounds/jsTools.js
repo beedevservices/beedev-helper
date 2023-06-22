@@ -10,6 +10,17 @@ function great() {
     result.style.color = '#95BD83'
     result.innerText = 'Great Job'
 }
+function nextStep() {
+    result.style.color = 'white'
+    result.innerText = 'PROCEED TO NEXT QUESTION ON THE LEFT'
+}
+function jobDone() {
+    result.style.color = 'white'
+    result.innerText = 'Function is complete'
+}
+function followInstructions() {
+    result.innerText = 'I will now follow my instructions'
+}
 
 // ***** Code for Events page ***** //
 function aPrint() {
@@ -35,21 +46,12 @@ function returnMe(element) {
 }
 
 // ***** Reusable Code ***** //
-function nextStep() {
-    result.style.color = 'white'
-    result.innerText = 'PROCEED TO NEXT QUESTION ON THE LEFT'
-}
-function jobDone() {
-    result.style.color = 'white'
-    result.innerText = 'the loop is now finished nothing to print'
-}
+
 function printValue(a) {
     result.style.color = 'yellow'
     result.innerText = `the value of i is: ${a}`
 }
-function followInstructions() {
-    result.innerText = 'I will now follow my instructions'
-}
+
 
 // ***** Actual loop code ***** //
 function stepOne() {
@@ -199,7 +201,7 @@ function arrSplice10Hello() {
 
 // ***** Conditional Code ***** //
 
-let x = document.condition.num.value
+
 let inpVar = document.getElementById('inpVar01')
 let ver01 = document.getElementById('version01')
 let ver02 = document.getElementById('version02')
