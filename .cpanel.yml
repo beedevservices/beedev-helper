@@ -3,3 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/craftsnh/public_html/helper-site
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYOPATH
