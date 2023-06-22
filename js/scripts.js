@@ -724,6 +724,9 @@ $(document).ready(function(){
         $('#hideJsArrayData').css({
             'display': 'none'
         })
+        $('#hideJsConditionals').css({
+            'display': 'none'
+        })
         $('#hideJsEvents').css({
             'display': 'flex',
             'flex-direction': 'column',
@@ -742,6 +745,9 @@ $(document).ready(function(){
             'display': 'none'
         })
         $('#hideJsArrayData').css({
+            'display': 'none'
+        })
+        $('#hideJsConditionals').css({
             'display': 'none'
         })
         $('#hideJsLoops').css({
@@ -764,7 +770,33 @@ $(document).ready(function(){
         $('#hideJsEvents').css({
             'display': 'none'
         })
+        $('#hideJsConditionals').css({
+            'display': 'none'
+        })
         $('#hideJsArrayData').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
+    $('#showJsConditionals').click(function() {
+        $('#hideJsConditionals').animate( {
+            width: 'toggle'
+        })
+        $('#hideJsLoops').css({
+            'display': 'none'
+        })
+        $('#hideJsEvents').css({
+            'display': 'none'
+        })
+        $('#hideJsArrayData').css({
+            'display': 'none'
+        })
+        $('#hideJsConditionals').css({
             'display': 'flex',
             'flex-direction': 'column',
             'justify-content': 'center',
