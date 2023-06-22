@@ -1,1 +1,0 @@
-let x = document.condition.num.value

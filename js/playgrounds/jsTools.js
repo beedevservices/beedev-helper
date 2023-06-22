@@ -1,26 +1,6 @@
-// ***** The console element and reusable code ***** //
+// ***** The console element ***** //
 let result = document.getElementById('update')
-function clearTerm() {
-    result.innerHTML = ''
-}
-function tryAgain() {
-    result.innerText = 'Please try again'
-}
-function great() {
-    result.style.color = '#95BD83'
-    result.innerText = 'Great Job'
-}
-function nextStep() {
-    result.style.color = 'white'
-    result.innerText = 'PROCEED TO NEXT QUESTION ON THE LEFT'
-}
-function jobDone() {
-    result.style.color = 'white'
-    result.innerText = 'Function is complete'
-}
-function followInstructions() {
-    result.innerText = 'I will now follow my instructions'
-}
+
 
 // ***** Code for Events page ***** //
 function aPrint() {
@@ -43,129 +23,6 @@ function growMe(element) {
 function returnMe(element) {
     element.style.height = "50px"
     element.style.width = "300px"
-}
-
-// ***** Reusable Code ***** //
-
-function printValue(a) {
-    result.style.color = 'yellow'
-    result.innerText = `the value of i is: ${a}`
-}
-
-
-// ***** Actual loop code ***** //
-function stepOne() {
-    var selection = document.loopStart.lessThan.value
-    var stepOne = document.getElementById('loopStart')
-    var sTwo = document.getElementById('sTwo')
-    // Correct choice
-    if(selection == 'Yes') {
-        // Run this
-        great()
-        // Then wait 2 seconds
-        setTimeout(function() {
-            // And run this
-            followInstructions()
-
-            // Wait 2 seconds
-            setTimeout(function() {
-                // Run this
-                printValue(0)
-                // Wait 2 seconds
-                setTimeout(function() {
-                    // Run this
-                    clearTerm()
-                    stepOne.style.display = 'none'
-                    // Wait 2 seconds
-                    setTimeout(function() {
-                        // Run this
-                        nextStep()
-                        sTwo.style.display = 'flex'
-                    }, 2000)
-                }, 2000)
-            }, 2000)
-        }, 2000)
-    } else {
-        tryAgain()
-        setTimeout(function() {
-            clearTerm()
-        }, 2000)
-    }
-}
-function stepTwo() {
-    var selection = document.sTwo.lessThan.value
-    var stepOne = document.getElementById('loopStart')
-    var sTwo = document.getElementById('sTwo')
-    var sThree = document.getElementById('sThree')
-    if(selection == 'Yes') {
-        great()
-        setTimeout(function() {
-            followInstructions()
-            setTimeout(function() {
-                printValue(1)
-                setTimeout(function() {
-                    clearTerm()
-                    stepOne.style.display = 'none'
-                    sTwo.style.display = 'none'
-                    setTimeout(function() {
-                        nextStep()
-                        sThree.style.display = 'flex'
-                    }, 2000)
-                }, 2000)
-            }, 2000)
-        }, 2000)
-    } else {
-        tryAgain()
-        setTimeout(function() {
-            clearTerm()
-        }, 2000)
-    }
-}
-function stepThree() {
-    var selection = document.sThree.lessThan.value
-    var stepOne = document.getElementById('loopStart')
-    var sTwo = document.getElementById('sTwo')
-    var sThree = document.getElementById('sThree')
-    var sFour = document.getElementById('finalStep')
-    if(selection == 'No') {
-        great()
-        setTimeout(function() {
-            followInstructions()
-            setTimeout(function() {
-                jobDone()
-                setTimeout(function() {
-                    clearTerm()
-                    stepOne.style.display = 'none'
-                    sTwo.style.display = 'none'
-                    sThree.style.display = 'none'
-                    setTimeout(function() {
-                        result.innerText = 'Another round?'
-                        sFour.style.display = 'flex'
-                    }, 2000)
-                }, 2000)
-            }, 2000)
-        }, 2000)
-    } else {
-        tryAgain()
-        setTimeout(function() {
-            clearTerm()
-        }, 2000)
-    }
-}
-function final() {
-    var again = document.startOver.choice.value
-    var stepOne = document.getElementById('loopStart')
-    var sTwo = document.getElementById('sTwo')
-    var sThree = document.getElementById('sThree')
-    var sFour = document.getElementById('finalStep')
-    if(again == 'Yes') {
-        stepOne.style.display = 'flex'
-        sTwo.style.display = 'none'
-        sThree.style.display = 'none'
-        sFour.style.display = 'none'
-    } else {
-        result.innerText = 'Hope this helped!'
-    }
 }
 
 // ***** Manipulating Arrays Code ***** //
@@ -199,8 +56,12 @@ function arrSplice10Hello() {
     result.innerText = `${arr01}`
 }
 
-// ***** Conditional Code ***** //
 
+// ***** Loop / Conditional Globals ***** //
+var sOne = document.getElementById('loopStart')
+var sTwo = document.getElementById('sTwo')
+var sThree = document.getElementById('sThree')
+var sFour = document.getElementById('finalStep')
 
 let inpVar = document.getElementById('inpVar01')
 let ver01 = document.getElementById('version01')
@@ -208,6 +69,139 @@ let ver02 = document.getElementById('version02')
 let condForm = document.getElementById('condForm')
 let f = document.getElementById('first')
 let s = document.getElementById('second')
+
+// ***** Loop / Conditional DRY Functions ***** //
+function dispNone(e) {
+    e.style.display = 'none'
+}
+function dispFlex(e) {
+    e.style.display = 'flex'
+}
+function dispBlock(e) {
+    e.style.display = 'block'
+}
+function resultColor(e) {
+    result.style.color = e
+}
+function resultFont(e) {
+    result.style.fontSize = e
+}
+function clearTerm() {
+    result.innerHTML = ''
+}
+function updateConsole(a) {
+    result.innerText = a
+}
+function great() {
+    resultColor('#95BD83')
+    updateConsole('Great Job')
+}
+function nextStep() {
+    resultColor('white')
+    updateConsole('PROCEED TO NEXT QUESTION ON THE LEFT')
+}
+function jobDone() {
+    resultColor('white')
+    updateConsole('Function is complete')
+}
+function printValue(a) {
+    resultColor('yellow')
+    updateConsole(`the value of i is: ${a}`)
+}
+
+
+// ***** Actual loop code ***** //
+function stepOne() {
+    var selection = document.loopStart.lessThan.value
+    if(selection == 'Yes') {
+        great()
+        setTimeout(function() {
+            updateConsole('I will now follow my instructions')
+            setTimeout(function() {
+                printValue(0)
+                setTimeout(function() {
+                    clearTerm
+                    dispNone(sOne)
+                    setTimeout(function() {
+                        nextStep()
+                        dispFlex(sTwo)
+                    }, 2000)
+                }, 2000)
+            }, 2000)
+        }, 2000)
+    } else {
+        updateConsole('Please try again')
+        setTimeout(function() {
+            clearTerm()
+        })
+    }
+}
+function stepTwo() {
+    var selection = document.sTwo.lessThan.value
+    if(selection == 'Yes') {
+        great()
+        setTimeout(function() {
+            updateConsole('I will now follow my instructions')
+            setTimeout(function() {
+                printValue(1)
+                setTimeout(function() {
+                    clearTerm()
+                    dispNone(sOne)
+                    dispNone(sTwo)
+                    setTimeout(function() {
+                        nextStep()
+                        dispFlex(sThree)
+                    }, 2000)
+                }, 2000)
+            }, 2000)
+        }, 2000)
+    } else {
+        updateConsole('Please try again')
+        setTimeout(function() {
+            clearTerm()
+        }, 2000)
+    }
+}
+function stepThree() {
+    var selection = document.sThree.lessThan.value
+    if(selection == 'No') {
+        great()
+        setTimeout(function() {
+            updateConsole('I will now follow my instructions')
+            setTimeout(function() {
+                jobDone()
+                setTimeout(function() {
+                    clearTerm()
+                    dispNone(sOne)
+                    dispNone(sTwo)
+                    dispNone(sThree)
+                    setTimeout(function() {
+                        result.innerText = 'Another round?'
+                        dispFlex(sFour)
+                    }, 2000)
+                }, 2000)
+            }, 2000)
+        }, 2000)
+    } else {
+        updateConsole('Please try again')
+        setTimeout(function() {
+            clearTerm()
+        }, 2000)
+    }
+}
+function final() {
+    var again = document.startOver.choice.value
+    if(again == 'Yes') {
+        dispFlex(sOne)
+        dispNone(sFour)
+        dispNone(sTwo)
+        dispNone(sThree)
+    } else {
+        updateConsole('Hope this helped!')
+    }
+}
+
+// ***** Conditional Code ***** //
 
 function v01(x) {
     if(x < 10) {
@@ -236,25 +230,24 @@ function v02(x) {
 }
 
 function startCond() {
-    x = document.condition.num.value
+    var x = document.condition.num.value
     if(x > 20 || x < 0) {
-        result.style.color = 'red'
-        result.style.fontSize = '2em'
-        result.innerText = 'Please chose a number between 0 and 20'
+        resultFont('2em')
+        resultColor('red')
+        updateConsole('Please chose a number between 0 and 20')
     } else {
-        result.style.fontSize = '1.2em'
-        result.style.color = '#95BD83'
-        result.innerText = `x = ${x} for the following formulas`
+        resultFont('1.2em')
+        resultColor('#95BD83')
+        updateConsole(`x = ${x} for the following formulas`)
         theAnswer()
         setTimeout(function() {
-            ver02.style.display = 'none'
-            condForm.style.display = 'none'
+            dispNone(ver02)
+            dispNone(condForm)
             clearTerm()
-            ver01.style.display = 'block'
+            dispBlock(ver01)
             inpVar.innerText = x
             setTimeout(function() {
-                f.style.display = 'flex'
-                console.log(x)
+                dispFlex(f)
                 return x
             }, 2000)
         }, 2000)
@@ -327,7 +320,7 @@ function theFirst() {
         great()
         correctElse01(x)
     } else {
-        tryAgain()
+        updateConsole('Please try again')
     }
 }
 function theAnswer() {
@@ -379,7 +372,7 @@ function theSecond() {
         correctElse02(x)
     }
     else {
-        result.innerText = 'Please take another look and try again'
+        updateConsole('Please try again')
     }
 }
 
