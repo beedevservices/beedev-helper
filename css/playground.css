@@ -560,6 +560,10 @@ body main .area .buttons .startCode {
   justify-content: center;
   align-items: center;
 }
+body main .area .buttons .startCode #version01,
+body main .area .buttons .startCode #version02 {
+  display: none;
+}
 body main .area .buttons .oneButton {
   display: flex;
   flex-direction: column;
@@ -568,7 +572,9 @@ body main .area .buttons .oneButton {
 }
 body main .area .buttons .oneButton #sTwo,
 body main .area .buttons .oneButton #sThree,
-body main .area .buttons .oneButton #finalStep {
+body main .area .buttons .oneButton #finalStep,
+body main .area .buttons .oneButton #first,
+body main .area .buttons .oneButton #second {
   display: none;
 }
 body main .area .buttons .oneButton form {

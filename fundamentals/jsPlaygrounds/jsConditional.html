@@ -23,10 +23,15 @@
         <div class="area newArea">
             <div class="buttons">
                 <div class="startCode">
-                    <pre class="version01">
+                    <form name="condition" id="condForm">
+                        <label for="num">Chose a number between 0-20</label>
+                        <input type="number" name="num" id="">
+                        <input type="button" value="Submit" onclick="startCond()">
+                    </form>
+                    <pre id="version01">
                         The Code
+                        let x = <span id="inpVar01"></span>
                         <code class="language-js">
-                            let x = ?
                             if(x < 10) {
                                 console.log(x, 'is less than 10')
                             } else {
@@ -34,10 +39,10 @@
                             }
                         </code>
                     </pre>
-                    <pre class="version02">
+                    <pre id="version02">
                         The Code
+                        let x = <span id="inpVar02"></span>
                         <code class="language-js">
-                            let x = ?
                             if(x < 5) {
                                 console.log(x, 'is less than 5')
                             } 
@@ -48,6 +53,50 @@
                             }
                         </code>
                     </pre>
+                </div>
+                <div class="oneButton">
+                    <form name="first" id="first">
+                        <p>Will the if statement run or the else statement?</p>
+                        <div class="column">
+                            <div class="row">
+                                <div class="column">
+                                    <label for="ifCond">If</label>
+                                    <input type="radio" name="ifCond" value="true">
+                                </div>
+                                <div class="column">
+                                    <label for="ifCond">Else</label>
+                                    <input type="radio" name="ifCond" value="false">
+                                </div>
+                            </div>
+                            <input type="button" value="Submit Choice" onclick="theFirst()">
+                        </div>
+                    </form>
+                </div>
+                <div class="oneButton">
+                    <form name="second" id="second">
+                        <p>Will the if statement run or the else statement?</p>
+                        <div class="column">
+                            <div class="row">
+                                <div class="column">
+                                    <label for="ifCond">1st If Statement</label>
+                                    <input type="radio" name="ifCond" value="if01">
+                                </div>
+                                <div class="column">
+                                    <label for="ifCond">2nd If Statement</label>
+                                    <input type="radio" name="ifCond" value="if02">
+                                </div>
+                                <div class="column">
+                                    <label for="inCond">Both If Statements</label>
+                                    <input type="radio" name="ifCond" value="both">
+                                </div>
+                                <div class="column">
+                                    <label for="ifCond">Else</label>
+                                    <input type="radio" name="ifCond" value="newElse">
+                                </div>
+                            </div>
+                            <input type="button" value="Submit Choice" onclick="theSecond()">
+                        </div>
+                    </form>
                 </div>
             </div>
             <div id="console"><p id="term">BeeDevHelper $~/ <p id="update"></p></p></div>

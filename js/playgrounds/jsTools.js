@@ -1,7 +1,13 @@
-// The console element
+// ***** The console element and reusable code ***** //
 let result = document.getElementById('update')
+function clearTerm() {
+    result.innerHTML = ''
+}
+function tryAgain() {
+    result.innerText = 'Please try again'
+}
 
-// Code for Events page
+// ***** Code for Events page ***** //
 function aPrint() {
     result.innerText = 'Hello World'
 }
@@ -24,7 +30,7 @@ function returnMe(element) {
     element.style.width = "300px"
 }
 
-// Reusable Code for Loop Page
+// ***** Reusable Code ***** //
 function nextStep() {
     result.style.color = 'white'
     result.innerText = 'PROCEED TO NEXT QUESTION ON THE LEFT'
@@ -33,12 +39,8 @@ function great() {
     result.style.color = '#95BD83'
     result.innerText = 'Great Job'
 }
-function tryAgain() {
-    result.innerText = 'Please try again'
-}
-function clearTerm() {
-    result.innerHTML = ''
-}
+
+
 function jobDone() {
     result.style.color = 'white'
     result.innerText = 'the loop is now finished nothing to print'
@@ -51,7 +53,7 @@ function followInstructions() {
     result.innerText = 'I will now follow my instructions'
 }
 
-// Actual loop code
+// ***** Actual loop code ***** //
 function stepOne() {
     var selection = document.loopStart.lessThan.value
     var stepOne = document.getElementById('loopStart')
@@ -166,7 +168,7 @@ function final() {
     }
 }
 
-// Manipulating Arrays Code
+// ***** Manipulating Arrays Code ***** //
 let arr01 = ['Bob', 'Jane', 'Mary', 'John']
 
 function arrPrint() {
@@ -196,26 +198,190 @@ function arrSplice10Hello() {
     arr01.splice(1,0 ,'Hello')
     result.innerText = `${arr01}`
 }
-// Conditional Code
+
+// ***** Conditional Code ***** //
+
+let x = document.condition.num.value
+let inpVar = document.getElementById('inpVar01')
+let ver01 = document.getElementById('version01')
+let ver02 = document.getElementById('version02')
+let condForm = document.getElementById('condForm')
+let f = document.getElementById('first')
+let s = document.getElementById('second')
 
 function v01(x) {
     if(x < 10) {
-        result.innerText = `${x} is less than 10`
+        return true
     } else {
-        result.innerText = `${x} is bigger than 10`
+        return false
     }
 }
 function v02(x) {
+    let if01 = ''
+    let if02 = ''
+    let newElse = ''
+    let arr02 = []
     if(x < 5) {
-        result.innerText = `${x} is less than 5`
+        if01 = 'if01'
     }
-    if(x <=5) {
-        result.innerText = `${x} is less than or equal to 5`
+    if(x <= 5) {
+        if02='if02'
     } else {
-        result.innerText = `${x} is bigger than 5`
+        newElse = 'else'
     }
+    arr02.push(if01)
+    arr02.push(if02)
+    arr02.push(newElse)
+    return arr02
 }
 
+function startCond() {
+    x = document.condition.num.value
+    if(x > 20 || x < 0) {
+        result.style.color = 'red'
+        result.style.fontSize = '2em'
+        result.innerText = 'Please chose a number between 0 and 20'
+    } else {
+        result.style.fontSize = '1.2em'
+        result.style.color = '#95BD83'
+        result.innerText = `x = ${x} for the following formulas`
+        theAnswer()
+        setTimeout(function() {
+            ver02.style.display = 'none'
+            condForm.style.display = 'none'
+            clearTerm()
+            ver01.style.display = 'block'
+            inpVar.innerText = x
+            setTimeout(function() {
+                f.style.display = 'flex'
+                console.log(x)
+                return x
+            }, 2000)
+        }, 2000)
+    }
+}
+function onToSecond(x) {
+    setTimeout(function() {
+        result.innerText = 'Lets try another one'
+        setTimeout(function() {
+            clearTerm()
+            ver01.style.display = 'none'
+            f.style.display = 'none'
+            setTimeout(function() {
+                result.innerText = `x is still ${x}`
+                setTimeout(function() {
+                    inpVar = document.getElementById('inpVar02')
+                    inpVar.innerText = x
+                    ver02.style.display = 'block'
+                    setTimeout(function() {
+                        s.style.display = 'flex'
+
+                    }, 2000)
+                }, 2000)
+            }, 2000)
+        }, 2000)
+    }, 2000)
+}
+function correctIf01(x) {
+    setTimeout(function() {
+        result.innerText = `${x}, is less than 10`
+        onToSecond(x)
+    },2000)
+}
+function correct1If(x) {
+    setTimeout(function() {
+        result.innerText =`${x}, is less than or equal to 5`
+        finish()
+    }, 2000)
+}
+function correct2If(x) {
+    setTimeout(function() {
+        result.innerText = `
+        ${x}, is less than 5
+        ${x}, is less than or equal to 5
+        `
+        finish()
+    }, 2000)
+}
+function correctElse01(x) {
+    setTimeout(function() {
+        result.innerText = `${x} is bigger than 10`
+        onToSecond(x)
+    }, 2000)
+}
+function correctElse02(x) {
+    setTimeout(function() {
+        result.innerText = `${x} is bigger than 5`
+        finish()
+    }, 2000)
+}
+function theFirst() {
+    let choice = document.first.ifCond.value
+    let answer = v01(x)
+    console.log(choice, answer)
+    if(answer == true && choice == 'true') {
+        great()
+        correctIf01(x)
+    }
+    else if(answer == false && choice == 'false') {
+        great()
+        correctElse01(x)
+    } else {
+        tryAgain()
+    }
+}
+function theAnswer() {
+    let answer = v02(x)
+    let opt01 = answer[0]
+    let opt02 = answer[1]
+    let opt03 = answer[2]
+    console.log('01',opt01, '02', opt02, '03', opt03)
+}
+function finish() {
+    setTimeout(function() {
+        clearTerm()
+        ver01.style.display = 'none'
+        ver02.style.display = 'none'
+        f.style.display = 'none'
+        s.style.display = 'none'
+        condForm.style.display = 'none'
+        setTimeout(function() {
+            result.innerText = `
+            Thank you for using this playground
+            Feel free to play again! 
+            Just give me a moment to get it set back up
+            `
+            setTimeout(function() {
+                clearTerm()
+                setTimeout(function() {
+                    condForm.style.display = 'block'
+                }, 4000)
+            }, 4000)
+        }, 2000)
+    }, 2000)
+}
+
+function theSecond() {
+    let choice = document.second.ifCond.value
+    // answer = theAnswer(x)
+    answer = v02(x)
+    console.log(choice, answer)
+    if(choice == 'if02' && answer[0] == '' && answer[1] == 'if02')  {
+        great()
+        correct1If(x)
+    }
+    else if(choice == 'both' && answer[0] == 'if01' && answer[1] == 'if02')  {
+        great()
+        correct2If(x)
+    }
+    else if(choice == 'newElse' && answer[2] == 'else')  {
+        great()
+        correctElse02(x)
+    }
+    else {
+        result.innerText = 'Please take another look and try again'
+    }
+}
 
 
 
