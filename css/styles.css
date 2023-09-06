@@ -529,7 +529,8 @@ body main #hidePosition,
 body main #hideJsEvents,
 body main #hideJsLoops,
 body main #hideJsArrayData,
-body main #hideJsConditionals {
+body main #hideJsConditionals,
+body main #hidePyLoops {
   display: none;
   padding: 1em;
   margin: 0.5em;
@@ -542,7 +543,8 @@ body main #hidePosition .sideBySide,
 body main #hideJsEvents .sideBySide,
 body main #hideJsLoops .sideBySide,
 body main #hideJsArrayData .sideBySide,
-body main #hideJsConditionals .sideBySide {
+body main #hideJsConditionals .sideBySide,
+body main #hidePyLoops .sideBySide {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -557,7 +559,8 @@ body main #hidePosition .sideBySide .column,
 body main #hideJsEvents .sideBySide .column,
 body main #hideJsLoops .sideBySide .column,
 body main #hideJsArrayData .sideBySide .column,
-body main #hideJsConditionals .sideBySide .column {
+body main #hideJsConditionals .sideBySide .column,
+body main #hidePyLoops .sideBySide .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -572,7 +575,8 @@ body main #hidePosition .sideBySide .column button,
 body main #hideJsEvents .sideBySide .column button,
 body main #hideJsLoops .sideBySide .column button,
 body main #hideJsArrayData .sideBySide .column button,
-body main #hideJsConditionals .sideBySide .column button {
+body main #hideJsConditionals .sideBySide .column button,
+body main #hidePyLoops .sideBySide .column button {
   margin: 1em;
 }
 body main .resourceContainer {
