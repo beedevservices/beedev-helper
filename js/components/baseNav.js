@@ -5,30 +5,30 @@ class Nav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <nav>
-                <a href="../index.html">Home</a>
-                <a href="../resources.html">Resources Wiki</a>
-                <a href="../about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="resources.html">Resources Wiki</a>
+                <a href="about.html">About</a>
                 <!-- Start of Web Fundamentals Pages -->
                 <span>
                     <span id='showFundamentals'>HTML / CSS / JS</span>
                     <div id='hideFundamentals'>
-                        <a href="../fundamentals/house.html">HTML - Building your Page</a>
-                        <a href="../fundamentals/cssTools.html">CSS - Playgrounds</a>
-                        <a href="../flexbox.html">CSS - Flexbox</a>
-                        <a href="../shapes.html">CSS - Shapes</a>
-                        <a href="../fundamentals/jsTools.html">JS - Playground</a>
-                        <a href="../fundamentals/loops.html">JS - Loops</a>
-                        <a href="../fundamentals/conditionals.html">JS - Conditionals</a>
+                        <a href="fundamentals/house.html">HTML - Building your Page</a>
+                        <a href="fundamentals/cssTools.html">CSS - Playgrounds</a>
+                        <a href="fundamentals/flexbox.html">CSS - Flexbox</a>
+                        <a href="fundamentals/shapes.html">CSS - Shapes</a>
+                        <a href="fundamentals/jsTools.html">JS - Playground</a>
+                        <a href="fundamentals/loops.html">JS - Loops</a>
+                        <a href="fundamentals/conditionals.html">JS - Conditionals</a>
                     </div>
                 </span>
                 <!-- Start of Python pages -->
                 <span>
                     <span id='showPython'>Python / Flask / Django</span>
                         <div id='hidePython'>
-                        <a href="../python/basics.html">Python Basics</a>
-                        <a href="../python/loops.html">Python Loops</a>
-                        <a href="../python/iteratingData.html">IteratingData</a>
-                        <a href="../python/classes.html">Classes</a>
+                        <a href="python/basics.html">Python Basics</a>
+                        <a href="python/loops.html">Python Loops</a>
+                        <a href="python/iteratingData.html">IteratingData</a>
+                        <a href="python/classes.html">Classes</a>
                     </div>
                 </span>
                 <!-- Start of MERN pages -->
@@ -56,7 +56,7 @@ class Nav extends HTMLElement {
                 <span>
                     <span id="showCommands">Git / Terminal</span>
                     <div id="hideCommands">
-                        <a href="../git/basics.html">Git Basics</a>
+                        <a href="git/basics.html">Git Basics</a>
                     </div>
                 </span>
             </nav>
