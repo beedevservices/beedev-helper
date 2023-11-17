@@ -8,9 +8,16 @@ class Nav extends HTMLElement {
                 <a href="index.html">Home</a>
                 <a href="resources.html">Resources Wiki</a>
                 <a href="about.html">About</a>
+                <!-- Start of Git pages -->
+                <span>
+                    <span id="showCommands">Git / Terminal</span>
+                    <div id="hideCommands">
+                        <a href="git/basics.html">Git Basics</a>
+                    </div>
+                </span>
                 <!-- Start of Web Fundamentals Pages -->
                 <span>
-                    <span id='showFundamentals'>HTML / CSS / JS</span>
+                    <span id='showFundamentals'>Web Fundamentals</span>
                     <div id='hideFundamentals'>
                         <a href="fundamentals/house.html">HTML - Building your Page</a>
                         <a href="fundamentals/cssTools.html">CSS - Playgrounds</a>
@@ -23,7 +30,7 @@ class Nav extends HTMLElement {
                 </span>
                 <!-- Start of Python pages -->
                 <span>
-                    <span id='showPython'>Python / Flask / Django</span>
+                    <span id='showPython'></span>
                         <div id='hidePython'>
                         <a href="python/basics.html">Python Basics</a>
                         <a href="python/loops.html">Python Loops</a>
@@ -40,7 +47,7 @@ class Nav extends HTMLElement {
                 </span>
                 <!-- Start of Java pages -->
                 <span>
-                    <span id='showJava'>Java / Sprint Boot</span>
+                    <span id='showJava'>Java Fundamentals</span>
                     <div id='hideJava'>
 
                     </div>
@@ -52,11 +59,18 @@ class Nav extends HTMLElement {
 
                     </div>
                 </span>
-                <!-- Start of Git pages -->
+                <!-- Start of Data Science pages -->
                 <span>
-                    <span id="showCommands">Git / Terminal</span>
-                    <div id="hideCommands">
-                        <a href="git/basics.html">Git Basics</a>
+                    <span id='showDataScience'>Data Science</span>
+                    <div id='hideDataScience'>
+
+                    </div>
+                </span>
+                <!-- Start of Cyber Security pages -->
+                <span>
+                    <span id='showCyberSecurity'>Cyber</span>
+                    <div id='hideCSharp'>
+
                     </div>
                 </span>
             </nav>
