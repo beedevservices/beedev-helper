@@ -16,6 +16,7 @@ Currently is deployed and has some visual guides up but is in need of more.
 ## TEST TEST TEST:
 
 1. This is a test for a branch commit
+2. Another test
 
 
 ## REACH ME OR CHAT WITH ME:
