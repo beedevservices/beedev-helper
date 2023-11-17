@@ -1,4 +1,4 @@
-I am just testing# beedev-helper
+# beedev-helper
 
 # PURPOSE:
 To give visual aides to things that most developers have issues with. Things like loops easy to describe, but some folks need more visual descriptions to things.  
@@ -16,6 +16,7 @@ Currently is deployed and has some visual guides up but is in need of more.
 ## TEST TEST TEST:
 
 1. This is a test for a branch commit
+2. Another test
 
 
 ## REACH ME OR CHAT WITH ME:
