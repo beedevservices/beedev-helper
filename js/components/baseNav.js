@@ -30,7 +30,7 @@ class Nav extends HTMLElement {
                 </span>
                 <!-- Start of Python pages -->
                 <span>
-                    <span id='showPython'></span>
+                    <span id='showPython'>Python</span>
                         <div id='hidePython'>
                         <a href="python/basics.html">Python Basics</a>
                         <a href="python/loops.html">Python Loops</a>
