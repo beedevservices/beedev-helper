@@ -709,3 +709,23 @@ body footer {
     max-width: 300px;
   }
 }
+
+#gitcards{
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+#gitcards .card-text{
+  width: inherit;
+}
+
+#gitcards .card{
+}
+
+#gitcards .card:hover{
+  border: solid gray;
+}
+
+

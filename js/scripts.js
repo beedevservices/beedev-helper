@@ -840,3 +840,17 @@ function copyTriangle() {
     navigator.clipboard.writeText(copyText.value)
     alert("Copied the text: " + copyText.value)
   }
+
+function addBorderToCard() {
+    const card = document.getElementById('myCard');
+    card.addEventListener('mouseover', () => {
+    card.classList.add('hovered-card');
+});
+
+// Add a mouseout event listener
+card.addEventListener('mouseout', () => {
+    // Remove the CSS class to revert to the initial style
+    card.classList.remove('hovered-card');
+});
+
+}
