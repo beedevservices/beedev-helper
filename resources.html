@@ -16,6 +16,26 @@
         </header>
         <main>
             <h1>Welcome to the Resource Wiki</h1>
+            <h1>20 Minuet Rule Timer</h1>
+            <div class="timerBox">
+                <span class="count-digit">2</span>
+                <span class="count-digit">0</span>
+                <span class="separator">:</span>
+                <span class="count-digit">0</span>
+                <span class="count-digit">0</span>
+            </div>
+            <div class="options">
+                <button id="stop-timer">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/pause--v1.png" />
+                </button>
+                <button id="start-timer">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" />
+                </button>
+                <button id="reset-timer">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/stop.png" />
+                </button>
+            </div>
+            <audio id="alarm_audio"></audio>
             <h3>Click on a topic to view what resource links have been added</h3>
             <div class="resourceContainer">
                 <div class="resources">
@@ -112,5 +132,6 @@
         <footer-component></footer-component>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="./js/scripts.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>
