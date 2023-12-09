@@ -8,7 +8,24 @@
     gap: 50px;
 }
 
-#darkModeIconSizing{
-    width: 45px;
+#darkModeIcon{
+    width: 35px;
     cursor: pointer;
 }
+
+:root{
+    --primary-color: rgb(167,201,153);
+    --secondary-color: black;
+}
+
+#darkTheme{
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: gray;
+}
+
+body {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+
+}
+
