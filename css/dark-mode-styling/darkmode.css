@@ -1,3 +1,5 @@
+/* currently not using less styling, needs to be transferred over */
+
 #darkModeStyling{
     display: flex;
 	flex-direction: row;
@@ -7,6 +9,6 @@
 }
 
 #darkModeIconSizing{
-    width: 50px;
+    width: 45px;
     cursor: pointer;
 }
