@@ -63,7 +63,9 @@ class Nav extends HTMLElement {
                 <span>
                     <span id='showDataScience'>Data Science</span>
                     <div id='hideDataScience'>
-
+                        <a href="DS/DS.html">Introduction</a>
+                        <a href="DS/filtering.html">Filtering</a>
+                        <a href="DS/functions.html">Functions</a>
                     </div>
                 </span>
                 <!-- Start of Cyber Security pages -->
