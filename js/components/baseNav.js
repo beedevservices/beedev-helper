@@ -42,7 +42,7 @@ class Nav extends HTMLElement {
                 <span>
                     <span id='showReact'>React / Express / Node</span>
                     <div id='hideReact'>
-
+                    <a href="react/hooks.html">React Hooks</a>
                     </div>
                 </span>
                 <!-- Start of Java pages -->
