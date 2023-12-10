@@ -42,7 +42,7 @@ class Nav extends HTMLElement {
                 <span>
                     <span id='showReact'>React / Express / Node</span>
                     <div id='hideReact'>
-
+                        <a href="../react/hooks.html">React Hooks</a>
                     </div>
                 </span>
                 <!-- Start of Java pages -->
@@ -63,13 +63,15 @@ class Nav extends HTMLElement {
                 <span>
                     <span id='showDataScience'>Data Science</span>
                     <div id='hideDataScience'>
-
+                        <a href="../DS/DS.html">Introduction</a>
+                        <a href="../DS/filtering.html">Filtering</a>
+                        <a href="../DS/functions.html">Functions</a>
                     </div>
                 </span>
                 <!-- Start of Cyber Security pages -->
                 <span>
                     <span id='showCyberSecurity'>Cyber</span>
-                    <div id='hideCSharp'>
+                    <div id='hideCyberSecurity'>
 
                     </div>
                 </span>
