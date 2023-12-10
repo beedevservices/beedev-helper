@@ -14,18 +14,18 @@
 }
 
 :root{
-    --primary-color: rgb(167,201,153);
+    --primary-color: black;
+    --secondary-color: rgb(167,201,153);
+}
+
+.dark-theme{
+    --primary-color: rgb(255, 255, 255);
     --secondary-color: black;
 }
 
-#darkTheme{
-    --primary-color: rgb(255, 255, 255);
-    --secondary-color: gray;
-}
-
-body {
+body{
     background: var(--secondary-color);
     color: var(--primary-color);
-
 }
 
+/* just works for index.html page only */

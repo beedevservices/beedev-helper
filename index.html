@@ -21,8 +21,6 @@
         <header>
             <!-- nav bar start here -->
             <nav-component></nav-component>
-            
-            
         </header>
         <main>
             <h2>Welcome!</h2>
@@ -47,13 +45,15 @@
         <script>
             var darkModeIcon = document.getElementById("darkModeIcon");
 
-            darkModeIcon.onClick = function(){
-                document.body.classList.toggle("darkTheme");
-                if(document.body.classList.contains("darkTheme")){
+            
+            darkModeIcon.onclick = function(){
+                document.body.classList.toggle("dark-theme")
+                if(document.body.classList.contains("dark-theme")){
                     darkModeIcon.src = "./images/darkLightIcons/sun.png"
                 }else {
                     darkModeIcon.src = "./images/darkLightIcons/moon.png"
                 }
+                
             }
         </script>
     </body>
