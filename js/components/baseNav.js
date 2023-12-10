@@ -71,7 +71,7 @@ class Nav extends HTMLElement {
                 <!-- Start of Cyber Security pages -->
                 <span>
                     <span id='showCyberSecurity'>Cyber</span>
-                    <div id='hideCSharp'>
+                    <div id='hideCyberSecurity'>
 
                     </div>
                 </span>
