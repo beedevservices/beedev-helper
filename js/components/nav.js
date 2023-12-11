@@ -1,11 +1,11 @@
 class Nav extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
             <nav>
-                <a href="../index.html">Home</a>
+                <a id="testa" href="../index.html">Home</a>
                 <a href="../resources.html">Resources Wiki</a>
                 <a href="../about.html">About</a>
                 <!-- Start of Git pages -->
@@ -74,8 +74,8 @@ class Nav extends HTMLElement {
                     </div>
                 </span>
             </nav>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('nav-component', Nav)
+customElements.define("nav-component", Nav);

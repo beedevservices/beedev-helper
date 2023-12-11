@@ -19,11 +19,10 @@
 }
 
 .dark-theme{
-    --primary-color: rgb(255, 255, 255);
-    --secondary-color: black;
+    --primary-color: rgb(167,201,153);
+    --secondary-color: rgb(40, 40, 40);
 }
-
-body{
+body {
     background: var(--secondary-color);
     color: var(--primary-color);
 }
