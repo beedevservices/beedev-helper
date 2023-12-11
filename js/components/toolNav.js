@@ -40,16 +40,16 @@ class ToolNav extends HTMLElement {
                         <span class="dropdown">
                         <span class="dropdown-header" id='showAdvancedPython'>Advanced Python </span>
                         <div class="dropdown-content" id='hideAdvancedPython'>
-                            <a href="../python/oop.html">Object Oriented Programming</a>
-                            <a href="../python/errorHandling.html">Error Handling</a>
+                            <a href="../../python/oop.html">Object Oriented Programming</a>
+                            <a href="../../python/errorHandling.html">Error Handling</a>
                         </div>
                     </span>
 
                     <span class="dropdown">
                         <span class="dropdown-header" id='showWebDevPython'>Web Development with Python </span>
                         <div class="dropdown-content" id='hideWebDevPython'>
-                            <a href="../python/flask.html">Flask Framework</a>
-                            <a href="../python/django.html">Django Framework</a>
+                            <a href="../../python/flask.html">Flask Framework</a>
+                            <a href="#">Django Framework</a>
                         </div>
                     </span>
 
