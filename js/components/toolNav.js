@@ -49,7 +49,7 @@ class ToolNav extends HTMLElement {
                         <span class="dropdown-header" id='showWebDevPython'>Web Development with Python </span>
                         <div class="dropdown-content" id='hideWebDevPython'>
                             <a href="../../python/flask.html">Flask Framework</a>
-                            <a href="../../python/django.html">Django Framework</a>
+                            <a href="#">Django Framework</a>
                         </div>
                     </span>
 
