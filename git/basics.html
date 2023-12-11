@@ -9,6 +9,10 @@
     <script src="../js/components/nav.js"></script>
     <script src="../js/components/footer.js"></script>
 
+    <script src="code_mirror/codemirror-5.65.16/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="code_mirror/codemirror-5.65.16/lib/codemirror.css">
+    <script src="code_mirror/codemirror-5.65.16/mode/javascript/javascript.js"></script>
+
 
     
     <title>Git</title>
@@ -21,9 +25,23 @@
     <main>
     <h1>Git Basics</h1>
 
-    <div>
-        <textarea id="myCodeMirror"></textarea>
+    <div id="git_environment">
+        <textarea id="myTextarea">
+            <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+        </textarea>
     </div>
+    <hr>
 
 
     <div id="gitcards">
@@ -79,9 +97,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/scripts.js"></script>
 
-    <script src="lib/codemirror.js"></script>
-    <link rel="stylesheet" href="lib/codemirror.css">
-    <script src="mode/javascript/javascript.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var myTextarea = document.getElementById('myTextarea');
+            var editor = CodeMirror.fromTextArea(myTextarea, {
+                lineNumbers: true,
+                mode: "javascript"
+            });
+        });
+    </script>
+    
 </body>
 </html>
 

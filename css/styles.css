@@ -730,6 +730,11 @@ body footer {
 }
 
 
+#git_environment{
+  width: 400px;
+}
+
+
 .dropdown {
   position: relative;
   display: inline-block;
