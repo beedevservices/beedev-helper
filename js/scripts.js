@@ -854,3 +854,12 @@ card.addEventListener('mouseout', () => {
 });
 
 }
+
+
+// var myCodeMirror = CodeMirror(document.body);
+function placeEditor() {
+    // You can create and return the DOM element where you want the editor to be placed
+    const container = document.createElement('div');
+    // Customize the container if needed
+    return container;
+  }
