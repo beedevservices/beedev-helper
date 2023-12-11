@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<script src="../js/components/nav.js"></script>
+		<script src="../js/components/footer.js"></script>
+		<title>React</title>
+		<style>
+			.active-link {
+				text-decoration: underline;
+			}
+
+			.center {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.hook-nav {
+				display: flex;
+				gap: 40px;
+			}
+
+			.hook-nav h3 {
+				cursor: pointer;
+			}
+
+			.reactImg {
+				height: 600px;
+				border-radius: 10px;
+			}
+
+			.react-demo-img {
+				height: 295px;
+				border-radius: 10px;
+			}
+
+			.hook-container {
+				display: flex;
+				gap: 10px;
+			}
+			.demo-img-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 10px;
+			}
+
+			.hide {
+				display: none;
+			}
+		</style>
+	</head>
+	<body onload="showDefaultHook()">
+		<header>
+			<h1>BeeDev Services Helper Website</h1>
+			<nav-component></nav-component>
+		</header>
+		<main>
+			<h2>React Hooks</h2>
+
+			<!-- Navigation links for each React Hook -->
+			<div class="hook-nav">
+				<h3 id="useStateNav" onclick="selectHook('useState')">useState</h3>
+				<h3 id="useEffectNav" onclick="selectHook('useEffect')">useEffect</h3>
+				<h3 id="useContextNav" onclick="selectHook('useContext')">useContext</h3>
+			</div>
+
+			<!-- useState Hook Info Block -->
+			<div id="useState" class="center hide">
+				<p>
+					As the most basic, common, and important hook, useState is used for state management of both simple
+					and complex data. <br />
+					As shown on line 10, useState is a deconstructed array that consists of a constant variable (user)
+					and a setter function (setUser). These deconstructed values can be named anything, so long as it
+					relates to the content being stored and the setter function, by convention, starts with "set" and
+					ends with the same name as the constant state variable.
+				</p>
+				<p>
+					In the example below, since we are using TypeScript, which is increasingly becoming the industry
+					standard, we must define what a User is (lines 3-7) and tell the useState the type of data that it
+					will be storing, as show on line 10 with <strong>useState&lt;User | null&gt;()</strong>, which means
+					it will store a User or a null value.
+				</p>
+				<div class="hook-container">
+					<img src="../images/react/useState.png" alt="useState-React-Hook" class="reactImg" />
+					<div class="demo-img-container">
+						<img src="../images/react/useStateBtn.jpg" alt="useState-React-Hook" class="react-demo-img" />
+						<img src="../images/react/useStateUser.jpg" alt="useState-React-Hook" class="react-demo-img" />
+					</div>
+				</div>
+				<p>
+					The images above demonstrate a Page function that renders a button (line 24) and, based on the
+					useState "user" variable being null or having a User, renders either "No Current User" (line 35) or
+					the current users information (lines 30-32).
+					<br />
+					By clicking the button, the onClick method runs the function "setCurrentUser" which defines a
+					"newUser" then calls the useStates setter function "setUser", which sets "user" as the "newUser".
+				</p>
+				<p>
+					Another use of the setter function is passing it a function rather than an object. In the example
+					below for updating the user's name, we call an onClick method which calls an anonymous function that
+					runs the setter "setUser". In "setUser", the function sets a parameter called "prevUserInfo" that is
+					a snapshot of the current state of "user", then that param is spread into a new object and the
+					"name" property is set to "First Last".
+				</p>
+				<img
+					src="../images/react/useStateFunUpdate.png"
+					alt="useState-React-Hook"
+					style="height: 180px; border-radius: 10px" />
+			</div>
+
+			<!-- useEffect Hook Info Block -->
+			<div id="useEffect" class="center hide">
+				<h3>useEffect -> Coming Soon</h3>
+			</div>
+
+			<!-- useContext Hook Info Block -->
+			<div id="useContext" class="center hide">
+				<h3>useContext -> Coming Soon</h3>
+			</div>
+		</main>
+		<footer-component></footer-component>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../js/scripts.js"></script>
+		<script>
+			const useStateNav = document.getElementById("useStateNav");
+			const useStateBlock = document.getElementById("useState");
+
+			const useEffectNav = document.getElementById("useEffectNav");
+			const useEffectBlock = document.getElementById("useEffect");
+
+			const useContextNav = document.getElementById("useContextNav");
+			const useContextBlock = document.getElementById("useContext");
+
+			const ACTIVE_CLASS = "active-link";
+			const HIDE = "hide";
+
+			function selectHook(hookName) {
+				const hook = document.getElementById(hookName);
+
+				switch (hookName) {
+					case "useState":
+						// Remove default "hide" class
+						hook.classList.remove(HIDE);
+
+						// Add "hide" class to other hooks
+						useEffectBlock.classList.add(HIDE);
+						useContextBlock.classList.add(HIDE);
+
+						// Add "active-class" to nav link and remove it from inactive links
+						useStateNav.classList.add(ACTIVE_CLASS);
+						useEffectNav.classList.remove(ACTIVE_CLASS);
+						useContextNav.classList.remove(ACTIVE_CLASS);
+						return;
+
+					case "useEffect":
+						hook.classList.remove(HIDE);
+
+						useStateBlock.classList.add(HIDE);
+						useContextBlock.classList.add(HIDE);
+
+						useEffectNav.classList.add(ACTIVE_CLASS);
+						useStateNav.classList.remove(ACTIVE_CLASS);
+						useContextNav.classList.remove(ACTIVE_CLASS);
+						return;
+
+					case "useContext":
+						hook.classList.remove(HIDE);
+
+						useStateBlock.classList.add(HIDE);
+						useEffectBlock.classList.add(HIDE);
+
+						useContextNav.classList.add(ACTIVE_CLASS);
+						useEffectNav.classList.remove(ACTIVE_CLASS);
+						useStateNav.classList.remove(ACTIVE_CLASS);
+						return;
+
+					default:
+						return showDefaultHook();
+				}
+			}
+
+			function showDefaultHook() {
+				useStateBlock.classList.remove(HIDE);
+				useStateNav.classList.add(ACTIVE_CLASS);
+			}
+		</script>
+	</body>
+</html>

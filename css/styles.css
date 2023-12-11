@@ -331,7 +331,9 @@ body header nav-component nav #hidePython,
 body header nav-component nav #hideReact,
 body header nav-component nav #hideJava,
 body header nav-component nav #hideCSharp,
-body header nav-component nav #hideCommands {
+body header nav-component nav #hideCommands,
+body header nav-component nav #hideDataScience,
+body header nav-component nav #hideCyberSecurity {
   display: none;
 }
 body header nav-component nav #hideFundamentals a,
@@ -339,7 +341,9 @@ body header nav-component nav #hidePython a,
 body header nav-component nav #hideReact a,
 body header nav-component nav #hideJava a,
 body header nav-component nav #hideCSharp a,
-body header nav-component nav #hideCommands a {
+body header nav-component nav #hideCommands a,
+body header nav-component nav #hideDataScience a,
+body header nav-component nav #hideCyberSecurity a {
   margin: 0.5em;
 }
 body main {
