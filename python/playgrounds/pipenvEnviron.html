@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../../css/styles.css" />
+    <script src="../../js/components/nav.js"></script>
+    <script src="../../js/components/footer.js"></script>
+    <link rel="stylesheet" href="../css/env.css">
+    <title>Python</title>
+</head>
+<body>
+    <header>
+        <h1>BeeDev Services Helper Website</h1>
+        <nav-component></nav-component>
+    </header>
+    <main>
+        <button onclick="startTerminal()">Start Terminal</button>
+<div id="fakeTerminal" style="display: none;">
+  <p id="term">BeeDevHelper $~/ </p>
+  <div id="output"></div>
+</div>
+<input type="text" id="commandInput" placeholder="Type your spell..." style="display: none;">
+<button id="commandInputButton" onclick="executeCommand()">Cast Spell</button>
+
+    </main>
+    <footer-component></footer-component>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../js/env.js"></script>
+</body>
+</html>

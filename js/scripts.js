@@ -7,6 +7,12 @@ $(document).ready(function(){
         $('#hidePython').css({
             'display': 'none',
         })
+        $('#hideDataScience').css({
+            'display': 'none',
+        })
+        $('#hideCyberSecurity').css({
+            'display': 'none',
+        })
         $('#hideReact').css({
             'display': 'none',
         })
@@ -37,6 +43,12 @@ $(document).ready(function(){
             'display': 'none',
         })
         $('#hideReact').css({
+            'display': 'none',
+        })
+        $('#hideDataScience').css({
+            'display': 'none',
+        })
+        $('#hideCyberSecurity').css({
             'display': 'none',
         })
         $('#hideJava').css({
@@ -71,6 +83,12 @@ $(document).ready(function(){
         $('#hideJava').css({
             'display': 'none',
         })
+        $('#hideDataScience').css({
+            'display': 'none',
+        })
+        $('#hideCyberSecurity').css({
+            'display': 'none',
+        })
         $('#hideCSharp').css({
             'display': 'none',
         })
@@ -103,6 +121,12 @@ $(document).ready(function(){
         $('#hideCSharp').css({
             'display': 'none',
         })
+        $('#hideDataScience').css({
+            'display': 'none',
+        })
+        $('#hideCyberSecurity').css({
+            'display': 'none',
+        })
         $('#hideCommands').css({
             'display': 'none',
         })
@@ -127,6 +151,12 @@ $(document).ready(function(){
             'display': 'none',
         })
         $('#hideJava').css({
+            'display': 'none',
+        })
+        $('#hideDataScience').css({
+            'display': 'none',
+        })
+        $('#hideCyberSecurity').css({
             'display': 'none',
         })
         $('#hidePython').css({
@@ -161,10 +191,86 @@ $(document).ready(function(){
         $('#hideCSharp').css({
             'display': 'none',
         })
+        $('#hideDataScience').css({
+            'display': 'none',
+        })
+        $('#hideCyberSecurity').css({
+            'display': 'none',
+        })
         $('#hidePython').css({
             'display': 'none',
         })
         $('#hideCommands').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
+    $('#showCyberSecurity').click(function() {
+        $('#hideCyberSecurity').animate( {
+            width: 'toggle'
+        })
+        $('#hideFundamentals').css({
+            'display': 'none',
+        })
+        $('#hideReact').css({
+            'display': 'none',
+        })
+        $('#hideJava').css({
+            'display': 'none',
+        })
+        $('#hideCSharp').css({
+            'display': 'none',
+        })
+        $('#hideDataScience').css({
+            'display': 'none',
+        })
+        $('#hideCommands').css({
+            'display': 'none',
+        })
+        $('#hidePython').css({
+            'display': 'none',
+        })
+        $('#hideCyberSecurity').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
+    $('#showDataScience').click(function() {
+        $('#hideScience').animate( {
+            width: 'toggle'
+        })
+        $('#hideFundamentals').css({
+            'display': 'none',
+        })
+        $('#hideReact').css({
+            'display': 'none',
+        })
+        $('#hideJava').css({
+            'display': 'none',
+        })
+        $('#hideCSharp').css({
+            'display': 'none',
+        })
+        $('#hideCommands').css({
+            'display': 'none',
+        })
+        $('#hideCyberSecurity').css({
+            'display': 'none',
+        })
+        $('#hidePython').css({
+            'display': 'none',
+        })
+        $('#hideDataScience').css({
             'display': 'flex',
             'flex-direction': 'column',
             'justify-content': 'center',

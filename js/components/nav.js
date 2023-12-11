@@ -36,13 +36,29 @@ class Nav extends HTMLElement {
                         <a href="../python/loops.html">Python Loops</a>
                         <a href="../python/iteratingData.html">IteratingData</a>
                         <a href="../python/classes.html">Classes</a>
-                    </div>
+                        <span class="dropdown">
+                        <span class="dropdown-header" id='showAdvancedPython'>Advanced Python </span>
+                        <div class="dropdown-content" id='hideAdvancedPython'>
+                            <a href="../python/oop.html">Object Oriented Programming</a>
+                            <a href="../python/errorHandling.html">Error Handling</a>
+                        </div>
+                    </span>
+
+                    <span class="dropdown">
+                        <span class="dropdown-header" id='showWebDevPython'>Web Development with Python </span>
+                        <div class="dropdown-content" id='hideWebDevPython'>
+                            <a href="../python/flask.html">Flask Framework</a>
+                            <a href="#">Django Framework</a>
+                        </div>
+                    </span>
+
+                </div>
                 </span>
                 <!-- Start of MERN pages -->
                 <span>
                     <span id='showReact'>React / Express / Node</span>
                     <div id='hideReact'>
-
+                        <a href="../react/hooks.html">React Hooks</a>
                     </div>
                 </span>
                 <!-- Start of Java pages -->
@@ -63,14 +79,16 @@ class Nav extends HTMLElement {
                 <span>
                     <span id='showDataScience'>Data Science</span>
                     <div id='hideDataScience'>
-
+                        <a href="../DS/DS.html">Introduction</a>
+                        <a href="../DS/filtering.html">Filtering</a>
+                        <a href="../DS/functions.html">Functions</a>
                     </div>
                 </span>
                 <!-- Start of Cyber Security pages -->
                 <span>
                     <span id='showCyberSecurity'>Cyber</span>
-                    <div id='hideCSharp'>
-
+                    <div id='hideCyberSecurity'>
+                        <a href="../cyber/sqlInjectionScanner.html">SQL Injection Scanner</a>
                     </div>
                 </span>
             </nav>
