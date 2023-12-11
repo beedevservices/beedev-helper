@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../css/style.css" />
+    <link rel="stylesheet" type='text/css' href="../css/styles.css" />
+    <script src="../js/components/nav.js"></script>
+    <script src="../js/components/footer.js"></script>
+    <title>Python Frameworks - Django</title>
+</head>
+<body>
+    <header>
+        <h1>BeeDev Services Helper Website</h1>
+        <nav-component></nav-component>
+    </header>
+    <main>
+        <h2>Getting started with Flask</h2>
+        <h3>Installation and project setup</h3>
+        <p>
+            Create a directory for your project and move into it
+            <pre style="text-align: left;" class="codeBlock">
+    $ mkdir myproject
+    $ cd myproject
+            </pre>
+        </p>
+        <p>
+            Create a virtual environment
+            <pre style="text-align: left;" class="codeBlock">
+    $ python -m venv venv
+            </pre>
+        </p>
+        <p>
+            Activate the environment
+            <pre style="text-align: left;" class="codeBlock">
+    $ source venv/bin/activate
+            </pre>
+        </p>
+        <p>
+            Install Django
+            <pre style="text-align: left;" class="codeBlock">
+    (venv) $ pip install Django==4.2.8
+            </pre>
+        </p>
+        <p>
+            Create a new project
+            <pre style="text-align: left;" class="codeBlock">
+    (venv) $ django-admin startproject myproject
+            </pre>
+        </p>
+        <p>
+            This creates the following structure (along with some additional Django files)
+            <pre style="text-align: left;" class="codeBlock">
+    myproject/
+        manage.py
+        myproject/
+            asgi.py
+            __init__.py
+            settings.py
+            urls.py
+            asgi.py
+            wsgi.py
+            </pre>
+        </p>
+        <p>
+            Enter the project folder
+            <pre style="text-align: left;" class="codeBlock">
+    (venv) $ cd myproject
+            </pre>
+        </p>
+        <p>
+            You can verify that everything works by running following command
+            <pre style="text-align: left;" class="codeBlock">
+    (venv) $ python manage.py runserver
+            </pre>
+        </p>
+        <p>Open localhost:8000 in your web browser and you'll see the success screen. You can stop the server with <code>&lt;control-c&gt;</code>.</p>
+        <img src="/images/python/django-success.png" alt="A screenshot showing the Django success screen">
+        <hr>
+        <h3>Your first app</h3>
+        <p>
+            To create your first app, make sure you're in the folder with manage.py then type this command in the terminal
+            <pre style="text-align: left;" class="codeBlock">
+    (venv) $ python manage.py startapp firstapp
+            </pre>
+        </p>
+        <p>
+            Add your first view by modifying the <code>views.py</code> file in the firstapp folder as follows:
+            <pre style="text-align: left;" class="codeBlock">
+    from django.http import HttpResponse
+
+
+    def index(request):
+        return HttpResponse("Hello, world!")
+            </pre>
+        </p>
+        <p>
+            Create a file named <code>urls.py</code> in the firstapp folder and add the following code:
+            <pre style="text-align: left;" class="codeBlock">
+    from django.urls import path
+    from . import views
+
+    urlpatterns = [
+        path('', views.index),
+    ]
+            </pre>
+        </p>
+        <p>
+            In the myproject folder, modify the <code>urls.py</code> file that was automatically created. This connects the urlpattern we defined in our app to the project urls.
+            <pre style="text-align: left;" class="codeBlock">
+    from django.contrib import admin
+    from django.urls import include, path
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path("", include("firstapp.urls"))
+    ]
+            </pre>
+        </p>
+        <p>Restart the server if you had stopped it before and navigate to localhost:8000 again. You should now see the "Hello, World!" text we added in our view instead of the success page. Congratulations!</p>
+    </main>
+    <footer-component></footer-component>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

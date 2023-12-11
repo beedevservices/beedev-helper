@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../css/styles.css" />
+    <script src="../js/components/nav.js"></script>
+    <script src="../js/components/footer.js"></script>
+    <title>Python Frameworks - Overview</title>
+</head>
+<body>
+    <header>
+        <h1>BeeDev Services Helper Website</h1>
+        <nav-component></nav-component>
+    </header>
+    <main>
+        <h2>Python Frameworks</h2>
+        <h3>Tutorials</h3>
+        <p>Jump in with introductory tutorials for <strong><a href="python/frameworks2.html">Flask</a></strong> and <strong><a href="python/frameworks3.html">Django</a></strong> or check out the overview below.</p>
+        <p>In comparison, it will seem like we have to do a lot more to get a basic "Hello, World!" program up and running with Django. However, Django's value won't be evident from the initial stage of a project. Adding a database, user authentication, or any number of features can be done with less effort due to that functionality being built in.</p>
+        <p>Although Flask requires you to create these yourself, its simplicity means there's less overhead. You're free to implement only what you need rather than installing a large library filled with features you won't use.</p>
+        <hr>
+        <h3>Overview</h3>
+        <p>Flask and Django are two popular frameworks for Python. Here's a brief feature comparison:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Django</th>
+                    <th>Flask</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Full-stack (“batteries included”)</td>
+                    <td>Micro-framework - only the basics are included by default</td>
+                </tr>
+                <tr>
+                    <td>Low flexibility</td>
+                    <td>High flexibility</td>
+                </tr>
+                <tr>
+                    <td>Built-in ORM, supports multiple databases</td>
+                    <td>Supports multiple databases but relies on third-party modules for integration</td>
+                </tr>
+                <tr>
+                    <td>Built-in bootstrapping (Django-admin)</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Built-in template engine</td>
+                    <td>Relies on jinja2</td>
+                </tr>
+                <tr>
+                    <td>Model View Template (MVT)</td>
+                    <td>Model View Controller (MVC)</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3>When should you use Flask? When should you use Django?</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Use Django if you need any of the following:</th>
+                    <th>Use Flask if you need any of the following:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>You're building a large or multi-page project</td>
+                    <td>You're building a small or single page project</td>
+                </tr>
+                <tr>
+                    <td>You have a strict deadline</td>
+                    <td>You're building a static site or RESTful services</td>
+                </tr>
+                <tr>
+                    <td>You don't have time to build various features from scratch or just want to utilize Django's built-in admin</td>
+                    <td>You need flexibility in choosing libraries</td>
+                </tr>
+                <tr>
+                    <td>You want to use native ORM support</td>
+                    <td>You don't need a database or want to have flexibility in choosing one</td>
+                </tr>
+                <tr>
+                    <td>You want to easily extend the project to be more complicated in the future</td>
+                    <td>You already have API support</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </main>
+    <footer-component></footer-component>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
