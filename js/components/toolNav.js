@@ -73,7 +73,7 @@ class ToolNav extends HTMLElement {
                 <span>
                     <span id='showCyberSecurity'>Cyber</span>
                     <div id='hideCyberSecurity'>
-
+                        <a href="../../cyber/sqlInjectionScanner.html">SQL Injection Scanner</a>
                     </div>
                 </span>
             </nav>
