@@ -725,13 +725,9 @@ body footer {
   width: inherit;
 }
 
-#gitcards .card{
-}
-
 #gitcards .card:hover{
   border: solid gray;
 }
-
 
 
 .dropdown {
