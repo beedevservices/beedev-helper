@@ -10,7 +10,6 @@ function startTerminal() {
     termPrompt.innerHTML = 'BeeDevHelper $~/ '
     outputContainer.innerHTML = ''
     noEnv = true
-
     commandInput.value = ''
     commandInput.focus()
 }
@@ -45,6 +44,7 @@ function executeCommand() {
         if(noEnv) {
             outputText = `<span class="file">${command} Not found!`
         } else {
+            noEnv = true
             termPrompt.innerHTML += `BeeDevHelper $~/ ${getTimestamp()}$ `;
         }
     } else {
