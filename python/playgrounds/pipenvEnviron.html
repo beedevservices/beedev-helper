@@ -16,13 +16,36 @@
         <nav-component></nav-component>
     </header>
     <main>
-        <button onclick="startTerminal()">Start Terminal</button>
-<div id="fakeTerminal" style="display: none;">
-  <p id="term">BeeDevHelper $~/ </p>
-  <div id="output"></div>
-</div>
-<input type="text" id="commandInput" placeholder="Type your spell..." style="display: none;">
-<button id="commandInputButton" onclick="executeCommand()">Cast Spell</button>
+        <button onclick="startTerminal()">Clear Terminal</button>
+        <div id="fakeTerminal">
+        <p id="term">BeeDevHelper $~/ </p>
+        <div id="output"></div>
+        </div>
+        <input type="text" id="commandInput" placeholder="Type your spell...">
+        <button id="commandInputButton" onclick="executeCommand()">Cast Spell</button>
+        <h3>Commands to run:</h3>
+        <ol>
+            <li>ls
+                <ul>
+                    <li>This will list all the contents of the project folder</li>
+                </ul>
+            </li>
+            <li>pipenv install flask
+                <ul>
+                    <li>This will install flask and create the environment</li>
+                </ul>
+            </li>
+            <li>ls
+                <ul>
+                    <li>Listing again the content of the project folder, notice how there are 2 new files.  These were created in the last step</li>
+                </ul>
+            </li>
+            <li>pipenv shell
+                <ul>
+                    <li>This will turn the environment on</li>
+                </ul>
+            </li>
+        </ol>
 
     </main>
     <footer-component></footer-component>
