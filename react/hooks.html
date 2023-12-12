@@ -96,7 +96,9 @@
 					<strong>useState&lt;User | null&gt;()</strong>, which means it will store a User or a null value.
 				</p>
 				<div class="hook-container">
-					<img src="../images/react/useState.png" alt="useState-React-Hook" class="reactImg" />
+					<a href="../images/react/useState.png" target="_blank"
+						><img src="../images/react/useState.png" alt="useState-React-Hook" class="reactImg"
+					/></a>
 					<div class="demo-img-container">
 						<img src="../images/react/useStateBtn.jpg" alt="useState-React-Hook" class="react-demo-img" />
 						<img src="../images/react/useStateUser.jpg" alt="useState-React-Hook" class="react-demo-img" />
@@ -137,10 +139,16 @@
 				</ol>
 				<img src="../images/react/useEffect.png" alt="useEffect-hook" class="useEffect-img" />
 
-				<h4>Simple Demo</h4>
-				<div class="hook-container">
+				<fieldset class="hook-container">
+					<legend><h4>Simple Demo</h4></legend>
 					<div class="center">
-						<img src="../images/react/useEffectSimpleDemo.png" alt="useEffect-hook-demo" class="reactImg" />
+						<a href="../images/react/useEffectSimpleDemo.png" target="_blank"
+							><img
+								src="../images/react/useEffectSimpleDemo.png"
+								alt="useEffect-hook-demo"
+								class="reactImg"
+						/></a>
+
 						<a href="../images/react/useEffectSimpleDemo.png" download>Download</a>
 					</div>
 					<div class="demo-img-container" style="width: 400px">
@@ -162,7 +170,47 @@
 							parameter.
 						</p>
 					</div>
-				</div>
+				</fieldset>
+
+				<fieldset class="">
+					<legend><h4>Advanced Demo</h4></legend>
+					<div class="hook-container">
+						<div class="demo-img-container" style="width: 400px">
+							<h4 style="margin-bottom: 0px">Imports, Initial State, & Initial useEffect</h4>
+							<p style="width: fit-content">
+								In this Todo app, a TypeScript Type of 'Todo' and a function that retrieves data from
+								Local Storage is imported from a separate file. The useEffect (lines 9-11) first runs on
+								page load / component mount that sets the state (line 6, of type Todo[]) to the data
+								found in Local Storage. That list of todo's is then passed to the 'TodoList' component
+								that displays the title and if it's completed or not (pictured below). The second piece
+								of state (line 7) will be used to rerun the useEffect.
+							</p>
+							<h4 style="margin-bottom: 0px">handleAddTodo & Dependency Array</h4>
+							<p style="width: fit-content">
+								When clicking the button (line 29), the function 'handleAddTodo' runs, which created a
+								new todo item (lines 14-18), then adds that item to Local Storage by taking the current
+								list of todo's, spreading the data into a new array and appending the 'newTodo' (line
+								20). Finally, the 'setUpdateList' setter function is run using its advanced method of
+								calling its current state (false) and setting it to its opposite (true). Because
+								'updatedList' is changed, the useEffect detects it and runs the setter function
+								'setTodos', reacquiring the new data from Local Storage.
+							</p>
+						</div>
+						<div class="center">
+							<a href="../images/react/useEffectAdvancedDemo.png" target="_blank"
+								><img
+									src="../images/react/useEffectAdvancedDemo.png"
+									alt="useEffect-advanced-demo"
+									class="reactImg"
+							/></a>
+							<a href="../images/react/useEffectAdvancedDemo.png" download>Download</a>
+						</div>
+					</div>
+					<div>
+						<img class="react-demo-img" src="../images/react/useEffectState1.jpg" alt="" />
+						<img class="react-demo-img" src="../images/react/useEffectState2.jpg" alt="" />
+					</div>
+				</fieldset>
 			</div>
 			<!-- useContext Hook Info Block -->
 			<div id="useContext" class="center hide">
