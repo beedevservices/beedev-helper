@@ -15,7 +15,7 @@
         <div id="darkModeStyling">
             <h1>BeeDev Services Helper Website</h1>
             <p>
-                <img id="darkModeIcon" src="./images/darkLightIcons/moon.png" alt="moon-icon" >
+                <img id="darkModeIcon" src="./images/darkLightIcons/moon-first-quarter-new.jpg" alt="dark-mode-icon" >
             </p>
         </div>
         <header>
@@ -140,20 +140,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="./js/scripts.js"></script>
         <script src="./js/script.js"></script>
-
-        <script>
-            var darkModeIcon = document.getElementById("darkModeIcon");
-            
-
-            
-            darkModeIcon.onclick = function(){
-                document.body.classList.toggle("dark-theme")
-                if(document.body.classList.contains("dark-theme")){
-                    darkModeIcon.src = "./images/darkLightIcons/sun.png"
-                }else {
-                    darkModeIcon.src = "./images/darkLightIcons/moon.png"
-                }
-            }
-        </script>
+        <script src="js/components/darkmode.js"></script>
+        
     </body>
 </html>
