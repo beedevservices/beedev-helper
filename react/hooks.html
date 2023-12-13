@@ -41,16 +41,23 @@
 			.hook-container {
 				display: flex;
 				gap: 10px;
+				margin: 0 auto;
 			}
 			.demo-img-container {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
+				align-items: center;
+
 				gap: 10px;
 			}
 
 			.hide {
 				display: none;
+			}
+			.useEffect-img {
+				height: 100px;
+				border-radius: 10px;
 			}
 		</style>
 	</head>
@@ -62,6 +69,7 @@
 		<main>
 			<h2>React Hooks</h2>
 
+			<p>The following guides use TypeScript</p>
 			<!-- Navigation links for each React Hook -->
 			<div class="hook-nav">
 				<h3 id="useStateNav" onclick="selectHook('useState')">useState</h3>
@@ -115,12 +123,94 @@
 
 			<!-- useEffect Hook Info Block -->
 			<div id="useEffect" class="center hide">
-				<p>useEffect</p>
-			</div>
+				<p>
+					Do you need to set a piece of state and/or make an API call automatically when the page loads?
+					React's useEffect hook is the perfect method for doing just that. <br />
+					useEffect is comprised of three parts:
+				</p>
+				<ol style="text-align: start">
+					<li>The hook function call (imported from 'react')</li>
+					<li>The anonymous arrow function parameter</li>
+					<li>The dependency array parameter</li>
+				</ol>
+				<img src="../images/react/useEffect.png" alt="useEffect-hook" class="useEffect-img" />
 
+				<fieldset class="hook-container">
+					<legend><h4>Simple Demo</h4></legend>
+					<div class="center">
+						<a href="../images/react/useEffectSimpleDemo.png" target="_blank"
+							><img
+								src="../images/react/useEffectSimpleDemo.png"
+								alt="useEffect-hook-demo"
+								class="reactImg"
+						/></a>
+
+						<a href="../images/react/useEffectSimpleDemo.png" download>Download</a>
+					</div>
+					<div class="demo-img-container" style="width: 400px">
+						<h4 style="margin-bottom: 0px">Anonymous Arrow Function</h4>
+						<p style="width: fit-content">
+							In this example, we use the same code from the useSate guide, however, we extract the
+							'newUser' object (line 13) and place it inside the arrow function and then call 'setUser'
+							(line 19) to set the user information. Because the dependency array is empty, this will only
+							set the user information once on page load.
+						</p>
+						<h4 style="margin-bottom: 0px">Dependency Array</h4>
+						<p style="width: fit-content">
+							The dependency array parameter is what gives the useEffect hook its ability to run and/or
+							rerun the code written within the anonymous arrow function parameter. If left empty, the
+							useEffect will only run when the functional component is mounted or rerendered on a page
+							reload. If there is a piece of state that is changed on user interaction, for instance
+							updating user information, you can pass the 'user' state variable as a dependency. When the
+							'user' state changes, it will force the useEffect to rerun the code within its function
+							parameter.
+						</p>
+					</div>
+				</fieldset>
+
+				<fieldset class="">
+					<legend><h4>Advanced Demo</h4></legend>
+					<div class="hook-container">
+						<div class="demo-img-container" style="width: 400px">
+							<h4 style="margin-bottom: 0px">Imports, Initial State, & Initial useEffect</h4>
+							<p style="width: fit-content">
+								In this Todo app, a TypeScript Type of 'Todo' and a function that retrieves data from
+								Local Storage is imported from a separate file. The useEffect (lines 9-11) first runs on
+								page load / component mount that sets the state (line 6, of type Todo[]) to the data
+								found in Local Storage. That list of todo's is then passed to the 'TodoList' component
+								that displays the title and if it's completed or not (pictured below). The second piece
+								of state (line 7) will be used to rerun the useEffect.
+							</p>
+							<h4 style="margin-bottom: 0px">handleAddTodo & Dependency Array</h4>
+							<p style="width: fit-content">
+								When clicking the button (line 29), the function 'handleAddTodo' runs, which created a
+								new todo item (lines 14-18), then adds that item to Local Storage by taking the current
+								list of todo's, spreading the data into a new array and appending the 'newTodo' (line
+								20). Finally, the 'setUpdateList' setter function is run using its advanced method of
+								calling its current state (false) and setting it to its opposite (true). Because
+								'updatedList' is changed, the useEffect detects it and runs the setter function
+								'setTodos', reacquiring the new data from Local Storage.
+							</p>
+						</div>
+						<div class="center">
+							<a href="../images/react/useEffectAdvancedDemo.png" target="_blank"
+								><img
+									src="../images/react/useEffectAdvancedDemo.png"
+									alt="useEffect-advanced-demo"
+									class="reactImg"
+							/></a>
+							<a href="../images/react/useEffectAdvancedDemo.png" download>Download</a>
+						</div>
+					</div>
+					<div>
+						<img class="react-demo-img" src="../images/react/useEffectState1.jpg" alt="" />
+						<img class="react-demo-img" src="../images/react/useEffectState2.jpg" alt="" />
+					</div>
+				</fieldset>
+			</div>
 			<!-- useContext Hook Info Block -->
 			<div id="useContext" class="center hide">
-				<p>useContext</p>
+				<h3>useContext -> Coming Soon</h3>
 			</div>
 		</main>
 		<footer-component></footer-component>

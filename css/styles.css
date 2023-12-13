@@ -331,16 +331,20 @@ body header nav-component nav #hidePython,
 body header nav-component nav #hideReact,
 body header nav-component nav #hideJava,
 body header nav-component nav #hideCSharp,
-body header nav-component nav #hideCommands {
-	display: none;
+body header nav-component nav #hideCommands,
+body header nav-component nav #hideDataScience,
+body header nav-component nav #hideCyberSecurity {
+  display: none;
 }
 body header nav-component nav #hideFundamentals a,
 body header nav-component nav #hidePython a,
 body header nav-component nav #hideReact a,
 body header nav-component nav #hideJava a,
 body header nav-component nav #hideCSharp a,
-body header nav-component nav #hideCommands a {
-	margin: 0.5em;
+body header nav-component nav #hideCommands a,
+body header nav-component nav #hideDataScience a,
+body header nav-component nav #hideCyberSecurity a {
+  margin: 0.5em;
 }
 body main {
 	display: flex;
@@ -708,4 +712,83 @@ body footer {
 	body main .img {
 		max-width: 300px;
 	}
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-header::after {
+  content: " ▶";
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 8px;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-header::after {
+  content: " ▶";
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 8px;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  width:fit-content;
+}
+
+thead {
+  background-color: #95BD83;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ADCD9F;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #DBEBD4;
+}
+
+th, td {
+  width: 50%;
+  padding: 10px;
 }

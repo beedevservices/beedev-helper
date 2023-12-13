@@ -7,7 +7,7 @@
     <link rel="stylesheet" type='text/css' href="../css/styles.css" />
     <script src="../js/components/nav.js"></script>
     <script src="../js/components/footer.js"></script>
-    <title>filtering</title>
+    <title>Functions</title>
 </head>
 <body>
     <div class="container">
@@ -24,12 +24,12 @@
         
             <div>
                 <div>
-                    <div style="width: 15%; float: left; padding-right: 20px;">
+                    <div style="width: 15%; float: left;">
                         <nav class="side-nav">
                             <ul>
                                 <h2>Fundamentals</h2>
                                 <li><a href="DS.html">Loading Data</a></li>
-                                <li><a href="#">qwerty</a></li>
+                                <li><a href="functions.html">functions</a></li>
                                 <li><a href="#">qwerty</a></li>
                                 <h2> Transformations</h2>
                                 <li><a href="filtering.html">Filtering</a></li>
@@ -47,34 +47,25 @@
                         </nav>
                     </div>
                     <div style="width:80%; float: right;" >
-                        <h2>Data filtering</h2>
-                        <h4>Filtering allows us to do just that, FILTER our data output.</h4>
-                        <h4>multiple filters can be combined to fine tune your desired output.</h4>
-                        <h2>Boolean indexing:</h2>
-                        <h4>
-                            Pandas allows you to filter data using boolean indexing.
-                        </h4>
-                        <h4>
-                            You can create boolean conditions based on column values
-                            to filter rows in a DataFrame.
-                        </h4>
-                        <h2>String Method:</h2>
-                        <h4>
-                            Pandas provides various string methods that can be used to filter
-                        </h4>
-                        <h4>rows based on string conditions, such as ANY matchin critera contained within a string.</h4>
-                        <h2>Inverse filters:</h2>
-                        <h4>
-                            Instead of making multiple filter to include/exlude given criteria, 
-                        </h4>
-                        <h4>using an inverse operator(~) can simplify this process.</h4>
-
+                        <h2>Measures of cental tendency</h2>
+                        <ul style="list-style: none;">
+                            <li><strong>Mean:</strong> The mean, or average, is the sum of all values in a data set divided by the number of values.
+                                The mean is sensitive to extreme values (outliers) and may not accurately represent the central location if the data is skewed.</li>
+                            <li><strong>Median:</strong> The median is the middle value of a data set when it is ordered. If there is an even number of values, the median is the average of the two middle values.
+                                The median is not affected by extreme values and is a robust measure of central tendency.</li>
+                            <li><strong>Mode:</strong> The mode is the value that appears most frequently in a data set.
+                            A data set may have one mode, more than one mode, or no mode at all.
+                            Unlike the mean and median, the mode can be used for both numerical and categorical data.
+                            A data set with one mode is unimodal, while a data set with two modes is bimodal, and more than two modes is multimodal.</li>
+                            <li><strong>.describe():</strong> The .describe() method is a convenient function in the Pandas library in Python that provides a quick statistical summary of a DataFrame.
+                                When applied to a Pandas DataFrame or Series, it returns several descriptive statistics for each column,
+                                including measures of central tendency, dispersion, and shape of the distribution. </li>
+                            <li><strong>MIN/MAX</strong> description!! </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <h2>Filtering data with Pandas</h2>
-            <h4>You can use Pandas to filter your dataframes</h4>
-            <iframe src="./ipynb/filters.html" width="900" height="500"></iframe>
+            <iframe src="./ipynb/lesson_1.html" width="900" height="500"></iframe>
         </main>
         <footer-component></footer-component>
     </div>
