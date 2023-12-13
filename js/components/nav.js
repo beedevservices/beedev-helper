@@ -5,9 +5,11 @@ class Nav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <nav>
-                <a id="testa" href="../index.html">Home</a>
-                <a href="../resources.html">Resources Wiki</a>
-                <a href="../about.html">About</a>
+                <div>
+                    <a id="anchorTagsDarkMode" href="../index.html">Home</a>
+                    <a id="anchorTagsDarkMode" href="../resources.html">Resources Wiki</a>
+                    <a id="anchorTagsDarkMode" href="../about.html">About</a>
+                </div>
                 <!-- Start of Git pages -->
                 <span>
                     <span id="showCommands">Git / Terminal</span>

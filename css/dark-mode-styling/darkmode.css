@@ -21,13 +21,29 @@
     --secondary-color: rgb(167,201,153);
 }
 
-.dark-theme{
+.dark-theme {
     --primary-color: rgb(167,201,153);
     --secondary-color: rgb(40, 40, 40);
 }
 body {
     background: var(--secondary-color);
     color: var(--primary-color);
+    
 }
 
-/* just works for index.html page only */
+#anchorTagsDarkMode {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+/* 
+body header nav-component nav a {
+	text-decoration: none;
+	color: black;
+} */
+

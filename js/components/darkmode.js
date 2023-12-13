@@ -11,9 +11,9 @@ const enableDarkMode = () => {
 };
 
 const disableDarkMode = () => {
-  // step 1: add the class darkmode to the body
+  // added the class darkmode to the body
   document.body.classList.remove("dark-theme");
-  //step2: update darkMode in the localStorage
+  //updated darkMode in the localStorage
   localStorage.setItem("darkMode", null);
 };
 
