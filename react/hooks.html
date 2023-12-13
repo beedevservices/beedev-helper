@@ -43,26 +43,24 @@
 				gap: 10px;
 				margin: 0 auto;
 			}
-
 			.demo-img-container {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+
 				gap: 10px;
 			}
 
 			.hide {
 				display: none;
 			}
-
 			.useEffect-img {
 				height: 100px;
 				border-radius: 10px;
 			}
 		</style>
 	</head>
-
 	<body onload="showDefaultHook()">
 		<header>
 			<h1>BeeDev Services Helper Website</h1>
@@ -72,7 +70,6 @@
 			<h2>React Hooks</h2>
 
 			<p>The following guides use TypeScript</p>
-
 			<!-- Navigation links for each React Hook -->
 			<div class="hook-nav">
 				<h3 id="useStateNav" onclick="selectHook('useState')">useState</h3>
@@ -91,14 +88,13 @@
 					ends with the same name as the constant state variable.
 				</p>
 				<p>
-					In the example below, since we are using TypeScript, we must define what a User is (lines 3-7) and
-					tell the useState the type of data that it will be storing, as show on line 10 with
-					<strong>useState&lt;User | null&gt;()</strong>, which means it will store a User or a null value.
+					In the example below, since we are using TypeScript, which is increasingly becoming the industry
+					standard, we must define what a User is (lines 3-7) and tell the useState the type of data that it
+					will be storing, as show on line 10 with <strong>useState&lt;User | null&gt;()</strong>, which means
+					it will store a User or a null value.
 				</p>
 				<div class="hook-container">
-					<a href="../images/react/useState.png" target="_blank"
-						><img src="../images/react/useState.png" alt="useState-React-Hook" class="reactImg"
-					/></a>
+					<img src="../images/react/useState.png" alt="useState-React-Hook" class="reactImg" />
 					<div class="demo-img-container">
 						<img src="../images/react/useStateBtn.jpg" alt="useState-React-Hook" class="react-demo-img" />
 						<img src="../images/react/useStateUser.jpg" alt="useState-React-Hook" class="react-demo-img" />
