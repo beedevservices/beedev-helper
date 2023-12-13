@@ -1,13 +1,13 @@
 class ToolNav extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
             <nav>
-                <a href="../../index.html">Home</a>
-                <a href="../../resources.html">Resources Wiki</a>
-                <a href="../../about.html">About</a>
+                <a id="anchorTagsDarkMode" href="../../index.html">Home</a>
+                <a id="anchorTagsDarkMode" href="../../resources.html">Resources Wiki</a>
+                <a id="anchorTagsDarkMode" href="../../about.html">About</a>
                 <!-- Start of Git pages -->
                 <span>
                     <span id="showCommands">Git / Terminal</span>
@@ -93,8 +93,8 @@ class ToolNav extends HTMLElement {
                     </div>
                 </span>
             </nav>
-        `
-    }
+        `;
+  }
 }
 
 customElements.define('tool-component', ToolNav)
