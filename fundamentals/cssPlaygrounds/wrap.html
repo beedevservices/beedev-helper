@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="../../css/playground.css" />
+    <link rel="stylesheet" type='text/css' href="../../css/dark-mode-styling/darkmode.css" />
     <script src="../../js/components/toolNav.js"></script>
     <script src="../../js/components/footer.js"></script>
     <title>Flex Wrap</title>
 </head>
 <body>
-    <header>
+    <!-- dark mode switch -->
+    <div id="darkModeStyling">
         <h1>BeeDev Services Helper Website</h1>
+        <p>
+            <img id="darkModeIcon" src="../../images/darkLightIcons/moon-first-quarter-new.jpg" alt="dark-mode-icon" >
+        </p>
+    </div>
+    <header>
         <tool-component></tool-component>
         <nav class="toolsNav">
-            <a href="../cssTools.html">Back to Tools Page</a>
+            <a id="anchorTagsDarkMode" href="../cssTools.html">Back to Tools Page</a>
         </nav>
     </header>
     <main>
@@ -78,5 +85,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../../js/scripts.js"></script>
     <script src="../../js/playgrounds/cssTools.js"></script>
+    <script src="../../js/components/darkmode.js"></script>
 </body>
 </html>

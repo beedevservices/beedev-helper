@@ -1,0 +1,49 @@
+/* currently not using less styling, needs to be transferred over */
+
+#darkModeStyling{
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    gap: 50px;
+}
+
+#darkModeIcon{
+    width: 25px;
+    cursor: pointer;
+    border-radius: 80px;
+    padding: 7px;
+    border: 3px solid rgb(143, 143, 143);
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color: rgb(167,201,153);
+}
+
+.dark-theme {
+    --primary-color: rgb(167,201,153);
+    --secondary-color: rgb(40, 40, 40);
+}
+body {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    
+}
+
+#anchorTagsDarkMode {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+/* 
+body header nav-component nav a {
+	text-decoration: none;
+	color: black;
+} */
+
