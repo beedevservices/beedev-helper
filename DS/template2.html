@@ -5,20 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="../css/styles.css" />
+    <link rel="stylesheet" type='text/css' href="../css/dark-mode-styling/darkmode.css" />
     <script src="../js/components/nav.js"></script>
     <script src="../js/components/footer.js"></script>
+
     <title>DS</title>
+
 </head>
 <body>
     <div class="container">
 
             </ul>
         </nav>
-        <header>
-            <div>
-            <h1>BeeDev Services Helper Website</h1>
-            <nav-component></nav-component>
-        </header>
+<!-- dark mode switch -->
+<div id="darkModeStyling">
+    <h1>BeeDev Services Helper Website</h1>
+    <p>
+        <img id="darkModeIcon" src="../images/darkLightIcons/moon-first-quarter-new.jpg" alt="dark-mode-icon" >
+    </p>
+</div>
+<header>
+    <!-- nav bar start here -->
+    <nav-component></nav-component>
+</header>
         <main>
 
         
@@ -28,22 +37,22 @@
                         <nav class="side-nav">
                             <ul>
                                 <h2>Fundamentals</h2>
-                                <li><a href="#">Loading Data</a></li>
-                                <li><a href="#">qwerty</a></li>
+                                <li><a href="DS.html">Loading Data</a></li>
+                                <li><a href="functions.html">functions</a></li>
                                 <li><a href="#">qwerty</a></li>
                                 <h2> Transformations</h2>
-                                <li><a href="#">qwerty</a></li>
-                                <li><a href="#">qwerty</a></li>
+                                <li><a href="filtering.html">Filtering</a></li>
+                                <li><a href="Exports.html">Exporting Data</a></li>
                                 <li><a href="#">qwerty</a></li>
                                 <h2>Machine Learning</h2>
-                                <li><a href="#">qwerty</a></li>
+                                <li><a href="processing.html">Preprocessing</a></li>
                                 <li><a href="#">qwerty</a></li>
                                 <li><a href="#">qwerty</a></li>
                                 <h2>Visualizations</h2>
                                 <li><a href="#">qwerty</a></li>
                                 <li><a href="#">qwerty</a></li>
                                 <li><a href="#">qwerty</a></li>
-                            </ul>
+                          </ul>
                         </nav>
                     </div>
                     <div style="width:80%; float: right;" >
@@ -82,5 +91,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/scripts.js"></script>
+    <script src="../js/components/darkmode.js"></script>
 </body>
 </html>

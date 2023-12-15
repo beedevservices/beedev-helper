@@ -19,7 +19,6 @@ function startTerminal() {
     }
 }
 
-
 function executeCommand() {
     const command = commandInput.value;
     // Display the typed command in the terminal
