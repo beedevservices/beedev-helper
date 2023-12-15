@@ -1,13 +1,13 @@
 class Nav extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
             <nav>
-                <a href="index.html">Home</a>
-                <a href="resources.html">Resources Wiki</a>
-                <a href="about.html">About</a>
+                <a id="anchorTagsDarkMode" href="index.html">Home</a>
+                <a id="anchorTagsDarkMode" href="resources.html">Resources Wiki</a>
+                <a  id="anchorTagsDarkMode" href="about.html">About</a>
                 <!-- Start of Git pages -->
                 <span>
                     <span id="showCommands">Git / Terminal</span>
@@ -36,6 +36,7 @@ class Nav extends HTMLElement {
                         <a href="python/loops.html">Python Loops</a>
                         <a href="python/iteratingData.html">IteratingData</a>
                         <a href="python/classes.html">Classes</a>
+                        <a href="python/pythonTools.html">Python Playgrounds</a>
                         <span class="dropdown">
                             <span class="dropdown-header" id='showAdvancedPython'>Advanced Python </span>
                             <div class="dropdown-content" id='hideAdvancedPython'>
@@ -44,12 +45,12 @@ class Nav extends HTMLElement {
                             </div>
                         </span>
 
-                        <span class="dropdown">
+                    <span class="dropdown"> 
                         <span class="dropdown-header" id='showWebDevPython'>Web Development with Python </span>
                         <div class="dropdown-content" id='hideWebDevPython'>
-                            <a href="../python/frameworks1.html">Overview</a>
-                            <a href="../python/frameworks2.html">Flask</a>
-                            <a href="../python/frameworks3.html">Django</a>
+                            <a href="../python/frameworks1.html">Web Framework Overview</a>
+                            <a href="../python/frameworks2.html">Flask Framework</a>
+                            <a href="../python/frameworks3.html">Django Framework</a>
                         </div>
                     </span>
 
@@ -59,7 +60,7 @@ class Nav extends HTMLElement {
                 <span>
                     <span id='showReact'>React / Express / Node</span>
                     <div id='hideReact'>
-
+                    <a href="react/hooks.html">React Hooks</a>
                     </div>
                 </span>
                 <!-- Start of Java pages -->
@@ -80,19 +81,21 @@ class Nav extends HTMLElement {
                 <span>
                     <span id='showDataScience'>Data Science</span>
                     <div id='hideDataScience'>
-
+                        <a href="DS/DS.html">Introduction</a>
+                        <a href="DS/filtering.html">Filtering</a>
+                        <a href="DS/functions.html">Functions</a>
                     </div>
                 </span>
                 <!-- Start of Cyber Security pages -->
                 <span>
                     <span id='showCyberSecurity'>Cyber</span>
-                    <div id='hideCSharp'>
-
+                    <div id='hideCyberSecurity'>
+                        <a href="cyber/sqlInjectionScanner.html">SQL Injection Scanner</a>
                     </div>
                 </span>
             </nav>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('nav-component', Nav)
+customElements.define("nav-component", Nav);
