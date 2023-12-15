@@ -8,7 +8,7 @@
     <link rel="stylesheet" type='text/css' href="../css/dark-mode-styling/darkmode.css" />
     <script src="../js/components/nav.js"></script>
     <script src="../js/components/footer.js"></script>
-    <title>filtering</title>
+    <title>DS</title>
 </head>
 <body>
     <div class="container">
@@ -27,9 +27,11 @@
 <nav-component></nav-component>
 </header>
         <main>
+
+        
             <div>
                 <div>
-                    <div style="width: 15%; float: left; padding-right: 20px;">
+                    <div style="width: 15%; float: left;">
                         <nav class="side-nav">
                             <ul>
                                 <h2>Fundamentals</h2>
@@ -38,47 +40,18 @@
                                 <h2> Transformations</h2>
                                 <li><a href="filtering.html">Filtering</a></li>
                                 <li><a href="Exports.html">Exporting Data</a></li>
-
                                 <h2>Machine Learning</h2>
                                 <li><a href="processing.html">Preprocessing</a></li>
                                 <li><a href="linreg.html">Linear Regression</a></li>
-                                <li><a href="#">qwerty</a></li>
-                                <h2>Machine Learning</h2>
-                                <li><a href="processing.html">Preprocessing</a></li>
-                                <li><a href="#">qwerty</a></li>
-                                <li><a href="#">qwerty</a></li>
-
                             </ul>
                         </nav>
                     </div>
-                    <div style="width:80%; float: right;" >
-                        <h2>Preprocessing overview</h2>
-                        <h4>Filtering allows us to do just that, FILTER our data output.</h4>
-                        <h4>multiple filters can be combined to fine tune your desired output.</h4>
-                        <h2>Boolean indexing:</h2>
-                        <h4>
-                            Pandas allows you to filter data using boolean indexing.
-                        </h4>
-                        <h4>
-                            You can create boolean conditions based on column values
-                            to filter rows in a DataFrame.
-                        </h4>
-                        <h2>String Method:</h2>
-                        <h4>
-                            Pandas provides various string methods that can be used to filter
-                        </h4>
-                        <h4>rows based on string conditions, such as ANY matchin critera contained within a string.</h4>
-                        <h2>Inverse filters:</h2>
-                        <h4>
-                            Instead of making multiple filter to include/exlude given criteria, 
-                        </h4>
-                        <h4>using an inverse operator(~) can simplify this process.</h4>
+                    <div style="width:80%; float: right;padding-left: 50px;padding-top: 50px;" >
+                        <iframe src="./ipynb/Regression.html" width="900" height="500"></iframe>
                     </div>
                 </div>
             </div>
-            <h2>Filtering data with Pandas</h2>
-            <h4>You can use Pandas to filter your dataframes</h4>
-            <iframe src="./ipynb/filters.html" width="900" height="500"></iframe
+
         </main>
         <footer-component></footer-component>
     </div>
