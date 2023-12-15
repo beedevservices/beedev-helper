@@ -2,18 +2,25 @@ const fakeTerminal = document.getElementById('fakeTerminal')
 const termPrompt = document.getElementById('term')
 const commandInput = document.getElementById('commandInput')
 const outputContainer = document.getElementById('output')
+var noEnv = true
+const fileList = ['server.py', 'flask_app/'];
 
 function startTerminal() {
-    fakeTerminal.style.display = 'block'
+    fakeTerminal.style.display = 'flex'
     commandInput.style.display = 'inline'
     termPrompt.innerHTML = 'BeeDevHelper $~/ '
     outputContainer.innerHTML = ''
+    noEnv = true
     commandInput.value = ''
     commandInput.focus()
+    if(fileList.length > 2) {
+        fileList.pop()
+        fileList.pop()
+    }
 }
 
-const fileList = ['server.py', 'flask_app/'];
-var noEnv = true
+
+
 
 function executeCommand() {
     const command = commandInput.value;
@@ -37,10 +44,16 @@ function executeCommand() {
         outputText = '<span class="file">Launching subshell in virtual environment...</span>'
         termPrompt.innerHTML += `${outputText}<br>`;
         noEnv = false
+     }
+    else if(command == 'exit') {
+        if(noEnv) {
+            outputText = `<span class="file">${command} Not found!`
+        } else {
+            noEnv = true
+        }
     } else {
         const outputText = `Executing: ${command}\nCommand not found!`;
         termPrompt.innerHTML += `${outputText}<br>`;
-        noEnv = false
     }
     if (noEnv) {
         // Add a new BeeDevHelper $~/ line

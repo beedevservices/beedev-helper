@@ -912,6 +912,21 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+    // Starts Python Playgrounds
+    $('#showVirtualEnv').click(function() {
+        $('#hideVirtualEnv').animate( {
+            width: 'toggle'
+        })
+        $('#hideVirtualEnv').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
 })
 
 function copyTriangle() {

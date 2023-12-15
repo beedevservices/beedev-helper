@@ -37,6 +37,7 @@ class ToolNav extends HTMLElement {
                         <a href="../../python/loops.html">Python Loops</a>
                         <a href="../../python/iteratingData.html">IteratingData</a>
                         <a href="../../python/classes.html">Classes</a>
+                        <a href="../../python/pythonTools.html">Python Playgrounds</a>
                         <span class="dropdown">
                         <span class="dropdown-header" id='showAdvancedPython'>Advanced Python </span>
                         <div class="dropdown-content" id='hideAdvancedPython'>
