@@ -971,3 +971,21 @@ function placeEditor() {
   }
 
 
+
+// document.getElementById('reveal_button').addEventListener('click', function(){
+//     document.getElementById('card_reveal').style.display='block';
+//     this.style.display='none';
+// })
+
+document.querySelectorAll('.btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        // document.getElementById('card_reveal').style.display='block';
+        // this.style.display='none';
+        var cardContent = this.closest('.card-body').querySelector('.card_reveal'); // Assuming the content div is right after the button
+        cardContent.style.display = 'block';
+        this.style.display = 'none';
+    });
+});
+
+// add github feature
+// push it to main repo

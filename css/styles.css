@@ -734,6 +734,10 @@ body footer {
   width: 400px;
 }
 
+.card_reveal{
+  display: none;
+}
+
 
 .dropdown {
   position: relative;
