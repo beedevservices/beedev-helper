@@ -45,12 +45,13 @@ class Nav extends HTMLElement {
                         </span>
 
                         <span class="dropdown">
-                            <span class="dropdown-header" id='showWebDevPython'>Web Development with Python </span>
-                            <div class="dropdown-content" id='hideWebDevPython'>
-                                <a href="../python/flask.html">Flask Framework</a>
-                                <a href="../python/django.html">Django Framework</a>
-                            </div>
-                        </span>
+                        <span class="dropdown-header" id='showWebDevPython'>Web Development with Python </span>
+                        <div class="dropdown-content" id='hideWebDevPython'>
+                            <a href="../python/frameworks1.html">Overview</a>
+                            <a href="../python/frameworks2.html">Flask</a>
+                            <a href="../python/frameworks3.html">Django</a>
+                        </div>
+                    </span>
 
                     </div>
                 </span>
