@@ -1,41 +1,66 @@
 class Nav extends HTMLElement {
-    constructor() {
-        super();
-    }
-    connectedCallback() {
-        this.innerHTML = `
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    this.innerHTML = `
             <nav>
-                <a href="https://helper.beedev-services.com/">Home</a>
-                <a href="https://helper.beedev-services.com/resources.html">Resources Wiki</a>
-                <a href="https://helper.beedev-services.com/about.html">About</a>
+                <div>
+                    <a id="anchorTagsDarkMode" href="../index.html">Home</a>
+                    <a id="anchorTagsDarkMode" href="../resources.html">Resources Wiki</a>
+                    <a id="anchorTagsDarkMode" href="../about.html">About</a>
+                </div>
+                <!-- Start of Git pages -->
+                <span>
+                    <span id="showCommands">Git / Terminal</span>
+                    <div id="hideCommands">
+                        <a href="../git/basics.html">Git Basics</a>
+                    </div>
+                </span>
                 <!-- Start of Web Fundamentals Pages -->
                 <span>
-                    <span id='showFundamentals'>HTML / CSS / JS</span>
+                    <span id='showFundamentals'>Web Fundamentals</span>
                     <div id='hideFundamentals'>
-                        <a href="https://helper.beedev-services.com/fundamentals/house.html">HTML - Building your Page</a>
-                        <a href="https://helper.beedev-services.com/fundamentals/cssTools.html">CSS - Playgrounds</a>
-                        <a href="https://helper.beedev-services.com/fundamentals/flexbox.html">CSS - Flexbox</a>
-                        <a href="https://helper.beedev-services.com/fundamentals/shapes.html">CSS - Shapes</a>
-                        <a href="https://helper.beedev-services.com/fundamentals/jsTools.html">JS - Playground</a>
-                        <a href="https://helper.beedev-services.com/fundamentals/loops.html">JS - Loops</a>
-                        <a href="https://helper.beedev-services.com/fundamentals/conditionals.html">JS - Conditionals</a>
+                        <a href="../fundamentals/house.html">HTML - Building your Page</a>
+                        <a href="../fundamentals/cssTools.html">CSS - Playgrounds</a>
+                        <a href="../flexbox.html">CSS - Flexbox</a>
+                        <a href="../shapes.html">CSS - Shapes</a>
+                        <a href="../fundamentals/jsTools.html">JS - Playground</a>
+                        <a href="../fundamentals/loops.html">JS - Loops</a>
+                        <a href="../fundamentals/conditionals.html">JS - Conditionals</a>
                     </div>
                 </span>
                 <!-- Start of Python pages -->
                 <span>
-                    <span id='showPython'>Python / Flask / Django</span>
+                    <span id='showPython'>Python</span>
                         <div id='hidePython'>
-                        <a href="https://helper.beedev-services.com/python/basics.html">Python Basics</a>
-                        <a href="https://helper.beedev-services.com/python/loops.html">Python Loops</a>
-                        <a href="https://helper.beedev-services.com/python/iteratingData.html">IteratingData</a>
-                        <a href="https://helper.beedev-services.com/python/classes.html">Classes</a>
-                    </div>
+                        <a href="../python/basics.html">Python Basics</a>
+                        <a href="../python/loops.html">Python Loops</a>
+                        <a href="../python/iteratingData.html">IteratingData</a>
+                        <a href="../python/classes.html">Classes</a>
+                        <span class="dropdown">
+                        <span class="dropdown-header" id='showAdvancedPython'>Advanced Python </span>
+                        <div class="dropdown-content" id='hideAdvancedPython'>
+                            <a href="../python/oop.html">Object Oriented Programming</a>
+                            <a href="../python/errorHandling.html">Error Handling</a>
+                        </div>
+                    </span>
+
+                    <span class="dropdown">
+                        <span class="dropdown-header" id='showWebDevPython'>Web Development with Python </span>
+                        <div class="dropdown-content" id='hideWebDevPython'>
+                            <a href="../python/flask.html">Flask Framework</a>
+                            <a href="#">Django Framework</a>
+                        </div>
+                    </span>
+
+                </div>
                 </span>
                 <!-- Start of MERN pages -->
                 <span>
                     <span id='showReact'>React / Express / Node</span>
                     <div id='hideReact'>
-
+                        <a href="../react/hooks.html">React Hooks</a>
                     </div>
                 </span>
                 <!-- Start of Java pages -->
@@ -52,16 +77,25 @@ class Nav extends HTMLElement {
 
                     </div>
                 </span>
-                <!-- Start of Git pages -->
+                <!-- Start of Data Science pages -->
                 <span>
-                    <span id="showCommands">Git / Terminal</span>
-                    <div id="hideCommands">
-                        <a href="https://helper.beedev-services.com/git/basics.html">Git Basics</a>
+                    <span id='showDataScience'>Data Science</span>
+                    <div id='hideDataScience'>
+                        <a href="../DS/DS.html">Introduction</a>
+                        <a href="../DS/filtering.html">Filtering</a>
+                        <a href="../DS/functions.html">Functions</a>
+                    </div>
+                </span>
+                <!-- Start of Cyber Security pages -->
+                <span>
+                    <span id='showCyberSecurity'>Cyber</span>
+                    <div id='hideCyberSecurity'>
+                        <a href="../cyber/sqlInjectionScanner.html">SQL Injection Scanner</a>
                     </div>
                 </span>
             </nav>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('nav-component', Nav)
+customElements.define("nav-component", Nav);
