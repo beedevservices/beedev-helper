@@ -714,6 +714,31 @@ body footer {
 	}
 }
 
+#gitcards{
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+#gitcards .card-text{
+  width: inherit;
+}
+
+#gitcards .card:hover{
+  border: solid gray;
+}
+
+
+#git_environment{
+  width: 400px;
+}
+
+.card_reveal{
+  display: none;
+}
+
+
 .dropdown {
   position: relative;
   display: inline-block;
