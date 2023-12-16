@@ -912,12 +912,29 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+
+    $('#showPyLoops').click(function() {
+        $('#hidePyLoops').animate( {
+            width: 'toggle'
+        })
+        // $('#hideJsEvents').css({
+        //     'display': 'none'
+        // })
+        // $('#hideJsArrayData').css({
+        //     'display': 'none'
+        // })
+        // $('#hideJsConditionals').css({
+        //     'display': 'none'
+        // })
+        $('#hidePyLoops').css({
+
     // Starts Python Playgrounds
     $('#showVirtualEnv').click(function() {
         $('#hideVirtualEnv').animate( {
             width: 'toggle'
         })
         $('#hideVirtualEnv').css({
+
             'display': 'flex',
             'flex-direction': 'column',
             'justify-content': 'center',
