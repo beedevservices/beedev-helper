@@ -346,6 +346,56 @@ body header nav-component nav #hideDataScience a,
 body header nav-component nav #hideCyberSecurity a {
   margin: 0.5em;
 }
+body header nav-component nav #hideFundamentals span,
+body header nav-component nav #hidePython span,
+body header nav-component nav #hideReact span,
+body header nav-component nav #hideJava span,
+body header nav-component nav #hideCSharp span,
+body header nav-component nav #hideCommands span,
+body header nav-component nav #hideDataScience span,
+body header nav-component nav #hideCyberSecurity span {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header nav-component nav #hideFundamentals span #hideAdvancedPython,
+body header nav-component nav #hidePython span #hideAdvancedPython,
+body header nav-component nav #hideReact span #hideAdvancedPython,
+body header nav-component nav #hideJava span #hideAdvancedPython,
+body header nav-component nav #hideCSharp span #hideAdvancedPython,
+body header nav-component nav #hideCommands span #hideAdvancedPython,
+body header nav-component nav #hideDataScience span #hideAdvancedPython,
+body header nav-component nav #hideCyberSecurity span #hideAdvancedPython,
+body header nav-component nav #hideFundamentals span #hideWebDevPython,
+body header nav-component nav #hidePython span #hideWebDevPython,
+body header nav-component nav #hideReact span #hideWebDevPython,
+body header nav-component nav #hideJava span #hideWebDevPython,
+body header nav-component nav #hideCSharp span #hideWebDevPython,
+body header nav-component nav #hideCommands span #hideWebDevPython,
+body header nav-component nav #hideDataScience span #hideWebDevPython,
+body header nav-component nav #hideCyberSecurity span #hideWebDevPython {
+  display: none;
+}
+body header nav-component nav #hideFundamentals span #hideAdvancedPython a,
+body header nav-component nav #hidePython span #hideAdvancedPython a,
+body header nav-component nav #hideReact span #hideAdvancedPython a,
+body header nav-component nav #hideJava span #hideAdvancedPython a,
+body header nav-component nav #hideCSharp span #hideAdvancedPython a,
+body header nav-component nav #hideCommands span #hideAdvancedPython a,
+body header nav-component nav #hideDataScience span #hideAdvancedPython a,
+body header nav-component nav #hideCyberSecurity span #hideAdvancedPython a,
+body header nav-component nav #hideFundamentals span #hideWebDevPython a,
+body header nav-component nav #hidePython span #hideWebDevPython a,
+body header nav-component nav #hideReact span #hideWebDevPython a,
+body header nav-component nav #hideJava span #hideWebDevPython a,
+body header nav-component nav #hideCSharp span #hideWebDevPython a,
+body header nav-component nav #hideCommands span #hideWebDevPython a,
+body header nav-component nav #hideDataScience span #hideWebDevPython a,
+body header nav-component nav #hideCyberSecurity span #hideWebDevPython a {
+  margin: 0.5em;
+}
 body main {
   display: flex;
   flex-direction: column;

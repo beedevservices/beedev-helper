@@ -927,6 +927,35 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+    // Start Nav Dropdowns
+    $('#showAdvancedPython').click(function() {
+        $('#hideAdvancedPython').animate( {
+            width: 'toggle'
+        })
+        $('#hideAdvancedPython').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
+    $('#showWebDevPython').click(function() {
+        $('#hideWebDevPython').animate( {
+            width: 'toggle'
+        })
+        $('#hideWebDevPython').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
 })
 
 function copyTriangle() {
