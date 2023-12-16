@@ -912,6 +912,7 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+
     $('#showPyLoops').click(function() {
         $('#hidePyLoops').animate( {
             width: 'toggle'
@@ -926,6 +927,14 @@ $(document).ready(function(){
         //     'display': 'none'
         // })
         $('#hidePyLoops').css({
+
+    // Starts Python Playgrounds
+    $('#showVirtualEnv').click(function() {
+        $('#hideVirtualEnv').animate( {
+            width: 'toggle'
+        })
+        $('#hideVirtualEnv').css({
+
             'display': 'flex',
             'flex-direction': 'column',
             'justify-content': 'center',
@@ -969,3 +978,47 @@ function copyTriangle() {
     navigator.clipboard.writeText(copyText.value)
     alert("Copied the text: " + copyText.value)
   }
+
+function addBorderToCard() {
+    const card = document.getElementById('myCard');
+    card.addEventListener('mouseover', () => {
+    card.classList.add('hovered-card');
+});
+
+// Add a mouseout event listener
+card.addEventListener('mouseout', () => {
+    // Remove the CSS class to revert to the initial style
+    card.classList.remove('hovered-card');
+});
+
+}
+
+
+// var myCodeMirror = CodeMirror(document.body);
+function placeEditor() {
+    // You can create and return the DOM element where you want the editor to be placed
+    const container = document.createElement('div');
+    // Customize the container if needed
+    return container;
+  }
+
+
+
+// document.getElementById('reveal_button').addEventListener('click', function(){
+//     document.getElementById('card_reveal').style.display='block';
+//     this.style.display='none';
+// })
+
+document.querySelectorAll('.btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        // document.getElementById('card_reveal').style.display='block';
+        // this.style.display='none';
+        var cardContent = this.closest('.card-body').querySelector('.card_reveal'); // Assuming the content div is right after the button
+        cardContent.style.display = 'block';
+        this.style.display = 'none';
+    });
+});
+
+
+// add github feature
+// push it to main repo
