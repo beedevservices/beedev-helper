@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../../css/playground.css" />
+    <script src="../../js/components/toolNav.js"></script>
+    <script src="../../js/components/footer.js"></script>
+    <title>Python - Loops</title>
+</head>
+<body>
+    <header>
+        <h1>BeeDev Services Helper Website</h1>
+        <tool-component></tool-component>
+        <nav class="toolsNav">
+            <a href="../pythonTools.html">Back to python Tools Page</a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="centerText">Python Loops</h1>
+        <div class="area">
+            <div class="buttons">
+                <div class="startCode">
+                    <pre>
+                        The Code
+                        <code class="language-python">
+                            for i in range(0,5):
+                                print('the value of i is:', i)
+                        </code>
+                    </pre>
+                </div>
+                <div class="oneButton">
+                    <form name="loopOneStart" id="loopOneStart">
+                        <p>What is the last number that will print?</p>
+                        <p>You have 2 tries</p>
+                        <div class="column">
+                            <div class="row">
+                                <div class="column">
+                                    <label for="guess">5</label>
+                                    <input type="radio" name="guess" value="5">
+                                </div>
+                                <div class="column">
+                                    <label for="guess">6</label>
+                                    <input type="radio" name="guess" value="6">
+                                </div>
+                                <div class="column">
+                                    <label for="guess">4</label>
+                                    <input type="radio" name="guess" value="4">
+                                </div>
+                                <div class="column">
+                                    <label for="guess">3</label>
+                                    <input type="radio" name="guess" value="3">
+                                </div>
+                                <div class="column">
+                                    <label for="guess">Don't know</label>
+                                    <input type="radio" name="guess" id="na">
+                                </div>
+                            </div>
+                            <input type="button" value="Submit Choice" onclick="pyLoopOne()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="console"><p id="term">BeeDevHelper $~/ <p id="update"></p></p></div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/playgrounds/python/tools.js"></script>
+    <script src="../../js/prism.js"></script>
+</body>
+</html>

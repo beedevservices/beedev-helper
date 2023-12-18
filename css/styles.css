@@ -1,330 +1,330 @@
 .background {
-	background-image: radial-gradient(#dbebd4, #c5ddbb, #adcd9f, #95bd83);
-	background-repeat: no-repeat;
+  background-image: radial-gradient(#DBEBD4, #C5DDBB, #ADCD9F, #95BD83);
+  background-repeat: no-repeat;
 }
 .a {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 .codeBlock {
-	background-color: #e9eee6bd;
-	border: 2px double #dbebd4;
-	margin: 1em;
-	width: 575px;
+  background-color: #e9eee6bd;
+  border: 2px double #DBEBD4;
+  margin: 1em;
+  width: 575px;
 }
 .flexrow {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .flexcolumn {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .altrow {
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
 }
 .altcolumn {
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 .triangleD .triangleDown {
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-top: 100px solid #113469;
-	margin: 0;
-	padding: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #113469;
+  margin: 0;
+  padding: 0;
 }
 .triangleD .triangleDown .text {
-	position: absolute;
-	top: 30px;
-	width: 200px;
-	left: 0;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
 }
 .anyArrow {
-	font-size: 2.5em;
-	padding: 0;
-	margin: 0;
-	color: #113469;
+  font-size: 2.5em;
+  padding: 0;
+  margin: 0;
+  color: #113469;
 }
 .theStop .stop {
-	width: 170px;
-	height: 150px;
-	background: #911a1a;
-	position: relative;
+  width: 170px;
+  height: 150px;
+  background: #911a1a;
+  position: relative;
 }
 .theStop .stop .text {
-	position: absolute;
-	top: 60px;
-	width: 170px;
-	left: 0;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
+  position: absolute;
+  top: 60px;
+  width: 170px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
 }
 .theStop .stop:before {
-	content: "";
-	width: 100px;
-	height: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-bottom: 35px solid #911a1a;
-	border-left: 35px solid #e9eee6bd;
-	border-right: 35px solid #e9eee6bd;
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
 }
 .theStop .stop:after {
-	content: "";
-	width: 100px;
-	height: 0;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	border-top: 35px solid #911a1a;
-	border-left: 35px solid #e9eee6bd;
-	border-right: 35px solid #e9eee6bd;
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
 }
 .heart .heart {
-	position: relative;
-	width: 200px;
-	height: 175px;
+  position: relative;
+  width: 200px;
+  height: 175px;
 }
 .heart .heart .text {
-	position: absolute;
-	top: 40px;
-	width: 200px;
-	left: 0;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
-	z-index: 2;
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
 }
 .heart .heart:before,
 .heart .heart:after {
-	position: absolute;
-	content: "";
-	left: 100px;
-	top: 0;
-	width: 100px;
-	height: 145px;
-	background: #911a1a;
-	border-radius: 50px 50px 0 0;
-	transform: rotate(-45deg);
-	transform-origin: 0 100%;
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 0;
+  width: 100px;
+  height: 145px;
+  background: #911a1a;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
 }
 .heart .heart:after {
-	left: 0;
-	transform: rotate(45deg);
-	transform-origin: 100% 100%;
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
 }
 .diamond .diamond {
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-bottom-color: #113469;
-	position: relative;
-	top: -100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-bottom-color: #113469;
+  position: relative;
+  top: -100px;
 }
 .diamond .diamond .text {
-	position: absolute;
-	top: 90px;
-	width: 200px;
-	left: -100px;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
-	z-index: 2;
+  position: absolute;
+  top: 90px;
+  width: 200px;
+  left: -100px;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
 }
 .diamond .diamond:after {
-	content: "";
-	position: absolute;
-	left: -100px;
-	top: 100px;
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-top-color: #113469;
+  content: '';
+  position: absolute;
+  left: -100px;
+  top: 100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-top-color: #113469;
 }
 .shapeContainer {
-	position: relative;
-	width: 200px;
+  position: relative;
+  width: 200px;
 }
 .shapeContainer .triangleDown {
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-top: 100px solid #113469;
-	margin: 0;
-	padding: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #113469;
+  margin: 0;
+  padding: 0;
 }
 .shapeContainer .triangleDown .text {
-	position: absolute;
-	top: 30px;
-	width: 200px;
-	left: 0;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
 }
 .shapeContainer .stop {
-	width: 170px;
-	height: 150px;
-	background: #911a1a;
-	position: relative;
+  width: 170px;
+  height: 150px;
+  background: #911a1a;
+  position: relative;
 }
 .shapeContainer .stop .text {
-	position: absolute;
-	top: 60px;
-	width: 170px;
-	left: 0;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
+  position: absolute;
+  top: 60px;
+  width: 170px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
 }
 .shapeContainer .stop:before {
-	content: "";
-	width: 100px;
-	height: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-bottom: 35px solid #911a1a;
-	border-left: 35px solid #e9eee6bd;
-	border-right: 35px solid #e9eee6bd;
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
 }
 .shapeContainer .stop:after {
-	content: "";
-	width: 100px;
-	height: 0;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	border-top: 35px solid #911a1a;
-	border-left: 35px solid #e9eee6bd;
-	border-right: 35px solid #e9eee6bd;
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
 }
 .shapeContainer .heart {
-	position: relative;
-	width: 200px;
-	height: 175px;
+  position: relative;
+  width: 200px;
+  height: 175px;
 }
 .shapeContainer .heart .text {
-	position: absolute;
-	top: 40px;
-	width: 200px;
-	left: 0;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
-	z-index: 2;
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
 }
 .shapeContainer .heart:before,
 .shapeContainer .heart:after {
-	position: absolute;
-	content: "";
-	left: 100px;
-	top: 0;
-	width: 100px;
-	height: 145px;
-	background: #911a1a;
-	border-radius: 50px 50px 0 0;
-	transform: rotate(-45deg);
-	transform-origin: 0 100%;
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 0;
+  width: 100px;
+  height: 145px;
+  background: #911a1a;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
 }
 .shapeContainer .heart:after {
-	left: 0;
-	transform: rotate(45deg);
-	transform-origin: 100% 100%;
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
 }
 .shapeContainer .diamond {
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-bottom-color: #113469;
-	position: relative;
-	top: -100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-bottom-color: #113469;
+  position: relative;
+  top: -100px;
 }
 .shapeContainer .diamond .text {
-	position: absolute;
-	top: 90px;
-	width: 200px;
-	left: -100px;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
-	z-index: 2;
+  position: absolute;
+  top: 90px;
+  width: 200px;
+  left: -100px;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
 }
 .shapeContainer .diamond:after {
-	content: "";
-	position: absolute;
-	left: -100px;
-	top: 100px;
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-top-color: #113469;
+  content: '';
+  position: absolute;
+  left: -100px;
+  top: 100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-top-color: #113469;
 }
 body {
-	font-family: "Lato", sans-serif;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-image: radial-gradient(#dbebd4, #c5ddbb, #adcd9f, #95bd83);
-	background-repeat: no-repeat;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(#DBEBD4, #C5DDBB, #ADCD9F, #95BD83);
+  background-repeat: no-repeat;
 }
 body header {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 95%;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  text-align: center;
 }
 body header nav-component {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	align-items: flex-start;
-	width: 95%;
-	justify-content: space-evenly;
-	font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 95%;
+  justify-content: space-evenly;
+  font-size: 18px;
 }
 body header nav-component nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	align-items: flex-start;
-	width: 95%;
-	justify-content: space-evenly;
-	font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 95%;
+  justify-content: space-evenly;
+  font-size: 18px;
 }
 body header nav-component nav a {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 body header nav-component nav span {
-	cursor: pointer;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body header nav-component nav #hideFundamentals,
 body header nav-component nav #hidePython,
@@ -347,183 +347,183 @@ body header nav-component nav #hideCyberSecurity a {
   margin: 0.5em;
 }
 body main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 95%;
-	margin: 1em;
-	text-align: center;
-	min-height: 825px;
-	justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 1em;
+  text-align: center;
+  min-height: 825px;
+  justify-content: flex-start;
 }
 body main p {
-	width: 50%;
-	font-size: 18px;
-	text-align: center;
+  width: 50%;
+  font-size: 18px;
+  text-align: center;
 }
 body main a {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 body main hr {
-	background-color: #ffedab;
-	height: 10px;
-	width: 95%;
-	border-radius: 10%;
+  background-color: #FFEDAB;
+  height: 10px;
+  width: 95%;
+  border-radius: 10%;
 }
 body main .img {
-	max-width: 1000px;
+  max-width: 1000px;
 }
 body main .main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body main .main img {
-	margin: 1em 0;
+  margin: 1em 0;
 }
 body main .chart {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 1em;
-	width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  width: 95%;
 }
 body main .chart .shape {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
 body main .chart .shape .theShape {
-	position: relative;
-	width: 200px;
+  position: relative;
+  width: 200px;
 }
 body main .chart .shape .theShape .triangleDown {
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-top: 100px solid #113469;
-	margin: 0;
-	padding: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-top: 100px solid #113469;
+  margin: 0;
+  padding: 0;
 }
 body main .chart .shape .theShape .triangleDown .text {
-	position: absolute;
-	top: 30px;
-	width: 200px;
-	left: 0;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
 }
 body main .chart .shape .theShape .stop {
-	width: 170px;
-	height: 150px;
-	background: #911a1a;
-	position: relative;
+  width: 170px;
+  height: 150px;
+  background: #911a1a;
+  position: relative;
 }
 body main .chart .shape .theShape .stop .text {
-	position: absolute;
-	top: 60px;
-	width: 170px;
-	left: 0;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
+  position: absolute;
+  top: 60px;
+  width: 170px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
 }
 body main .chart .shape .theShape .stop:before {
-	content: "";
-	width: 100px;
-	height: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	border-bottom: 35px solid #911a1a;
-	border-left: 35px solid #e9eee6bd;
-	border-right: 35px solid #e9eee6bd;
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
 }
 body main .chart .shape .theShape .stop:after {
-	content: "";
-	width: 100px;
-	height: 0;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	border-top: 35px solid #911a1a;
-	border-left: 35px solid #e9eee6bd;
-	border-right: 35px solid #e9eee6bd;
+  content: "";
+  width: 100px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 35px solid #911a1a;
+  border-left: 35px solid #e9eee6bd;
+  border-right: 35px solid #e9eee6bd;
 }
 body main .chart .shape .theShape .heart {
-	position: relative;
-	width: 200px;
-	height: 175px;
+  position: relative;
+  width: 200px;
+  height: 175px;
 }
 body main .chart .shape .theShape .heart .text {
-	position: absolute;
-	top: 40px;
-	width: 200px;
-	left: 0;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
-	z-index: 2;
+  position: absolute;
+  top: 40px;
+  width: 200px;
+  left: 0;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
 }
 body main .chart .shape .theShape .heart:before,
 body main .chart .shape .theShape .heart:after {
-	position: absolute;
-	content: "";
-	left: 100px;
-	top: 0;
-	width: 100px;
-	height: 145px;
-	background: #911a1a;
-	border-radius: 50px 50px 0 0;
-	transform: rotate(-45deg);
-	transform-origin: 0 100%;
+  position: absolute;
+  content: "";
+  left: 100px;
+  top: 0;
+  width: 100px;
+  height: 145px;
+  background: #911a1a;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
 }
 body main .chart .shape .theShape .heart:after {
-	left: 0;
-	transform: rotate(45deg);
-	transform-origin: 100% 100%;
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
 }
 body main .chart .shape .theShape .diamond {
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-bottom-color: #113469;
-	position: relative;
-	top: -100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-bottom-color: #113469;
+  position: relative;
+  top: -100px;
 }
 body main .chart .shape .theShape .diamond .text {
-	position: absolute;
-	top: 90px;
-	width: 200px;
-	left: -100px;
-	text-align: center;
-	display: block;
-	color: #dbebd4;
-	z-index: 2;
+  position: absolute;
+  top: 90px;
+  width: 200px;
+  left: -100px;
+  text-align: center;
+  display: block;
+  color: #DBEBD4;
+  z-index: 2;
 }
 body main .chart .shape .theShape .diamond:after {
-	content: "";
-	position: absolute;
-	left: -100px;
-	top: 100px;
-	width: 0;
-	height: 0;
-	border: 100px solid transparent;
-	border-top-color: #113469;
+  content: '';
+  position: absolute;
+  left: -100px;
+  top: 100px;
+  width: 0;
+  height: 0;
+  border: 100px solid transparent;
+  border-top-color: #113469;
 }
 body main .chart .shape .code {
-	background-color: #e9eee6bd;
-	border: 2px double #dbebd4;
-	margin: 1em;
-	width: 575px;
+  background-color: #e9eee6bd;
+  border: 2px double #DBEBD4;
+  margin: 1em;
+  width: 575px;
 }
 body main #hideInlineBlock,
 body main #hideDisplayFlex,
@@ -533,10 +533,12 @@ body main #hidePosition,
 body main #hideJsEvents,
 body main #hideJsLoops,
 body main #hideJsArrayData,
-body main #hideJsConditionals {
-	display: none;
-	padding: 1em;
-	margin: 0.5em;
+body main #hideJsConditionals,
+body main #hidePyLoops {
+body main #hideVirtualEnv {
+  display: none;
+  padding: 1em;
+  margin: 0.5em;
 }
 body main #hideInlineBlock .sideBySide,
 body main #hideDisplayFlex .sideBySide,
@@ -546,12 +548,17 @@ body main #hidePosition .sideBySide,
 body main #hideJsEvents .sideBySide,
 body main #hideJsLoops .sideBySide,
 body main #hideJsArrayData .sideBySide,
-body main #hideJsConditionals .sideBySide {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin: 1em;
+body main #hideJsConditionals .sideBySide,
+
+body main #hidePyLoops .sideBySide {
+
+body main #hideVirtualEnv .sideBySide {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
 }
 body main #hideInlineBlock .sideBySide .column,
 body main #hideDisplayFlex .sideBySide .column,
@@ -561,12 +568,17 @@ body main #hidePosition .sideBySide .column,
 body main #hideJsEvents .sideBySide .column,
 body main #hideJsLoops .sideBySide .column,
 body main #hideJsArrayData .sideBySide .column,
-body main #hideJsConditionals .sideBySide .column {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 1em;
+body main #hideJsConditionals .sideBySide .column,
+
+body main #hidePyLoops .sideBySide .column {
+
+body main #hideVirtualEnv .sideBySide .column {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
 }
 body main #hideInlineBlock .sideBySide .column button,
 body main #hideDisplayFlex .sideBySide .column button,
@@ -576,31 +588,36 @@ body main #hidePosition .sideBySide .column button,
 body main #hideJsEvents .sideBySide .column button,
 body main #hideJsLoops .sideBySide .column button,
 body main #hideJsArrayData .sideBySide .column button,
-body main #hideJsConditionals .sideBySide .column button {
-	margin: 1em;
+body main #hideJsConditionals .sideBySide .column button,
+
+body main #hidePyLoops .sideBySide .column button {
+
+body main #hideVirtualEnv .sideBySide .column button {
+
+  margin: 1em;
 }
 body main .resourceContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body main .resourceContainer .resources {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 body main .resourceContainer .resources .section {
-	padding: 0.5em;
-	margin: 0.5em;
+  padding: 0.5em;
+  margin: 0.5em;
 }
 body main .resourceContainer .resources .section .topic {
-	padding: 1em;
-	border: 3px groove black;
-	background-color: #dbebd4;
+  padding: 1em;
+  border: 3px groove black;
+  background-color: #DBEBD4;
 }
 body main .resourceContainer .resources .section #hideBasic,
 body main .resourceContainer .resources .section #hideHtmlCss,
@@ -612,9 +629,9 @@ body main .resourceContainer .resources .section #hideResources,
 body main .resourceContainer .resources .section #hideChallenges,
 body main .resourceContainer .resources .section #hideHackathons,
 body main .resourceContainer .resources .section #hideBlogRss {
-	display: none;
-	padding: 1em;
-	margin: 0.5em;
+  display: none;
+  padding: 1em;
+  margin: 0.5em;
 }
 body main .resourceContainer .resources .section #hideBasic a,
 body main .resourceContainer .resources .section #hideHtmlCss a,
@@ -636,75 +653,85 @@ body main .resourceContainer .resources .section #hideResources span,
 body main .resourceContainer .resources .section #hideChallenges span,
 body main .resourceContainer .resources .section #hideHackathons span,
 body main .resourceContainer .resources .section #hideBlogRss span {
-	border: 2px solid #2d4323;
-	background-color: #ffedab;
-	padding: 0.5em;
-	margin: 0.5em;
+  border: 2px solid #2d4323;
+  background-color: #FFEDAB;
+  padding: 0.5em;
+  margin: 0.5em;
 }
 body main .nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	text-decoration: none;
-	color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
 }
 body main .nav a {
-	margin: 1em;
-	padding: 0.5em;
-	border: 3px groove black;
-	background-color: #dbebd4;
+  margin: 1em;
+  padding: 0.5em;
+  border: 3px groove black;
+  background-color: #DBEBD4;
 }
 body main .contribs {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 body main .contribs .contrib {
-	margin: 1em;
-	padding: 0.5em;
-	border: 3px groove #ffedab;
-	background-color: #dbebd4;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  margin: 1em;
+  padding: 0.5em;
+  border: 3px groove #FFEDAB;
+  background-color: #DBEBD4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 body main .contribs .contrib a {
-	color: black;
-	text-decoration: underline;
-	margin: 1em;
-	padding: 0.5em;
-	background-color: #dbebd4;
+  color: black;
+  text-decoration: underline;
+  margin: 1em;
+  padding: 0.5em;
+  background-color: #DBEBD4;
 }
 body main .contribs .contrib .contribImg {
-	max-width: 100px;
-	margin: 0.3em;
+  max-width: 100px;
+  margin: 0.3em;
 }
 body footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 95%;
-	margin: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 1em;
 }
 @media only screen and (max-width: 1150px) {
-	body main .img {
-		max-width: 775px;
-	}
-	body main p {
-		width: 80%;
-	}
+  body main .img {
+    max-width: 775px;
+  }
+  body main p {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 850px) {
-	body main .img {
-		max-width: 500px;
-	}
+  body main .img {
+    max-width: 500px;
+  }
 }
 @media only screen and (max-width: 550px) {
+
+  body header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .img {
+    max-width: 300px;
+  }
+}
+
 	body header nav {
 		flex-direction: column;
 		align-items: center;
@@ -713,6 +740,32 @@ body footer {
 		max-width: 300px;
 	}
 }
+
+
+#gitcards{
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  justify-content: space-between;
+}
+
+#gitcards .card-text{
+  width: inherit;
+}
+
+#gitcards .card:hover{
+  border: solid gray;
+}
+
+
+#git_environment{
+  width: 400px;
+}
+
+.card_reveal{
+  display: none;
+}
+
 
 .dropdown {
   position: relative;

@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="../css/styles.css" />
-    <link rel="stylesheet" type='text/css' href="../css/dark-mode-styling/darkmode.css" />
+
     <script src="../js/components/nav.js"></script>
     <script src="../js/components/footer.js"></script>
+
+    <!-- Boostrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+
+
+    
     <title>Git</title>
 </head>
 <body>
@@ -22,7 +29,74 @@
         <nav-component></nav-component>
     </header>
     <main>
-      <h1>Git Basics</h1>
+    <h1>Git Basics</h1>
+    <hr>
+    <!-- Link to GitHub Virtual Environment -->
+    <img src="../images/git/gitHubEnviron.png" class="img" style="width: 250px;" alt="">
+    <p><a class="link-opacity-25-hover" href="../git/terminalExample/playgrounds/pipenvEnviron.html">Go to GitHub Environment</a></p>
+    <hr>
+
+    <div id="gitcards">
+        <!-- Card One -->
+        <div class="card" style="width: 20rem; height: 18rem;">
+            <div class="card-body">
+                <div class="card_header">
+                    <h5 class="card-title">What is Git?</h5>
+                    <button type="button" class="btn btn-primary" id="reveal_button">Show Answer</button>
+                </div>
+                <div class="card_reveal">
+                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                    <p class="card-text">* Git is a version control system</p>
+                    <p class="card-text">* Git lets us keep track of changes in our code</p>
+                    <p class="card-text">* Git allows many develpers to work on the same project at once</p>
+                    <a href="https://git-scm.com/" class="card-link">Go To Git</a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card Two -->
+        <div class="card" style="width: 20rem; height: 18rem;">
+            <div class="card-body">
+                <div class="card_header">
+                    <h5 class="card-title">What is GitHub?</h5>
+                    <button type="button" class="btn btn-primary" id="reveal_button">Show Answer</button>
+                </div>
+                <div class="card_reveal">
+                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                    <p class="card-text">* GitHub is a website</p>
+                    <p class="card-text">* GitHub lets us store our projects remotely</p>
+                    <p class="card-text">* Projects are also called repositories</p>
+                    <a href="https://github.com/" class="card-link">Set Up GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Three -->
+        <div class="card" style="width: 20rem; height: 18rem;">
+            <div class="card-body">
+                <div class="card_header">
+                    <h5 class="card-title">What is Version Control?</h5>
+                    <button type="button" class="btn btn-primary" id="reveal_button">Show Answer</button>
+                </div>
+                <div class="card_reveal">
+                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                    <p class="card-text">* VC is a system that tracks changes in files.</p>
+                    <p class="card-text">* Also known as Source Code Management.</p>
+                    <p class="card-text">* Allows us to keep a history of changes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <img src="../images/git/1701233192796.gif" style="width: 700px;" class="img" alt="">
+    </div>
+    <hr>
+
+
+
+
+
         <img src="../images/git/git-basics.png" alt="Git Environments" class='img'>
         <a href='../images/git/git-basics.png' download><button>Download Image</button></a>
         <hr>
@@ -33,6 +107,22 @@
     <footer-component></footer-component>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/scripts.js"></script>
-    <script src="../js/components/darkmode.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var myTextarea = document.getElementById('myTextarea');
+            var editor = CodeMirror.fromTextArea(myTextarea, {
+                lineNumbers: true,
+                mode: "javascript"
+            });
+        });
+    </script>
+
 </body>
 </html>
+
+<!-- create gtihub environment
+blank "terminal"
+choose from commands, like git clone, git add files, git commit
+include a repo name: https://github.com/username/my_repo.git -->
