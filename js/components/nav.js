@@ -67,14 +67,14 @@ class Nav extends HTMLElement {
                 <span>
                     <span id='showJava'>Java / Sprint Boot</span>
                     <div id='hideJava'>
-
+                        <a href="#">Links Coming Soon</a>
                     </div>
                 </span>
                 <!-- Start of C# pages -->
                 <span>
                     <span id='showCSharp'>C# / .NET</span>
                     <div id='hideCSharp'>
-
+                        <a href="#">Links Coming Soon</a>
                     </div>
                 </span>
                 <!-- Start of Data Science pages -->

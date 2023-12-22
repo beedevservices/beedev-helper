@@ -59,21 +59,21 @@ class Nav extends HTMLElement {
                 <span>
                     <span id='showReact'>React / Express / Node</span>
                     <div id='hideReact'>
-                    <a href="react/hooks.html">React Hooks</a>
+                        <a href="react/hooks.html">React Hooks</a>
                     </div>
                 </span>
                 <!-- Start of Java pages -->
                 <span>
                     <span id='showJava'>Java Fundamentals</span>
                     <div id='hideJava'>
-
+                        <a href="#">Links Coming Soon</a>
                     </div>
                 </span>
                 <!-- Start of C# pages -->
                 <span>
                     <span id='showCSharp'>C# / .NET</span>
                     <div id='hideCSharp'>
-
+                        <a href="#">Links Coming Soon</a>
                     </div>
                 </span>
                 <!-- Start of Data Science pages -->
