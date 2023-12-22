@@ -23,8 +23,8 @@ class Nav extends HTMLElement {
                     <div id='hideFundamentals'>
                         <a href="../fundamentals/house.html">HTML - Building your Page</a>
                         <a href="../fundamentals/cssTools.html">CSS - Playgrounds</a>
-                        <a href="../flexbox.html">CSS - Flexbox</a>
-                        <a href="../shapes.html">CSS - Shapes</a>
+                        <a href="../fundamentals/flexbox.html">CSS - Flexbox</a>
+                        <a href="../fundamentals/shapes.html">CSS - Shapes</a>
                         <a href="../fundamentals/jsTools.html">JS - Playground</a>
                         <a href="../fundamentals/loops.html">JS - Loops</a>
                         <a href="../fundamentals/conditionals.html">JS - Conditionals</a>
@@ -39,24 +39,22 @@ class Nav extends HTMLElement {
                         <a href="../python/iteratingData.html">IteratingData</a>
                         <a href="../python/classes.html">Classes</a>
                         <a href="../python/pythonTools.html">Python Playgrounds</a>
-                        <span class="dropdown">
-                        <span class="dropdown-header" id='showAdvancedPython'>Advanced Python </span>
-                        <div class="dropdown-content" id='hideAdvancedPython'>
-                            <a href="../python/oop.html">Object Oriented Programming</a>
-                            <a href="../python/errorHandling.html">Error Handling</a>
-                        </div>
-                    </span>
-
-                    <span class="dropdown">
-                        <span class="dropdown-header" id='showWebDevPython'>Web Development with Python </span>
-                        <div class="dropdown-content" id='hideWebDevPython'>
-                            <a href="../python/frameworks1.html">Web Framework Overview</a>
-                            <a href="../python/frameworks2.html">Flask Framework</a>
-                            <a href="../python/frameworks3.html">Django Framework</a>
-                        </div>
-                    </span>
-
-                </div>
+                        <span>
+                            <span id='showAdvancedPython'>Advanced Python </span>
+                            <div id='hideAdvancedPython'>
+                                <a href="../python/oop.html">Object Oriented Programming</a>
+                                <a href="../python/errorHandling.html">Error Handling</a>
+                            </div>
+                        </span>
+                        <span>
+                            <span id='showWebDevPython'>Web Development with Python </span>
+                            <div id='hideWebDevPython'>
+                                <a href="../python/frameworks1.html">Web Framework Overview</a>
+                                <a href="../python/frameworks2.html">Flask Framework</a>
+                                <a href="../python/frameworks3.html">Django Framework</a>
+                            </div>
+                        </span>
+                    </div>
                 </span>
                 <!-- Start of MERN pages -->
                 <span>
@@ -69,14 +67,14 @@ class Nav extends HTMLElement {
                 <span>
                     <span id='showJava'>Java / Sprint Boot</span>
                     <div id='hideJava'>
-
+                        <a href="#">Links Coming Soon</a>
                     </div>
                 </span>
                 <!-- Start of C# pages -->
                 <span>
                     <span id='showCSharp'>C# / .NET</span>
                     <div id='hideCSharp'>
-
+                        <a href="#">Links Coming Soon</a>
                     </div>
                 </span>
                 <!-- Start of Data Science pages -->

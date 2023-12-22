@@ -346,6 +346,56 @@ body header nav-component nav #hideDataScience a,
 body header nav-component nav #hideCyberSecurity a {
   margin: 0.5em;
 }
+body header nav-component nav #hideFundamentals span,
+body header nav-component nav #hidePython span,
+body header nav-component nav #hideReact span,
+body header nav-component nav #hideJava span,
+body header nav-component nav #hideCSharp span,
+body header nav-component nav #hideCommands span,
+body header nav-component nav #hideDataScience span,
+body header nav-component nav #hideCyberSecurity span {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header nav-component nav #hideFundamentals span #hideAdvancedPython,
+body header nav-component nav #hidePython span #hideAdvancedPython,
+body header nav-component nav #hideReact span #hideAdvancedPython,
+body header nav-component nav #hideJava span #hideAdvancedPython,
+body header nav-component nav #hideCSharp span #hideAdvancedPython,
+body header nav-component nav #hideCommands span #hideAdvancedPython,
+body header nav-component nav #hideDataScience span #hideAdvancedPython,
+body header nav-component nav #hideCyberSecurity span #hideAdvancedPython,
+body header nav-component nav #hideFundamentals span #hideWebDevPython,
+body header nav-component nav #hidePython span #hideWebDevPython,
+body header nav-component nav #hideReact span #hideWebDevPython,
+body header nav-component nav #hideJava span #hideWebDevPython,
+body header nav-component nav #hideCSharp span #hideWebDevPython,
+body header nav-component nav #hideCommands span #hideWebDevPython,
+body header nav-component nav #hideDataScience span #hideWebDevPython,
+body header nav-component nav #hideCyberSecurity span #hideWebDevPython {
+  display: none;
+}
+body header nav-component nav #hideFundamentals span #hideAdvancedPython a,
+body header nav-component nav #hidePython span #hideAdvancedPython a,
+body header nav-component nav #hideReact span #hideAdvancedPython a,
+body header nav-component nav #hideJava span #hideAdvancedPython a,
+body header nav-component nav #hideCSharp span #hideAdvancedPython a,
+body header nav-component nav #hideCommands span #hideAdvancedPython a,
+body header nav-component nav #hideDataScience span #hideAdvancedPython a,
+body header nav-component nav #hideCyberSecurity span #hideAdvancedPython a,
+body header nav-component nav #hideFundamentals span #hideWebDevPython a,
+body header nav-component nav #hidePython span #hideWebDevPython a,
+body header nav-component nav #hideReact span #hideWebDevPython a,
+body header nav-component nav #hideJava span #hideWebDevPython a,
+body header nav-component nav #hideCSharp span #hideWebDevPython a,
+body header nav-component nav #hideCommands span #hideWebDevPython a,
+body header nav-component nav #hideDataScience span #hideWebDevPython a,
+body header nav-component nav #hideCyberSecurity span #hideWebDevPython a {
+  margin: 0.5em;
+}
 body main {
   display: flex;
   flex-direction: column;
@@ -356,6 +406,24 @@ body main {
   text-align: center;
   min-height: 825px;
   justify-content: flex-start;
+}
+body main #gitcards {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  justify-content: space-between;
+}
+body main #gitcards .card-text {
+  width: inherit;
+}
+body main #gitcards .card:hover {
+  border: solid gray;
+}
+body main #git_environment {
+  width: 400px;
+}
+body main .card_reveal {
+  display: none;
 }
 body main p {
   width: 50%;
@@ -534,7 +602,6 @@ body main #hideJsEvents,
 body main #hideJsLoops,
 body main #hideJsArrayData,
 body main #hideJsConditionals,
-body main #hidePyLoops {
 body main #hideVirtualEnv {
   display: none;
   padding: 1em;
@@ -549,11 +616,7 @@ body main #hideJsEvents .sideBySide,
 body main #hideJsLoops .sideBySide,
 body main #hideJsArrayData .sideBySide,
 body main #hideJsConditionals .sideBySide,
-
-body main #hidePyLoops .sideBySide {
-
 body main #hideVirtualEnv .sideBySide {
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -569,11 +632,7 @@ body main #hideJsEvents .sideBySide .column,
 body main #hideJsLoops .sideBySide .column,
 body main #hideJsArrayData .sideBySide .column,
 body main #hideJsConditionals .sideBySide .column,
-
-body main #hidePyLoops .sideBySide .column {
-
 body main #hideVirtualEnv .sideBySide .column {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -589,11 +648,7 @@ body main #hideJsEvents .sideBySide .column button,
 body main #hideJsLoops .sideBySide .column button,
 body main #hideJsArrayData .sideBySide .column button,
 body main #hideJsConditionals .sideBySide .column button,
-
-body main #hidePyLoops .sideBySide .column button {
-
 body main #hideVirtualEnv .sideBySide .column button {
-
   margin: 1em;
 }
 body main .resourceContainer {
@@ -722,7 +777,6 @@ body footer {
   }
 }
 @media only screen and (max-width: 550px) {
-
   body header nav {
     flex-direction: column;
     align-items: center;
@@ -730,118 +784,4 @@ body footer {
   body main .img {
     max-width: 300px;
   }
-}
-
-	body header nav {
-		flex-direction: column;
-		align-items: center;
-	}
-	body main .img {
-		max-width: 300px;
-	}
-}
-
-
-#gitcards{
-  display: flex;
-  flex-direction: row;
-  width: 1200px;
-  justify-content: space-between;
-}
-
-#gitcards .card-text{
-  width: inherit;
-}
-
-#gitcards .card:hover{
-  border: solid gray;
-}
-
-
-#git_environment{
-  width: 400px;
-}
-
-.card_reveal{
-  display: none;
-}
-
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-header::after {
-  content: " ▶";
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  padding: 8px;
-  min-width: 160px;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 8px 16px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-header::after {
-  content: " ▶";
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  padding: 8px;
-  min-width: 160px;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 8px 16px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-table {
-  border-collapse: collapse;
-  border: 1px solid black;
-  width:fit-content;
-}
-
-thead {
-  background-color: #95BD83;
-}
-
-tbody tr:nth-child(even) {
-  background-color: #ADCD9F;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: #DBEBD4;
-}
-
-th, td {
-  width: 50%;
-  padding: 10px;
 }

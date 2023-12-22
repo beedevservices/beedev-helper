@@ -38,6 +38,18 @@ body {
                     a {
                         margin: .5em;
                     }
+                    span {
+                        cursor: pointer;
+                        .flexcolumn();
+
+                        #hideAdvancedPython, #hideWebDevPython {
+                            display: none;
+
+                            a {
+                                margin: .5em;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -49,6 +61,30 @@ body {
         text-align: center;
         min-height: 825px;
         justify-content: flex-start;
+
+        #gitcards{
+            display: flex;
+            flex-direction: row;
+            width: 1200px;
+            justify-content: space-between;
+        }
+        
+        #gitcards .card-text{
+            width: inherit;
+        }
+        
+        #gitcards .card:hover{
+            border: solid gray;
+        }
+        
+        
+        #git_environment{
+            width: 400px;
+        }
+        
+        .card_reveal{
+            display: none;
+        }
 
         p {
             width: 50%;
@@ -91,8 +127,6 @@ body {
                 }
             }
         }
-
-        #hideInlineBlock, #hideDisplayFlex, #hideFlexWrap, #hideBoxModel, #hidePosition, #hideJsEvents, #hideJsLoops, #hideJsArrayData, #hideJsConditionals, #hidePyLoops {
 
         #hideInlineBlock, #hideDisplayFlex, #hideFlexWrap, #hideBoxModel, #hidePosition, #hideJsEvents, #hideJsLoops, #hideJsArrayData, #hideJsConditionals, #hideVirtualEnv {
 
