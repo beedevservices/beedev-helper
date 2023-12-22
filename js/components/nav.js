@@ -23,8 +23,8 @@ class Nav extends HTMLElement {
                     <div id='hideFundamentals'>
                         <a href="../fundamentals/house.html">HTML - Building your Page</a>
                         <a href="../fundamentals/cssTools.html">CSS - Playgrounds</a>
-                        <a href="../flexbox.html">CSS - Flexbox</a>
-                        <a href="../shapes.html">CSS - Shapes</a>
+                        <a href="../fundamentals/flexbox.html">CSS - Flexbox</a>
+                        <a href="../fundamentals/shapes.html">CSS - Shapes</a>
                         <a href="../fundamentals/jsTools.html">JS - Playground</a>
                         <a href="../fundamentals/loops.html">JS - Loops</a>
                         <a href="../fundamentals/conditionals.html">JS - Conditionals</a>
