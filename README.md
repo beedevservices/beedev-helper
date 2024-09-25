@@ -13,13 +13,6 @@ Currently is deployed and has some visual guides up but is in need of more.
 3. The visuals.
 
 
-## TEST TEST TEST:
-
-1. This is a test for a branch commit
-2. Another test
-
-
 ## REACH ME OR CHAT WITH ME:
 * Email: melissa@beedev-services.com
-* Slack: https://join.slack.com/t/beedev-workspace/shared_invite/zt-w8zrxgiu-G4jRerfz0JcboaX~qdnDvg
-* Discord: https://discord.gg/A5PSJwp
+
