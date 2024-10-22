@@ -7,7 +7,15 @@ class Footer extends HTMLElement {
             <footer>
                 <p>&copy; 2021-2023 BeeDev Services</p>
             </footer>
+            <script src="./js/smallScreen.js"></script>
         `
+        console.log('Testing')
+        const script = document.createElement('script');
+        script.src = './js/smallScreen.js';
+        script.onload = function() {
+            console.log("smallScreen.js loaded successfully");
+        };
+        document.body.appendChild(script);
     }
 }
 customElements.define('footer-component', Footer)
