@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <footer>
-                <p>&copy; 2021-2023 BeeDev Services</p>
+                <p>&copy; 2021-2024 BeeDev Services</p>
             </footer>
             <script src="./js/smallScreen.js"></script>
         `
