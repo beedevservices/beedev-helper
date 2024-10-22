@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     // Menu Items
     $('#showCommands').click(function() {
