@@ -29,6 +29,6 @@ table, tr, td, th {
 .user-command {
     color: #ff00ff; /* Purple color for user commands */
   }
-#step1desc, #step2Start, #step2desc, #step2Bdesc, #step3Start, #step4Start, #step5Start, #step3desc, #step4desc, #step5desc {
+#step1desc, #step2Start, #step2desc, #step3Start, #step4Start, #step5Start, #step3desc, #step4desc, #step5desc, #step6Start, #step6desc, #step7Start, #step7desc, #step8Start, #step8desc, #step9Start, #step9desc, #step10Start, #step10desc, #step11Start, #step11desc, #step12Start, #step12desc, #step3aStart, #step3adesc, #step13Start, #step13desc, #step14Start {
   display: none;
 }
