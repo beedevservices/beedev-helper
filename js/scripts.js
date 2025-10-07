@@ -820,6 +820,24 @@ $(document).ready(function(){
             'margin': '.5em'
         })
     })
+    // Starts Terminal Playgrounds
+    $('#showTermCmds').click(function() {
+        $('#hideTermCmds').animate( {
+            width: 'toggle'
+        })
+        $('#hideTermGit').css({
+            'display': 'none'
+        })
+        $('#hideTermCmds').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
     // Starts JS Playgrounds
     $('#showJsEvents').click(function() {
         $('#hideJsEvents').animate( {

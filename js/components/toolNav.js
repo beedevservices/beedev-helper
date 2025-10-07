@@ -13,6 +13,7 @@ class ToolNav extends HTMLElement {
                     <span id="showCommands">Git / Terminal</span>
                     <div id="hideCommands">
                         <a href="../../git/basics.html">Git Basics</a>
+                        <a href="../../git/termTools.html">Terminal - Playgrounds</a>
                     </div>
                 </span>
                 <!-- Start of Web Fundamentals Pages -->
