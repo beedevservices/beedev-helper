@@ -602,8 +602,7 @@ body main #hideJsEvents,
 body main #hideJsLoops,
 body main #hideJsArrayData,
 body main #hideJsConditionals,
-body main #hideVirtualEnv,
-body main #hideTermCmds {
+body main #hideVirtualEnv {
   display: none;
   padding: 1em;
   margin: 0.5em;
@@ -617,8 +616,7 @@ body main #hideJsEvents .sideBySide,
 body main #hideJsLoops .sideBySide,
 body main #hideJsArrayData .sideBySide,
 body main #hideJsConditionals .sideBySide,
-body main #hideVirtualEnv .sideBySide,
-body main #hideTermCmds .sideBySide {
+body main #hideVirtualEnv .sideBySide {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -634,8 +632,7 @@ body main #hideJsEvents .sideBySide .column,
 body main #hideJsLoops .sideBySide .column,
 body main #hideJsArrayData .sideBySide .column,
 body main #hideJsConditionals .sideBySide .column,
-body main #hideVirtualEnv .sideBySide .column,
-body main #hideTermCmds .sideBySide .column {
+body main #hideVirtualEnv .sideBySide .column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -651,8 +648,7 @@ body main #hideJsEvents .sideBySide .column button,
 body main #hideJsLoops .sideBySide .column button,
 body main #hideJsArrayData .sideBySide .column button,
 body main #hideJsConditionals .sideBySide .column button,
-body main #hideVirtualEnv .sideBySide .column button,
-body main #hideTermCmds .sideBySide .column button {
+body main #hideVirtualEnv .sideBySide .column button {
   margin: 1em;
 }
 body main .resourceContainer {
