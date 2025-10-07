@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/term.css">
     <script src="../../js/components/toolNav.js"></script>
     <script src="../../js/components/footer.js"></script>
-    <title>Basic Terminal Commands</title>
+    <title>Basic Git Commands</title>
 </head>
 <body>
     <!-- dark mode switch -->
@@ -37,7 +37,7 @@
             <button id="commandInputButton" onclick="executeBasicTerm()">Cast Spell</button>
         </div>
         <div class="column">
-            <h2>Basic Terminal Command Instructions</h2>
+            <h2>Basic Git Command Instructions</h2>
             (ls and pwd can be done at any time)
             <table id="basicTable">
                 <tr>
@@ -47,28 +47,27 @@
                 </tr>
                 <tr id="step1Start">
                     <td>#1</td>
-                    <td>pwd</td>
-                    <td><span id="step1desc">Where am I? Tells you the location or file path on your system that your terminal is currently located</span></td>
+                    <td>cd Documents</td>
+                    <td><span id="step1desc">First lets get us into where we will be saving all our code</span></td>
                 </tr>
                 <tr id="step2Start">
                     <td>#2</td>
-                    <td>ls</td>
-                    <td><span id="step2desc">List the items in the current folder</span></td>
+                    <td>git clone https://github.com/beedevservices/beedev-helper.git</td>
+                    <td><span id="step2desc">This will bring the repository down to your pc in the current folder</span></td>
                 </tr>
                 <tr id="step3Start">
                     <td>#3</td>
-                    <td>cd Documents</td>
-                    <td><span id="step3desc">Move or go into the Documents folder</span></td>
+                    <td>cd beedev-helper</td>
+                    <td><span id="step3desc">Now we need to move into that new repository folder</span></td>
                 </tr>
                 <tr id="step3aStart">
                     <td>#3a</td>
-                    <td>ls</td>
-                    <td><span id="step3adesc">Look inside current folder</span></td>
+                    <td>For this step we are going to assume you have now edited the index.html file</td>
                 </tr>
                 <tr id="step4Start">
                     <td>#4</td>
-                    <td>cd ..</td>
-                    <td><span id="step4desc">Moves you back or out of 1 folder</span></td>
+                    <td>git status</td>
+                    <td><span id="step4desc">This tells us what files are new or modified in this case just modified</span></td>
                 </tr>
                 <tr id="step5Start">
                     <td>#5</td>
@@ -77,47 +76,18 @@
                 </tr>
                 <tr id="step6Start">
                     <td>#6</td>
-                    <td>cd Documents</td>
-                    <td><span id="step6desc">Lets move back into the documents folder</span></td>
+                    <td>git add .</td>
+                    <td><span id="step6desc">This simply adds all the files that have changed into a "box"</span></td>
                 </tr>
                 <tr id="step7Start">
                     <td>#7</td>
-                    <td>mkdir Test</td>
-                    <td><span id="step7desc">Creates a new folder in the current location</span></td>
+                    <td>git commit -m 'updated index page'</td>
+                    <td><span id="step7desc">This seals the "box" and puts a message letting others know what happened</span></td>
                 </tr>
                 <tr id="step8Start">
                     <td>#8</td>
-                    <td>ls</td>
-                    <td><span id="step8desc">List the items and see new folder</span></td>
-                </tr>
-                <tr id="step9Start">
-                    <td>#9</td>
-                    <td>cd Test</td>
-                    <td><span id="step9desc">Lets take a look inside our new folder</span></td>
-                </tr>
-                <tr id="step10Start">
-                    <td>#10</td>
-                    <td>ls</td>
-                    <td><span id="step10desc">Notice it is empty</span></td>
-                </tr>
-                <tr id="step11Start">
-                    <td>#11</td>
-                    <td>touch index.html</td>
-                    <td><span id="step11desc">Now we have created a new file called index.html</span></td>
-                </tr>
-                <tr id="step12Start">
-                    <td>#12</td>
-                    <td>ls</td>
-                    <td><span id="step12desc">List the items and see we just have the one file</span></td>
-                </tr>
-                <tr id="step13Start">
-                    <td>#13</td>
-                    <td>cd ../..</td>
-                    <td><span id="step13desc">Move back to the documents folder</span></td>
-                </tr>
-                <tr id="step14Start">
-                    <td>#14</td>
-                    <td colspan="2">All commands: pwd, ls, cd, mkdir, touch</td>
+                    <td>git push</td>
+                    <td><span id="step8desc">This ships off the "box" back up to git hub</span></td>
                 </tr>
             </table>
         </div>
