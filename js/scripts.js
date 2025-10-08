@@ -825,10 +825,27 @@ $(document).ready(function(){
         $('#hideTermCmds').animate( {
             width: 'toggle'
         })
-        $('#hideTermGit').css({
+        $('#hideBasicGitCmds').css({
             'display': 'none'
         })
         $('#hideTermCmds').css({
+            'display': 'flex',
+            'flex-direction': 'column',
+            'justify-content': 'center',
+            'align-items': 'center',
+            'background-color': '#DBEBD4',
+            'z-index': '2',
+            'margin': '.5em'
+        })
+    })
+    $('#showBasicGitCmds').click(function() {
+        $('#hideBasicGitCmds').animate( {
+            width: 'toggle'
+        })
+        $('#hideTermCmds').css({
+            'display': 'none'
+        })
+        $('#hideBasicGitCmds').css({
             'display': 'flex',
             'flex-direction': 'column',
             'justify-content': 'center',

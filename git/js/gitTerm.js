@@ -6,11 +6,11 @@ const fileList = ['Documents', 'Pictures'];
 var fileLocation = '/Users/guest'
 var baseLocation = 'BeeDevHelper $~/'
 var step = 0
-var final = 'Commands practiced:\ngit clone\ngit status\n git add\ngit commit\ngit push'
+var final = 'Commands practiced:\ngit clone\ngit status\ngit add\ngit commit\ngit push'
 var idToShow = ''
 var hide = ''
 var outputText = ''
-const gitClone = "Cloning into 'beedev-helper'...\nremote: Enumerating objects: 613, done.\nremote: Counting objects: 100% (613/613), done.\nremote: Compressing objects: 100% (341/341), done.\nremote: Total 613 (delta 368), reused 486 (delta 252), pack-reused 0 (from 0)\nReceiving objects: 100% (613/613), 217.63 KiB | 3.11 MiB/s, done.\nResolving deltas: 100% (368/368), done."
+const gitClone = "Cloning into 'beedev-helper'...\nremote: Enumerating objects: 512, done.\nremote: Counting objects: 100% (512/512), done.\nremote: Compressing objects: 100% (341/341), done.\nremote: Total 512 (delta 368), reused 486 (delta 252), pack-reused 0 (from 0)\nReceiving objects: 100% (512/512), 217.63 KiB | 3.11 MiB/s, done.\nResolving deltas: 100% (368/368), done."
 const gitStatus = 'On branch main\nChanges not staged for commit:\n(use "git add <file>..." to update what will be committed)\n(use "git restore <file>..." to discard changes in working directory)\n    modified:   index.html\nno changes added to commit (use "git add" and/or "git commit -a")'
 const gitCommit = '[main 2069748] updated index page\n1 file changed, 4 insertions(+), 3 deletions(-)'
 const gitPush = 'Enumerating objects: 9, done.\nCounting objects: 100% (9/9), done.\nDelta compression using up to 8 threads\nCompressing objects: 100% (5/5), done.\nWriting objects: 100% (5/5), 471 bytes | 471.00 KiB/s, done.\nTotal 5 (delta 3), reused 0 (delta 0), pack-reused 0\nremote: Resolving deltas: 100% (3/3), completed with 3 local objects.\nTo https://github.com/beedevservices/beedev-helper.git\n   74c7fc0..2069748  main -> main'
@@ -77,11 +77,13 @@ function executeBasicTerm() {
         fileList.push('Project')
         baseLocation += 'Documents/'
         fileLocation += '/Documents'
+        unhideSteps(command)
     }
     else if (command === 'git clone https://github.com/beedevservices/beedev-helper.git') {
         fileList.push('beedev-helper')
         outputText = gitClone
         termPrompt.innerHTML += `${outputText}<br>`
+        unhideSteps(command)
     } 
     else if (command === 'cd beedev-helper') {
         baseLocation += 'beedev-helper/'
@@ -101,6 +103,7 @@ function executeBasicTerm() {
     else if (command === 'git status') {
         outputText = gitStatus
         termPrompt.innerHTML += `${outputText}<br>`
+        unhideSteps(command)
     }
     else if (command === 'git add .') {
         termPrompt.innerHTML += `${baseLocation}`
@@ -144,7 +147,7 @@ function executeBasicTerm() {
 
 
 function unhideSteps(command) {
-    if(command == 'pwd') {
+    if(command == 'cd Documents') {
         if(step === 0) {
             idToShow = document.getElementById('step1desc')
             step = 1
@@ -158,7 +161,121 @@ function unhideSteps(command) {
             }, 2000)
             console.log(step)
         }
-    } 
+    }
+    else if (command === 'git clone https://github.com/beedevservices/beedev-helper.git') {
+        if(step === 1) {
+            idToShow = document.getElementById('step2desc')
+            step = 2
+            setTimeout(function() {
+                unhide()
+
+                setTimeout(function() {
+                    idToShow = document.getElementById('step3Start')
+                    idToShow.style.display = 'table-row'
+                }, 2000)
+            }, 2000)
+        }
+    }
+    else if (command === 'cd beedev-helper') {
+        if(step === 2) {
+            idToShow = document.getElementById('step3desc')
+            hide = document.getElementById('step1Start')
+            step = 3
+            setTimeout(function() {
+                unhide()
+
+                setTimeout(function() {
+                    idToShow = document.getElementById('step3aStart')
+                    idToShow.style.display = 'table-row'
+
+                    setTimeout(function() {
+                        idToShow = document.getElementById('step4Start')
+                        idToShow.style.display = 'table-row'
+                        step = 4
+                        hide.style.display = 'none'
+                        hide = document.getElementById('step2Start')
+                        hide.style.display = 'none'
+                        hide = document.getElementById('step3Start')
+                        hide.style.display = 'none'
+                    }, 2000)
+                }, 2000)
+            }, 2000)
+        }
+    }
+    else if (command === 'git status') {
+        if(step === 4) {
+            idToShow = document.getElementById('step4desc')
+            step = 5
+            setTimeout(function() {
+                unhide()
+
+                setTimeout(function() {
+                    idToShow = document.getElementById('step5Start')
+                    idToShow.style.display = 'table-row'
+                }, 2000)
+            }, 2000)
+        }
+    }
+    else if (command === 'git add .') {
+        if(step === 5) {
+            idToShow = document.getElementById('step5desc')
+            step = 6
+            setTimeout(function() {
+                unhide()
+
+                setTimeout(function() {
+                    idToShow = document.getElementById('step6Start')
+                    idToShow.style.display = 'table-row'
+                }, 2000)
+            }, 2000)
+        }
+    }
+    else if (command === "git commit -m 'updated index page'") {
+        if(step === 6) {
+            idToShow = document.getElementById('step6desc')
+            step = 7
+            setTimeout(function() {
+                unhide()
+
+                setTimeout(function() {
+                    idToShow = document.getElementById('step7Start')
+                    idToShow.style.display = 'table-row'
+                }, 2000)
+            }, 2000)
+        }
+    }
+    else if (command === 'git push') {
+        if(step === 7) {
+            idToShow = document.getElementById('step7desc')
+            hide = document.getElementById('step3aStart')
+            step = 8
+            setTimeout(function() {
+                unhide()
+
+                setTimeout(function() {
+                    idToShow = document.getElementById('step8Start')
+                    idToShow.style.display = 'table-row'
+
+                    setTimeout(function() {
+                        clearTerminal()
+
+                        setTimeout(function() {
+                            hide.style.display = 'none'
+                            hide = document.getElementById('step4Start')
+                            hide.style.display = 'none'
+                            hide = document.getElementById('step5Start')
+                            hide.style.display = 'none'
+                            hide = document.getElementById('step6Start')
+                            hide.style.display = 'none'
+                            hide = document.getElementById('step7Start')
+                            hide.style.display = 'none'
+                            finalTerm()
+                        }, 1000)
+                    }, 1000)
+                }, 2000)
+            }, 2000)
+        }
+    }
     else {
         console.log('wait')
     }
