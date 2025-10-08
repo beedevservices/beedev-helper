@@ -6,9 +6,7 @@ const fileList = ['Documents', 'Pictures'];
 var fileLocation = '/Users/guest'
 var baseLocation = 'BeeDevHelper $~/'
 var step = 0
-var final = 'Commands practiced:\npwd\nls\ncd\nmkdir\ntouch'
-var idToShow = ''
-var hide = ''
+var final = 'Commands practiced:\ngit clone\ngit status\n git add\ngit commit\ngit push'
 
 function startTerminal() {
     fakeTerminal.style.display = 'flex'
@@ -33,7 +31,7 @@ function clearTerminal() {
 function finalTerm() {
     fakeTerminal.style.display = 'flex'
     commandInput.style.display = 'inline'
-    termPrompt.innerHTML = `${final}`
+    termPrompt.innerHTML = ``
     outputContainer.innerHTML = ''
     commandInput.value = ''
     commandInput.focus()
@@ -138,7 +136,8 @@ function executeBasicTerm() {
     console.log("End Step #", step, baseLocation)
 }
 
-
+var idToShow = ''
+var hide = ''
 function unhideSteps(command) {
     if(command == 'pwd') {
         if(step === 0) {
